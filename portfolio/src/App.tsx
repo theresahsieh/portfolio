@@ -1,13 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ThemeProvider } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import theme from "./theme";
+import Header from "./Header";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
+import Projects from "./Pages/Projects.js";
+import Work from "./Pages/Work.js";
+import Resume from "./Pages/Resume.js";
+import About from "./Pages/About.js";
 
-function App() {
-  return (
-    <div className="App">
-      <h1> HELLLO </h1>
-    </div>
-  );
-}
+const App = () => (
+    <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <BrowserRouter>
+            <Header />
+            <Switch>
+                <Route exact path="/projects" component={Projects} />
+                <Route exact path="/work" component={Work} />
+                <Route exact path="/resume" component={Resume} />
+                <Route exact path="/about" component={About} />
+                <Route
+                    exact
+                    path="/"
+                    render={() => {
+                        return <Redirect to="/projects" />;
+                    }}
+                />
+            </Switch>
+        </BrowserRouter>
+    </ThemeProvider>
+);
 
 export default App;
