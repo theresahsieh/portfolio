@@ -13,11 +13,17 @@ import {
 } from "@material-ui/core";
 import { Menu as MenuIcon } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const useStyles = makeStyles({
     name: {
-      position: "absolute"
+      position: "absolute",
+      color: "black",
+      textDecoration: "none"
+    },
+    navBar:{
+        backgroundColor:"white",
+        boxShadow:"0px 2px 4px -1px rgba(0,0,0,0.05)"
     },
     navDisplayFlex: {
         display: `flex`,
@@ -25,17 +31,74 @@ const useStyles = makeStyles({
     },
     linkText: {
         textDecoration: `none`,
-        color: `white`,
+    },
+    navListText: {
+        color: "rgba(0, 0, 0, 0.87)"
+    },
+    navListButton: {
+        '&$selected': {
+            backgroundColor: "transparent" 
+        },
+        '&:hover': {
+            backgroundColor: "transparent" 
+        },
+        '&:hover::before': {
+            position: 'absolute',
+            bottom: '0px',
+            visbility: 'hidden',
+            transform: 'scaleX(1)'
+        },
+        '&::before': {
+            content: '""',
+            position: 'absolute',
+            left: '10%',
+            right: '10%',
+            width: '80%',
+            bottom: "0",
+            border: '1px solid #AB72E3',
+            visbility: 'hidden',
+            transform: 'scaleX(0)',
+            transition: 'all 0.3s ease-in-out 0s'
+        },
     },
     menuButton: {
-        color: `white`,
         float: `right`,
     },
     drawer: {
         top: "64px",
+        marginTop:"0.5rem",
+        backgroundColor:"#AB72E3",
+        boxShadow:"0px 2px 4px -1px rgba(0,0,0,0.05), 0px 2px 4px -1px rgba(0,0,0,0.05)"
     },
-    navLink: {
-        textAlign:'center'
+    drawerLink: {
+        textAlign:'center',
+        "&$selected":{
+            color: "red"
+        },
+        '&:hover': {
+            backgroundColor: "transparent" 
+        },
+        '&:hover::before': {
+            position: 'absolute',
+            bottom: '0px',
+            visbility: 'hidden',
+            transform: 'scaleX(1)'
+        },
+        '&::before': {
+            content: '""',
+            position: 'absolute',
+            left: '10%',
+            right: '10%',
+            width: '80%',
+            bottom: "0",
+            border: '1px solid white',
+            visbility: 'hidden',
+            transform: 'scaleX(0)',
+            transition: 'all 0.3s ease-in-out 0s'
+        },
+    },
+    drawerLinkText: {
+        color: "white",
     }
 });
 
@@ -51,6 +114,8 @@ const Header = () => {
         setOpenDrawer(!openDrawer);
     };
     const classes = useStyles();
+    const location = useLocation();
+    const isActive = (value) => (location.pathname === value ? 'active' : '')
 
     const MobileDrawer = React.forwardRef((props, ref) => (
         <Drawer
@@ -70,10 +135,10 @@ const Header = () => {
                     component={Link}
                     to={path}
                     key={title}
-                    className={classes.navLink}
+                    className={classes.drawerLink}
                     onClick={handleDrawer}
                 >
-                    <ListItemText primary={title} />
+                    <ListItemText primary={title} style={path === location.pathname ?  {color:"black"} : {} } className={classes.drawerLinkText}/>
                 </ListItem>
                 ))}
             </ListItem>
@@ -81,9 +146,10 @@ const Header = () => {
     ));
     return (
         <div>
-            <AppBar position="sticky">
+            <AppBar className={classes.navBar} position="sticky">
                 <Toolbar>
-                  <Typography variant="h6" className={classes.name}>Theresa Hsieh</Typography>
+                  <Typography variant="h6" className={classes.name} component={Link}
+                                        to={"/"}>Theresa Hsieh</Typography>
                     <div style={{ flex: "1 1 auto" }}></div>
                     <Hidden smDown>
                         <Container
@@ -101,8 +167,9 @@ const Header = () => {
                                         component={Link}
                                         to={path}
                                         key={title}
+                                        className={classes.navListButton}
                                     >
-                                        <ListItemText primary={title} />
+                                        <ListItemText style={path === location.pathname ?  {color:'#7326C0'} : {} } className={`${classes.navListText}`} primary={title} />
                                     </ListItem>
                                 ))}
                             </List>
