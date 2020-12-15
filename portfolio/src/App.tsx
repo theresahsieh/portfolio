@@ -12,7 +12,7 @@ import About from "./Pages/About.js";
 const App = () => (
     <ThemeProvider theme={theme}>
         <CssBaseline />
-        <BrowserRouter>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Header />
             <Switch>
                 <Route exact path="/projects" component={Projects} />

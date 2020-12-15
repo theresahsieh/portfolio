@@ -115,7 +115,6 @@ const Header = () => {
     };
     const classes = useStyles();
     const location = useLocation();
-    const isActive = (value) => (location.pathname === value ? 'active' : '')
 
     const MobileDrawer = React.forwardRef((props, ref) => (
         <Drawer
