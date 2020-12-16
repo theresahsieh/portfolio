@@ -15,9 +15,11 @@ import { Menu as MenuIcon } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link, useLocation } from "react-router-dom";
 
+import t2 from "./Pages/resources/logo.png"
 const useStyles = makeStyles({
     name: {
       position: "absolute",
+      left: "4rem",
       color: "black",
       textDecoration: "none"
     },
@@ -147,6 +149,7 @@ const Header = () => {
         <div>
             <AppBar className={classes.navBar} position="sticky">
                 <Toolbar>
+                <img src={t2} alt="logo" style={{width: "2rem", height:"2rem", pointerEvents:"all"}} href={"/"}/>
                   <Typography variant="h6" className={classes.name} component={Link}
                                         to={"/"}>Theresa Hsieh</Typography>
                     <div style={{ flex: "1 1 auto" }}></div>

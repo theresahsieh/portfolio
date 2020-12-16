@@ -1,9 +1,9 @@
-const { Typography } = require("@material-ui/core")
+import { Typography } from "@material-ui/core";
 
 const Work = () => {
     return (
     <div style={{padding: "1rem"}}>
-      <Typography variant="h6">work</Typography>
+      <Typography variant="h4">work</Typography>
     </div>
     );
 };
