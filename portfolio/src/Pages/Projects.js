@@ -9,11 +9,12 @@ import { makeStyles } from "@material-ui/core/styles";
 
 import KlixCover from "./resources/Klix-cover.png";
 import PECSSCover from "./resources/PECSS-cover.png";
-import PEQCover from "./resources/PEQ-cover.png"
+import PEQCover from "./resources/PEQ-cover.png";
+import ReflectCover from "./resources/Reflect-cover.png";
 
 const useStyles = makeStyles({
     title: {
-        marginBottom: "1.5rem",
+        margin: "0 0 1.5rem 1.5rem",
     },
     projectName: {
       fontWeight:"bold"
@@ -54,12 +55,16 @@ const klixChip = {...chipStyle, backgroundColor:"#8576ed"}
 const pecssChip = {...chipStyle, backgroundColor:"#54D0E0"}
 const yearChip = {...chipStyle, backgroundColor:'#E5E5E5'}
 const peqChip = {...chipStyle, backgroundColor:"#FF4BAF"}
+const reflectChip = {...chipStyle, backgroundColor:"#2993FC"}
 
 
 const Projects = () => {
     const classes = useStyles();
     return (
         <div style={{ padding: "1rem" }}>
+          <Typography variant="h4" component="h1" className={classes.title}>
+                projects
+            </Typography>
             <div
                 style={{
                     flexDirection: "column",
@@ -69,9 +74,7 @@ const Projects = () => {
                     justify: "center",
                 }}
             >
-              <Typography variant="h4" component="h1" className={classes.title}>
-                projects
-            </Typography>
+              
                 <Card className={classes.mainCard}>
                     <CardMedia
                         className={classes.cardImage}
@@ -142,6 +145,29 @@ const Projects = () => {
                     <CardActions className={classes.cardChips}>
                       <span style={klixChip}>UX Research + Design</span>
                       <span style={yearChip}>2019</span>
+                    </CardActions>
+                </Card>
+                <Card className={classes.mainCard}>
+                    <CardMedia
+                        className={classes.cardImage}
+                        image={ReflectCover}
+                        title="Reflect! Cover Photo"
+                    ></CardMedia>
+                    <CardContent>
+                        <Typography gutterBottom variant="h6" component="h2" className={classes.projectName}>
+                            Reflect!
+                        </Typography>
+                        <Typography
+                            variant="body2"
+                            color="textSecondary"
+                            component="p"
+                        >
+                            Facilitating collaborative problem solving for small teams. 
+                        </Typography>
+                    </CardContent>
+                    <CardActions className={classes.cardChips}>
+                      <span style={reflectChip}>UX Design + React JS</span>
+                      <span style={yearChip}>2018-2020</span>
                     </CardActions>
                 </Card>
             </div>

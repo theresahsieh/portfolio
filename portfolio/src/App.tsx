@@ -5,7 +5,6 @@ import theme from "./theme";
 import Header from "./Header";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import Projects from "./Pages/Projects.js";
-import Work from "./Pages/Work.js";
 import Resume from "./Pages/Resume.js";
 import About from "./Pages/About.js";
 
@@ -13,10 +12,10 @@ const App = () => (
     <ThemeProvider theme={theme}>
         <CssBaseline />
         <BrowserRouter basename={process.env.PUBLIC_URL}>
-            <Header />
+            <Header/>
+            <div style={{height:"64px"}}/>
             <Switch>
                 <Route exact path="/projects" component={Projects} />
-                <Route exact path="/work" component={Work} />
                 <Route exact path="/resume" component={Resume} />
                 <Route exact path="/about" component={About} />
                 <Route
