@@ -71,7 +71,7 @@ const About = () => {
                         I'm a computer science student at Georgia Tech with a
                         passion for UX design and frontend development. For my
                         undergraduate degree, my concentration is in "People and
-                        Media" - where "computing meets users and design". I
+                        Media" - where "computing meets users and design." I
                         enjoy designing rich user experiences and bringing them
                         to life with code.
                     </Typography>
