@@ -11,7 +11,7 @@ import ImaginalHw from "./resources/PEQ/ImaginalHw.png"
 import ReflectCover from "./resources/Reflect/Reflect-cover.png";
 import Workplan from "./resources/Reflect/workplan.png";
 
-import { Grid, Typography } from "@material-ui/core";
+import { Typography } from "@material-ui/core";
 
 const textBlockStyle = {
     fontWeight: "normal",
@@ -24,7 +24,7 @@ export const ProjectDetailContent = {
         coverImage: PECSSCover,
         color: "#54D0E0",
         problemStatement: "Improving PTSD treatment for veterans",
-        roles: ["UI Design", "Developer"],
+        roles: ["UI Design", "Development"],
         timeline: ["Jan 2019 - present", "NSF Project"],
         tools: ["Figma, Angular JS"],
         teamMembers: ["Marcus Wilder, Dr. Andrew Sherrill, Catherine Deeter"],
@@ -114,7 +114,7 @@ export const ProjectDetailContent = {
         coverImage: ReflectCover,
         color: "#2993FC",
         problemStatement: "Facilitating collaborative problem solving for small teams",
-        roles: ["UX Design", "Developer"],
+        roles: ["UX Design", "Development"],
         timeline: ["Jan 2019 - Dec 2020", "NSF Project"],
         tools: ["Adobe XD", "React JS"],
         teamMembers: ["Phillip Abel", "Angelina Suwoto", "Mary Alsayar", "Ale Silcott"],

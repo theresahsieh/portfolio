@@ -9,6 +9,7 @@ const useStyles = makeStyles({
         margin: "0 0 1.5rem 1.5rem",
         textDecoration: "none",
         color: "black",
+        fontWeight: "500"
     },
 });
 

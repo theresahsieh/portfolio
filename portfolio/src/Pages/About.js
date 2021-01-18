@@ -4,6 +4,7 @@ import me from "./resources/TheresaHsieh.png";
 const useStyles = makeStyles({
     title: {
         margin: "0 0 1.5rem 1.5rem",
+        fontWeight: "500"
     },
     intro: {
         color: "#AB72E3",

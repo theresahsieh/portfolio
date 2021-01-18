@@ -18,6 +18,7 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles({
     title: {
         margin: "0 0 1.5rem 1.5rem",
+        fontWeight: "500"
     },
     splashTitle: {
         margin: "1.5rem 0 1rem 1.5rem",
@@ -158,7 +159,7 @@ const Projects = () => {
                 I'm a UX designer and UI developer focused on creating
                 meaningful experiences.
             </Typography>
-            <img src={Icons} alt="icons" style={{maxWidth:"80%", margin:"auto", display: "block"}}></img>
+            <img src={Icons} alt="icons" style={{width:"80%", maxWidth:"600px", margin:"auto", display: "block"}}></img>
             <hr style={lineStyle}/>
             <div style={{ padding: "1rem" }}>
                 <Typography

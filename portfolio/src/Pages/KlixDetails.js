@@ -8,6 +8,17 @@ import KlixWeb1 from "./resources/Klix/web1.png";
 import KlixWeb2 from "./resources/Klix/web2.png";
 import KlixDiscord from "./resources/Klix/discord.png";
 import KlixDesignChart from "./resources/Klix/designComparison.png";
+import KlixPrototype from "./resources/Klix/prototype.png";
+import Andrew from "./resources/Klix/Andrew.png";
+import Mia from "./resources/Klix/Mia.png";
+import Jordan from "./resources/Klix/Jordan.png";
+import Ava from "./resources/Klix/Ava.png";
+import Clicks from "./resources/Klix/clicks.png";
+import NASA from "./resources/Klix/NASA-tlx.png";
+
+import KlixScreens from "./resources/Klix/screens.png";
+
+import KlixFeatureGraphic from "./resources/Klix/featureGraphic.png";
 
 import {
     Grid,
@@ -58,11 +69,19 @@ const subHeaderStyle = {
     margin: "1rem 0 1rem 0",
     fontSize: "22px",
 };
-
 const imageStyle = {
     margin: "1rem auto",
     width: "90%",
-    maxWidth: "800px",
+    maxWidth: "1200px",
+    height: "auto",
+    borderRadius: "10px",
+    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
+    display: "block",
+};
+
+const screenStyle = {
+    margin: "1rem auto",
+    width: "96%",
     height: "auto",
     borderRadius: "10px",
     boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
@@ -96,20 +115,20 @@ const KlixDetails = () => {
             </Typography>
             <Typography variant="h6" component="p" style={textBlockStyle}>
                 We used an online survey to to reach gamers on Twitter to get a
-                general idea about the gaming habits of people online. After one
-                week, we received 18 responses from a diverse set of gamers. We
-                learned that Twitter, Discord, Twitch and Reddit were the top
-                social media sites for gamers but many felt it was hard to find
-                friends on the massive platforms. Furthermore, many though
-                respondents reported a desire to socialize with others online,
-                they also said this was hard to a toxic culture.
+                general idea about people's gaming habits. After one week, we
+                received 18 responses from a diverse set of gamers. We learned
+                that Twitter, Discord, Twitch and Reddit are the top social
+                media sites for gamers but many feel it is hard to find friends
+                on these massive platforms. Furthermore, many though respondents
+                reported a desire to socialize with others online, they also
+                said this was hard due to a toxic culture.
             </Typography>
             <Typography variant="h5" component="h4" style={subHeaderStyle}>
                 Semi Structured Interivews
             </Typography>
             <Typography variant="h6" component="p" style={textBlockStyle}>
                 To gain a better understanding of the socialization practices of
-                the gaming community we conducted semi-structured interviews.
+                the gaming community, we conducted semi-structured interviews.
                 These interviews were helpful for taking into account personal
                 experience and identifying themes and current pain points.
             </Typography>
@@ -148,7 +167,38 @@ const KlixDetails = () => {
                 alt="interview results"
                 style={imageStyle}
             ></img>
-
+            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+                User Personas
+            </Typography>
+            <Typography variant="h6" component="p" style={textBlockStyle}>
+                We created a set of user personas that would help us understand
+                the goals and motivations of our users.
+            </Typography>
+            <Grid container spacing={1} alignItems="center">
+                <Grid item xs={12} sm={6} lg={3}>
+                    <img
+                        src={Andrew}
+                        alt="user persona 1"
+                        style={imageStyle}
+                    ></img>
+                </Grid>
+                <Grid item xs={12} sm={6} lg={3}>
+                    <img src={Mia} alt="user person 2" style={imageStyle}></img>
+                </Grid>
+                <Grid item xs={12} sm={6} lg={3}>
+                    <img
+                        src={Jordan}
+                        alt="user persona 3"
+                        style={imageStyle}
+                    ></img>
+                </Grid>
+                <Grid item xs={12} sm={6} lg={3}>
+                    <img src={Ava} alt="user person 4" style={imageStyle}></img>
+                </Grid>
+            </Grid>
+            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+                System Requirements
+            </Typography>
             <Typography variant="h6" component="p" style={textBlockStyle}>
                 This information helped us form a set of system requirements
                 that detailed the functionality we wanted our design solutions
@@ -355,7 +405,8 @@ const KlixDetails = () => {
                         addressed the pain points we had identified.
                         Furthermore, at the poster session, people expressed the
                         most interest in the app idea and provided us helpful
-                        feedback on how to best improve it.
+                        feedback on how to best improve it such as using badges
+                        to promote non-toxic behavior.
                     </Typography>
                 </Grid>
                 <Grid item xs={12} md={6} lg={5}>
@@ -382,8 +433,30 @@ const KlixDetails = () => {
                 component="p"
                 className={classes.textBlock}
             >
-                prototype
+                We used Figma to create high fidelity mockups and a working
+                prototype. The purple theme mirrors the Twitch purple branding
+                to align itself with the popular gamer site's aesthetic. The
+                gradients and round corners create a more feminine and soft
             </Typography>
+            <img
+                src={KlixScreens}
+                alt="Klix prototype screens"
+                style={screenStyle}
+            ></img>
+            <Typography variant="h6" component="p" style={textBlockStyle}>
+                The screens illustrate the components needed for the five major
+                functions of the application: user signup, profile management,
+                player discovery, messaging, and event planning. We created the
+                necessary screens for users to accomplish three tasks for
+                evaluation: (1) Find a specific profile on the Discover page,
+                (2) Report an offensive message, and (3) Schedule and event with
+                contacts.
+            </Typography>
+            <img
+                src={KlixPrototype}
+                alt="Klix prototype screens"
+                style={imageStyle}
+            ></img>
 
             <span style={{ verticalAlign: "top" }}>
                 <span style={blockStyle} />
@@ -395,32 +468,94 @@ const KlixDetails = () => {
                     Evaluation
                 </Typography>
             </span>
+            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+                Think Aloud
+            </Typography>
             <Typography
                 variant="h6"
                 component="p"
                 className={classes.textBlock}
             >
-                eval
+                We decided to use the think aloud technique to gather
+                qualitative data for our app. We felt it was important to figure
+                out what people were thinking when using our app. This technique
+                allows us to figure out if the users comprehend what they are
+                doing instead of guessing what they are thinking.
             </Typography>
-
-            <span style={{ verticalAlign: "top" }}>
-                <span style={blockStyle} />
-                <Typography
-                    variant="h5"
-                    component="h2"
-                    className={classes.sectionHeader}
-                >
-                    Key takeaways
-                </Typography>
-            </span>
+            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+                Number of Clicks
+            </Typography>
             <Typography
                 variant="h6"
                 component="p"
                 className={classes.textBlock}
             >
-                takeaways
+                We decided to count the number of clicks to complete the task so
+                we could gather quantitative data concerning the intuitiveness
+                of our task. This allows us to have numerical data to compare
+                between participants and tasks so that we could pinpoint
+                weaknesses efficiently.
             </Typography>
-
+            <img src={Clicks} alt="Number of Clicks" style={imageStyle}></img>
+            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+                NASA TLX Survey
+            </Typography>
+            <Typography
+                variant="h6"
+                component="p"
+                className={classes.textBlock}
+            >
+                We included the NASA TLX Survey to get quantitative feedback
+                about the usability of our app. Similar to the Number of Clicks
+                measure, this quantitative data can help us compare experiences
+                across participants
+            </Typography>
+            <img src={NASA} alt="NASA TLX" style={imageStyle}></img>
+            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+                Open-ended Questions
+            </Typography>
+            <Typography
+                variant="h6"
+                component="p"
+                className={classes.textBlock}
+            >
+                We also included a number of open ended questions after each
+                task, to get more qualitative feedback from the user. We
+                obtained the following qualitative feedback:
+            </Typography>
+            <Typography variant="h6" component="ul" style={listStyle}>
+                <li>Creating the gameplay schedule was not intuitive.</li>
+                <li>Profilse could use a bio section.</li>
+                <li>
+                    The profile cards could have more information about
+                    expertise level.
+                </li>
+                <li>
+                    The report feature was good but, on the messaging page it
+                    shouldn't be included in the reactions.
+                </li>
+                <li>
+                    The badges were met with mixed options. Some people felt
+                    they would be useless and some thought they were a good
+                    addition. People were also unsure how badges were earned.
+                </li>
+            </Typography>
+            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+                Results
+            </Typography>
+            <Typography
+                variant="h6"
+                component="p"
+                className={classes.textBlock}
+            >
+                We found that the usability and task flow were adequate and most
+                participants enjoyed the visual designs. Based on the feedback
+                and discussion regarding the evaluation results, we found
+                potential avenues for improvements in Klix such as allowing for
+                a more detailed and in-depth profile, creating a more intuitive
+                process for scheduling, and making the process for earning
+                badges and reporting users clearer.
+            </Typography>
             <span style={{ verticalAlign: "top" }}>
                 <span style={blockStyle} />
                 <Typography
@@ -436,8 +571,16 @@ const KlixDetails = () => {
                 component="p"
                 className={classes.textBlock}
             >
-                future work
+                With another group of teammates (Kevin Chen, Sabrina Aang, Suraj
+                Masand, and Benson Huang), I helped develop Klix into and
+                Android application. An early version of the app is currently on
+                the the Android Play Store.
             </Typography>
+            <img
+                src={KlixFeatureGraphic}
+                alt="Klix feature graphic"
+                style={screenStyle}
+            ></img>
         </div>
     );
 };
