@@ -119,9 +119,9 @@ const KlixDetails = () => {
                 received 18 responses from a diverse set of gamers. We learned
                 that Twitter, Discord, Twitch and Reddit are the top social
                 media sites for gamers but many feel it is hard to find friends
-                on these massive platforms. Furthermore, many though respondents
-                reported a desire to socialize with others online, they also
-                said this was hard due to a toxic culture.
+                on these massive platforms. Furthermore, many respondents
+                reported that their desire to socialize with others online was
+                often hindered by the toxic culture within the gaming community.
             </Typography>
             <Typography variant="h5" component="h4" style={subHeaderStyle}>
                 Semi Structured Interivews
@@ -288,8 +288,8 @@ const KlixDetails = () => {
                 populates a deck of profile cards and offers filtering options
                 so users can easily find other gamers who share similar
                 interests and schedules. The application offers messaging
-                services, scheduling functionality and provides extremely
-                intuitive capabilities for reporting inappropriate users.
+                services, scheduling functionality and provides avenues for
+                reporting inappropriate users.
             </Typography>
             <Grid
                 container
@@ -435,8 +435,12 @@ const KlixDetails = () => {
             >
                 We used Figma to create high fidelity mockups and a working
                 prototype. The purple theme mirrors the Twitch purple branding
-                to align itself with the popular gamer site's aesthetic. The
-                gradients and round corners create a more feminine and soft
+                to align itself with the popular gamer site's aesthetic. One of
+                the features that we changed from the initial app design was
+                swapping “Notifications” for “Events.” We realized that we
+                didn’t have a page for creating events and that the
+                “Notifications” for matches would be redundant since it would
+                also appear in the “Messages” section.
             </Typography>
             <img
                 src={KlixScreens}
@@ -449,7 +453,7 @@ const KlixDetails = () => {
                 player discovery, messaging, and event planning. We created the
                 necessary screens for users to accomplish three tasks for
                 evaluation: (1) Find a specific profile on the Discover page,
-                (2) Report an offensive message, and (3) Schedule and event with
+                (2) Report an offensive message, and (3) Schedule an event with
                 contacts.
             </Typography>
             <img
@@ -520,8 +524,9 @@ const KlixDetails = () => {
                 className={classes.textBlock}
             >
                 We also included a number of open ended questions after each
-                task, to get more qualitative feedback from the user. We
-                obtained the following qualitative feedback:
+                task, to get more qualitative feedback from the user. The
+                following is a summary of the feedback we received from
+                participants:
             </Typography>
             <Typography variant="h6" component="ul" style={listStyle}>
                 <li>Creating the gameplay schedule was not intuitive.</li>
@@ -563,6 +568,29 @@ const KlixDetails = () => {
                     component="h2"
                     className={classes.sectionHeader}
                 >
+                    Lessons Learned
+                </Typography>
+            </span>
+            <Typography
+                variant="h6"
+                component="p"
+                className={classes.textBlock}
+            >
+                This project was my first experience thoroughly following the
+                user-centered design process. I learned how to take the
+                information gained from our user research and create user
+                personas that would remind us of the users we were designing for
+                and gained experience conducting user interviews. This was also
+                my first time using Figma, so I learned how to utilize the tool
+                for creating mockups and working prototypes.
+            </Typography>
+            <span style={{ verticalAlign: "top" }}>
+                <span style={blockStyle} />
+                <Typography
+                    variant="h5"
+                    component="h2"
+                    className={classes.sectionHeader}
+                >
                     Future Work
                 </Typography>
             </span>
@@ -572,9 +600,9 @@ const KlixDetails = () => {
                 className={classes.textBlock}
             >
                 With another group of teammates (Kevin Chen, Sabrina Aang, Suraj
-                Masand, and Benson Huang), I helped develop Klix into and
-                Android application. An early version of the app is currently on
-                the the Android Play Store.
+                Masand, and Benson Huang), I helped develop Klix into an Android
+                application. An early version of the app is currently on the the
+                Android Play Store.
             </Typography>
             <img
                 src={KlixFeatureGraphic}
