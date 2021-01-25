@@ -6,7 +6,7 @@ import {
     CardActions,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import {useEffect} from 'react';
+import { useEffect } from "react";
 
 import KlixCover from "./resources/Klix/Klix-cover.png";
 import PECSSCover from "./resources/PECSS/PECSS-cover.png";
@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles({
     title: {
         margin: "0 0 1.5rem 1.5rem",
-        fontWeight: "500"
+        fontWeight: "500",
     },
     splashTitle: {
         margin: "1.5rem 0 1rem 1.5rem",
@@ -27,7 +27,7 @@ const useStyles = makeStyles({
         margin: "0 0 1rem 1.5rem",
         fontWeight: "normal",
         display: "inline-flex",
-        verticalAlign:"top"
+        verticalAlign: "top",
     },
     projectName: {
         fontWeight: "bold",
@@ -86,33 +86,20 @@ const Projects = () => {
     const classes = useStyles();
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
     const projects = [
         {
-            name: "PECSS Clinician Dashboard",
+            name: "PECSS",
             image: PECSSCover,
             description:
-                "Prolonged Exposure Collective Sensing System. Improving PTSD treatment for veterans.",
+                "Prolonged Exposure Collective Sensing System. Managing personal health information to improve the patient adherence to PTSD treatment.",
             chips: (
                 <CardActions className={classes.cardChips}>
-                    <span style={pecssChip}>UX Design + Angular JS</span>
-                    <span style={yearChip}>2019 - present</span>
-                </CardActions>
-            ),
-            path: "pecss",
-        },
-        {
-            name: "PEQ Widget",
-            image: PEQCover,
-            description:
-                "Patient Engagement Quotient. Visualizing electronic personal health information to improve patient adherence to treatment protocols.",
-            chips: (
-                <CardActions className={classes.cardChips}>
-                    <span style={peqChip}>UX Research + Design</span>
+                    <span style={pecssChip}>HCI Research + UX Design + Angular JS</span>
                     <span style={yearChip}>2020 - present</span>
                 </CardActions>
             ),
-            path: "peq",
+            path: "pecss",
         },
         {
             name: "Klix",
@@ -122,11 +109,24 @@ const Projects = () => {
             chips: (
                 <CardActions className={classes.cardChips}>
                     <span style={klixChip}>UX Research + Design</span>
-                    <span style={yearChip}>2019</span>
+                    <span style={yearChip}>2020</span>
                 </CardActions>
             ),
             path: "klix",
         },
+        // {
+        //     name: "PEQ Widget",
+        //     image: PEQCover,
+        //     description:
+        //         "Patient Engagement Quotient. Visualizing electronic personal health information to improve patient adherence to treatment protocols.",
+        //     chips: (
+        //         <CardActions className={classes.cardChips}>
+        //             <span style={peqChip}>UX Research + Design</span>
+        //             <span style={yearChip}>2020 - present</span>
+        //         </CardActions>
+        //     ),
+        //     path: "peq",
+        // },
         {
             name: "Reflect!",
             image: ReflectCover,
@@ -159,8 +159,17 @@ const Projects = () => {
                 I'm a UX designer and UI developer focused on creating
                 meaningful experiences.
             </Typography>
-            <img src={Icons} alt="icons" style={{width:"80%", maxWidth:"600px", margin:"auto", display: "block"}}></img>
-            <hr style={lineStyle}/>
+            <img
+                src={Icons}
+                alt="icons"
+                style={{
+                    width: "80%",
+                    maxWidth: "600px",
+                    margin: "auto",
+                    display: "block",
+                }}
+            ></img>
+            <hr style={lineStyle} />
             <div style={{ padding: "1rem" }}>
                 <Typography
                     variant="h4"

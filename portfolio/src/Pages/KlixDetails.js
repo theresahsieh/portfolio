@@ -20,13 +20,7 @@ import KlixScreens from "./resources/Klix/screens.png";
 
 import KlixFeatureGraphic from "./resources/Klix/featureGraphic.png";
 
-import {
-    Grid,
-    Typography,
-    makeStyles,
-    Container,
-    Toolbar,
-} from "@material-ui/core";
+import { Grid, Typography, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
     title: {
@@ -486,35 +480,61 @@ const KlixDetails = () => {
                 allows us to figure out if the users comprehend what they are
                 doing instead of guessing what they are thinking.
             </Typography>
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
-                Number of Clicks
-            </Typography>
-            <Typography
-                variant="h6"
-                component="p"
-                className={classes.textBlock}
-            >
-                We decided to count the number of clicks to complete the task so
-                we could gather quantitative data concerning the intuitiveness
-                of our task. This allows us to have numerical data to compare
-                between participants and tasks so that we could pinpoint
-                weaknesses efficiently.
-            </Typography>
-            <img src={Clicks} alt="Number of Clicks" style={imageStyle}></img>
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
-                NASA TLX Survey
-            </Typography>
-            <Typography
-                variant="h6"
-                component="p"
-                className={classes.textBlock}
-            >
-                We included the NASA TLX Survey to get quantitative feedback
-                about the usability of our app. Similar to the Number of Clicks
-                measure, this quantitative data can help us compare experiences
-                across participants
-            </Typography>
-            <img src={NASA} alt="NASA TLX" style={imageStyle}></img>
+
+            <Grid container spacing={1} alignItems="top">
+                <Grid item xs={12} md={6} lg={7}>
+                    <Typography
+                        variant="h5"
+                        component="h4"
+                        style={subHeaderStyle}
+                    >
+                        Number of Clicks
+                    </Typography>
+                    <Typography
+                        variant="h6"
+                        component="p"
+                        className={classes.textBlock}
+                    >
+                        We decided to count the number of clicks to complete the
+                        task so we could gather quantitative data concerning the
+                        intuitiveness of our task. This allows us to have
+                        numerical data to compare between participants and tasks
+                        so that we could pinpoint weaknesses efficiently.
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={6} lg={5}>
+                    <img
+                        src={Clicks}
+                        alt="Number of Clicks"
+                        style={imageStyle}
+                    ></img>
+                </Grid>
+            </Grid>
+
+            <Grid container spacing={1} alignItems="top">
+                <Grid item xs={12} md={6} lg={7}>
+                    <Typography
+                        variant="h5"
+                        component="h4"
+                        style={subHeaderStyle}
+                    >
+                        NASA TLX Survey
+                    </Typography>
+                    <Typography
+                        variant="h6"
+                        component="p"
+                        className={classes.textBlock}
+                    >
+                        We included the NASA TLX Survey to get quantitative
+                        feedback about the usability of our app. Similar to the
+                        Number of Clicks measure, this quantitative data can
+                        help us compare experiences across participants
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={6} lg={5}>
+                    <img src={NASA} alt="NASA TLX" style={imageStyle}></img>
+                </Grid>
+            </Grid>
             <Typography variant="h5" component="h4" style={subHeaderStyle}>
                 Open-ended Questions
             </Typography>

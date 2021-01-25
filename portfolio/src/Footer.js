@@ -2,7 +2,7 @@ import { Typography } from "@material-ui/core";
 
 const Footer = () => {
     return (
-        <footer style= {{height: "50px", width: "100%", textAlign: "center", bottom: 0}}>
+        <footer style= {{height: "50px", width: "100%", textAlign: "center", bottom: 0, marginTop:"4rem"}}>
             <Typography
             variant="p"
             component="p">

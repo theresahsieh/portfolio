@@ -1,12 +1,7 @@
-import {
-    Grid,
-    Typography,
-    makeStyles,
-    Container,
-    Toolbar,
-} from "@material-ui/core";
+import { Grid, Typography, makeStyles, Container } from "@material-ui/core";
 
-import {useEffect} from 'react';
+import { useEffect } from "react";
+import nsf from "./resources/nsf.png";
 
 const useStyles = makeStyles({
     title: {
@@ -20,6 +15,14 @@ const useStyles = makeStyles({
         width: "80%",
         marginRight: "10%",
         marginLeft: "10%",
+    },
+    information:{
+        "@media (min-width: 600px)": {
+            width: "90%",
+        marginRight: "5%",
+        marginLeft: "5%",
+        },
+        
     },
     subheader: {
         fontWeight: "bold",
@@ -42,15 +45,7 @@ const coverImageStyle = {
     borderRadius: "10px",
     boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
 };
-const solutionImageStyle = {
-    margin: "1rem auto",
-    width: "90%",
-    maxWidth: "600px",
-    height: "auto",
-    borderRadius: "10px",
-    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
-    display: "block",
-};
+
 
 const lineStyle = {
     backgroundColor: "#E8E8E8",
@@ -64,7 +59,7 @@ const ProjectDetail = (props) => {
     const classes = useStyles();
     useEffect(() => {
         window.scrollTo(0, 0);
-      }, []);
+    }, []);
     const content = props.content;
     const blockStyle = {
         backgroundColor: content.color,
@@ -131,7 +126,18 @@ const ProjectDetail = (props) => {
                         ))}
                     </Grid>
                 </Grid>
+                {content.nsf && (
+                    <div style={{verticalAlign:"middle", margin:"auto"}}>
+                        <img src={nsf} alt="nsf logo" style={{maxWidth:"45px", display: "inline-flex", verticalAlign:"middle", margin:".5rem"}}/>
+                        <Typography style={{display:"inline-flex"}}>
+                            This project is funded by the National Science
+                            Foundation grant #{content.nsf}.
+                        </Typography>
+                    </div>
+                )}
+
                 <hr style={lineStyle} />
+                <Container className={classes.information}>
                 <span style={{ verticalAlign: "top" }}>
                     <span style={blockStyle} />
                     <Typography
@@ -155,13 +161,10 @@ const ProjectDetail = (props) => {
                 </span>
 
                 {content.solution}
-                <img
-                    src={content.solutionImage}
-                    alt="Solution"
-                    style={solutionImageStyle}
-                ></img>
 
                 {content.details}
+                </Container>
+                
             </div>
         </div>
     );

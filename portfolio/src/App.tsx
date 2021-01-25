@@ -25,11 +25,11 @@ const App = () => (
                         content={ProjectDetailContent.pecss}
                     ></ProjectDetail>
                 </Route>
-                <Route exact path="/projects/peq">
+                {/* <Route exact path="/projects/peq">
                     <ProjectDetail
                         content={ProjectDetailContent.peq}
                     ></ProjectDetail>
-                </Route>
+                </Route> */}
                 <Route exact path="/projects/klix">
                     <ProjectDetail
                         content={ProjectDetailContent.klix}
