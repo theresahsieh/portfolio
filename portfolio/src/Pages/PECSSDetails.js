@@ -212,7 +212,7 @@ const PECSSDetails = () => {
                     <img src={PEBook} alt="PE book" style={bookStyle}></img>
                 </Grid>
             </Grid>
-            <div style={{ padding: "0 1rem 1rem 1rem" }}>
+            <div style={{ padding: "0 1rem .5rem 1rem" }}>
                 <Typography variant="h6" component="p" style={textBlockStyle}>
                     <HearingIcon className={classes.icon} fontSize="large" />
                     <strong>Imaginal Exposure</strong> Patients are asked to
@@ -279,15 +279,51 @@ const PECSSDetails = () => {
                 >
                     Methods
                 </Typography>
-                <Typography variant="h6" component="p" style={textBlockStyle}>
-                    <ul>
-                        <li>Semi-Structured Interviews</li>
-                        <li>Heurisitic Evaluations</li>
-                        <li>Protoype Demonstrations</li>
-                        <li>Angular JS Development</li>
-                    </ul>
+            </span>
+            <Typography variant="h6" component="p" style={textBlockStyle}>
+                <ul>
+                    <li>Semi-Structured Interviews</li>
+                    <li>Heurisitic Evaluations</li>
+                    <li>Protoype Demonstrations</li>
+                    <li>Angular JS Development</li>
+                </ul>
+            </Typography>
+            <span style={{ verticalAlign: "top" }}>
+                <span style={blockStyle} />
+                <Typography
+                    variant="h5"
+                    component="h2"
+                    className={classes.sectionHeader}
+                >
+                    Lessons Learned
                 </Typography>
             </span>
+            <Typography variant="h6" component="p" style={textBlockStyle}>
+                As a part of this research lab, I have gained experience
+                conducting HCI research and learned important user-centered
+                design principles and tools. I have greatly improved my ability
+                to understand the goals and needs of users and strengthened my
+                evaluation skills. Furthermore, as a part of developing the
+                visualization tools for the dashboard, I have learned the
+                Angular JS framework.
+            </Typography>
+            <span style={{ verticalAlign: "top" }}>
+                <span style={blockStyle} />
+                <Typography
+                    variant="h5"
+                    component="h2"
+                    className={classes.sectionHeader}
+                >
+                    Future Work
+                </Typography>
+            </span>
+            <Typography variant="h6" component="p" style={textBlockStyle}>
+                I am currently working on this project as both a development 
+                team member and as an HCI researcher. We are planning to test 
+                our designs with patients and clinicians and continue to 
+                gather more insight on how we can improve PECSS to aid in PTSD 
+                treatment.
+            </Typography>
             {/* <Typography variant="h6" component="p" style={textBlockStyle}>
                 <strong>Development Constraints</strong> The deployment of the
                 dashboard was scheduled for approximately 6 months after I

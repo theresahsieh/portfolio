@@ -10,7 +10,8 @@ import ImaginalHw from "./resources/PEQ/ImaginalHw.png";
 import PEQDetails from "./PEQDetails";
 
 import ReflectCover from "./resources/Reflect/Reflect-cover.png";
-import Workplan from "./resources/Reflect/workplan.png";
+import ReflectLogo from "./resources/Reflect/Reflect-logo.png";
+import ReflectDetails from "./ReflectDetails";
 
 import { Typography } from "@material-ui/core";
 
@@ -29,6 +30,12 @@ const solutionImageStyle = {
     display: "block",
 };
 
+const logoImageStyle = {
+    ...solutionImageStyle,
+    padding: "1rem",
+    border: " 4px solid dodgerBlue",
+};
+
 export const ProjectDetailContent = {
     pecss: {
         title: "PECSS",
@@ -36,7 +43,7 @@ export const ProjectDetailContent = {
         coverImage: PECSSCover,
         color: "#54D0E0",
         problemStatement:
-        "Managing personal health information to improve the continuity of care during PTSD treatment",
+            "Managing personal health information to improve the continuity of care during PTSD treatment",
         roles: ["HCI Research", "UX Design", "Development"],
         timeline: ["Jan 2020 - present"],
         tools: ["Figma", "Angular JS"],
@@ -97,10 +104,10 @@ export const ProjectDetailContent = {
                 <Typography variant="h6" component="p" style={textBlockStyle}>
                     This is a National Science Foundation (NSF) funded project
                     and due to the nature of our work, I am not able to share
-                    the details that have yet to be published. Below I share some
-                    context for the pieces of the project I have been working on.
-                    Please contact me if you would like to learn more and feel
-                    free to read the already published work.
+                    the details that have yet to be published. Below I share
+                    some context for the pieces of the project I have been
+                    working on. Please contact me if you would like to learn
+                    more and feel free to read the already published work.
                     <ul>
                         <li>
                             <a
@@ -285,19 +292,101 @@ export const ProjectDetailContent = {
             "Ale Silcott",
         ],
         problemSpace: (
-            <Typography
-                variant="h6"
-                component="p"
-                style={textBlockStyle}
-            ></Typography>
+            <div>
+                <Typography variant="h6" component="p" style={textBlockStyle}>
+                    Wicked problems are problems that can be framed in a variety
+                    of ways based on the perspective of the person looking at
+                    it. These are difficult issues that don't have a clear
+                    solutions and pose serious ethical challenges in the world.
+                    How do we deal with climate change, inequality, automation
+                    in manufacturing?
+                </Typography>
+                <Typography variant="h6" component="p" style={textBlockStyle}>
+                    In an educational setting, students presented with such
+                    wicked problems may not know how to approach solving such
+                    intricate issues. Who can you identify people affected by
+                    the problem? How do you ethically consider the consequences
+                    of your decision?
+                </Typography>
+            </div>
         ),
         solution: (
-            <Typography
-                variant="h6"
-                component="p"
-                style={textBlockStyle}
-            ></Typography>
+            <div>
+                <Typography variant="h6" component="p" style={textBlockStyle}>
+                    We propose Reflect! a web-based platform that guides small
+                    teams through the Reflective Consensus Building (RCB).
+                    Reflect! uses "Workplans" to provide a curriculum of
+                    educational activities to promote both learning in
+                    individual and team settings. Users are guided through the
+                    argumentation process, including problem formulation,
+                    identification and justification of stakeholders, and
+                    symphysis proposal creation. The goal of Reflect! is to help
+                    teams engage in self-corrective reasoning as they learn the
+                    skills to approach complex ethical issues.
+                </Typography>
+                <img
+                    src={ReflectLogo}
+                    alt="Reflect! logo"
+                    style={logoImageStyle}
+                />
+                 <Typography variant="h6" component="p" style={textBlockStyle}>
+                     This is a National Science Foundation (NSF) funded project
+                     and here are links to associated publications: 
+                     
+                 <ul>
+                        <li>
+                            <a
+                                href="http://dx.doi.org/10.1007/s11245-019-09640-x"
+                                style={{
+                                    textDecoration: "none",
+                                    color: "#1a6dbf",
+                                }}
+                                target="blank"
+                            >
+                                Consensus Building and its Epistemic Conditions
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="http://dx.doi:10.1007/s10503-017-9442-x"
+                                style={{
+                                    textDecoration: "none",
+                                    color: "#1a6dbf",
+                                }}
+                                target="blank"
+                            >
+                                The Elusive Notion of "Argument Quality"
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="http://dx.doi.org/10.1007/s11948-019-00132-0"
+                                style={{
+                                    textDecoration: "none",
+                                    color: "#1a6dbf",
+                                }}
+                                target="blank"
+                            >
+                                Reflective Consensus Building on Wicked Problems on the Reflect! Platform
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="http://dx.doi.org/10.1007/s10503-017-9442-x"
+                                style={{
+                                    textDecoration: "none",
+                                    color: "#1a6dbf",
+                                }}
+                                target="blank"
+                            >
+                                Stimulating Reflection and Self-Correcting Reasoning Through Argument Mapping: Three Approaches
+                            </a>
+                        </li>
+                        </ul>
+                 </Typography>
+                
+            </div>
         ),
-        details: <div>Reflect</div>,
+        details: <ReflectDetails />,
     },
 };
