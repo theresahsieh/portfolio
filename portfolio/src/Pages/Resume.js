@@ -1,6 +1,6 @@
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import resume from "./resources/HsiehResume_2020.jpg";
+import resume from "./resources/HsiehResume_2021.jpg";
 
 import { Link } from "@material-ui/core";
 
@@ -31,7 +31,7 @@ const Resume = () => {
                 component={Link}
                 target="_blank"
                 href={
-                    "https://drive.google.com/file/d/1TT1UD8u8KMfPCol2rkA24XiNeVH6Dky7/view?usp=sharing"
+                    "https://drive.google.com/file/d/1yYxdu8eK0JxaZMgbGaggdR8aA_D5OBto/view?usp=sharing"
                 }
             >
                 resume
