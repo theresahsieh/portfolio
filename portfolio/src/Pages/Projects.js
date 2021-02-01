@@ -10,7 +10,6 @@ import { useEffect } from "react";
 
 import KlixCover from "./resources/Klix/Klix-cover.png";
 import PECSSCover from "./resources/PECSS/PECSS-cover.png";
-import PEQCover from "./resources/PEQ/PEQ-cover.png";
 import ReflectCover from "./resources/Reflect/Reflect-cover.png";
 import Icons from "./resources/icons.png";
 import { Link } from "react-router-dom";
@@ -79,7 +78,6 @@ const chipStyle = {
 const klixChip = { ...chipStyle, backgroundColor: "#8576ed" };
 const pecssChip = { ...chipStyle, backgroundColor: "#54D0E0" };
 const yearChip = { ...chipStyle, backgroundColor: "#E5E5E5" };
-const peqChip = { ...chipStyle, backgroundColor: "#FF4BAF" };
 const reflectChip = { ...chipStyle, backgroundColor: "#2993FC" };
 
 const Projects = () => {
@@ -114,19 +112,6 @@ const Projects = () => {
             ),
             path: "klix",
         },
-        // {
-        //     name: "PEQ Widget",
-        //     image: PEQCover,
-        //     description:
-        //         "Patient Engagement Quotient. Visualizing electronic personal health information to improve patient adherence to treatment protocols.",
-        //     chips: (
-        //         <CardActions className={classes.cardChips}>
-        //             <span style={peqChip}>UX Research + Design</span>
-        //             <span style={yearChip}>2020 - present</span>
-        //         </CardActions>
-        //     ),
-        //     path: "peq",
-        // },
         {
             name: "Reflect!",
             image: ReflectCover,

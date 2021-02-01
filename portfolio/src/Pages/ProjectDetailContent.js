@@ -5,10 +5,6 @@ import KlixDetails from "./KlixDetails";
 import PECSSCover from "./resources/PECSS/PECSS-cover.png";
 import PECSSDetails from "./PECSSDetails";
 
-import PEQCover from "./resources/PEQ/PEQ-cover.png";
-import ImaginalHw from "./resources/PEQ/ImaginalHw.png";
-import PEQDetails from "./PEQDetails";
-
 import ReflectCover from "./resources/Reflect/Reflect-cover.png";
 import ReflectLogo from "./resources/Reflect/Reflect-logo.png";
 import ReflectDetails from "./ReflectDetails";
@@ -186,95 +182,6 @@ export const ProjectDetailContent = {
         ),
         details: <KlixDetails />,
     },
-    // peq: {
-    //     title: "Patient Engagement Quotient Prototype",
-    //     nsf: "1915504",
-    //     coverImage: PEQCover,
-    //     color: "#FF4BAF",
-    //     problemStatement:
-    //         "Visualizing electronic personal health information to improve patient adherence to treatment protocols",
-    //     roles: ["UX Research", "UI Design"],
-    //     timeline: ["Jan 2020 - present"],
-    //     tools: ["Figma"],
-    //     teamMembers: ["Dr. Rosa Arriaga", "Hayley Evans", "Jiawei Zhou"],
-    //     problemSpace: (
-    //         <div>
-    //             <Typography variant="h6" component="p" style={textBlockStyle}>
-    //                 <strong>Post traumatic stress disorder (PTSD)</strong> is a
-    //                 mental health condition that can occur following a traumatic
-    //                 event. Symptoms of PTSD are characterized by trauma
-    //                 re-experiencing, avoidance of trauma related situations,
-    //                 emotions and thoughts, negative alterations in thought and
-    //                 mood, and hyperarousal. In particular, many US veterans
-    //                 suffer from the negative effects of PTSD.
-    //             </Typography>
-    //             <Typography variant="h6" component="p" style={textBlockStyle}>
-    //                 <strong>Prolonged Expousre (PE) Therapy</strong> is a well
-    //                 respected therapeutic approach to treating PTSD that
-    //                 involves clinicians helping patients process their traumatic
-    //                 memories. It is a highly manualized treatment that involves
-    //                 a series of therapy sessions and homework assignments.
-    //             </Typography>
-    //             <Typography variant="h6" component="p" style={textBlockStyle}>
-    //                 PE therapy is an intensive process that largely relies on
-    //                 patient self-report and clinician intuition. Collecting more
-    //                 objective data tracking the treatment progress could help
-    //                 clinicians improve patient engagement and adjust care as
-    //                 needed.
-    //             </Typography>
-    //         </div>
-    //     ),
-    //     solution: (
-    //         <div>
-    //             <Typography variant="h6" component="p" style={textBlockStyle}>
-    //                 We propose PECSS - the Prolonged Exposure Collective Sensing
-    //                 System. The PECSS platform allows patients to track their
-    //                 treatment progress on a mobile application and provides
-    //                 clinicians a dashboard to access this data for review. Using
-    //                 a data-driven approach, PECSS aims to improve patient
-    //                 engagement, continuity of care, and point of care
-    //                 interactions.
-    //             </Typography>
-    //             <Typography variant="h6" component="p" style={textBlockStyle}>
-    //                 This is a National Science Foundation (NSF) funded project
-    //                 and due to the nature of our work, I am not able to share
-    //                 the work that has yet to be published. Below I share some
-    //                 context to the piece of the project I have been working on.
-    //                 Please contact me if you would like to learn more and feel
-    //                 free to read the already published work.
-    //                 <ul>
-    //                     <li>
-    //                         <a
-    //                             href="https://dl.acm.org/doi/10.1145/3313831.3376170"
-    //                             style={{
-    //                                 textDecoration: "none",
-    //                                 color: "#2F7179",
-    //                             }}
-    //                             target="blank"
-    //                         >
-    //                             Understanding the Care Ecologies of Veterans
-    //                             with PTSD
-    //                         </a>
-    //                     </li>
-    //                     <li>
-    //                         <a
-    //                             href="https://par.nsf.gov/servlets/purl/10182778"
-    //                             style={{
-    //                                 textDecoration: "none",
-    //                                 color: "#A82970",
-    //                             }}
-    //                             target="blank"
-    //                         >
-    //                             Bridging the Gap: Creating a Clinician-Facing
-    //                             Dashboard for PTSD
-    //                         </a>
-    //                     </li>
-    //                 </ul>
-    //             </Typography>
-    //         </div>
-    //     ),
-    //     details: <PEQDetails />,
-    // },
     reflect: {
         title: "Reflect! Redesign",
         nsf: "1623419",

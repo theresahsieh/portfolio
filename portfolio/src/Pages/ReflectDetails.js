@@ -37,48 +37,17 @@ const textBlockStyle = {
     fontWeight: "normal",
     margin: "1rem 0 1rem 0",
 };
-const listStyle = {
-    fontWeight: "normal",
-    fontSize: "16px",
-};
+
 const subHeaderStyle = {
     fontWeight: "450",
     margin: "1rem 0 1rem 0",
     fontSize: "22px",
 };
 
-const solutionImageStyle = {
-    margin: "1rem auto",
-    width: "90%",
-    maxWidth: "600px",
-    height: "auto",
-    borderRadius: "10px",
-    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
-    display: "block",
-};
-
 const imageStyle = {
     margin: "1rem auto",
     width: "90%",
     maxWidth: "1200px",
-    height: "auto",
-    borderRadius: "10px",
-    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
-    display: "block",
-};
-const bookStyle = {
-    margin: "1rem auto",
-    width: "90%",
-    maxWidth: "200px",
-    height: "auto",
-    borderRadius: "10px",
-    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
-    display: "block",
-};
-
-const screenStyle = {
-    margin: "1rem auto",
-    width: "96%",
     height: "auto",
     borderRadius: "10px",
     boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",

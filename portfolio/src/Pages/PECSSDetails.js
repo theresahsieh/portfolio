@@ -3,10 +3,6 @@ import HearingIcon from "@material-ui/icons/Hearing";
 import LanguageIcon from "@material-ui/icons/Language";
 import AssignmentIcon from "@material-ui/icons/Assignment";
 import PEBook from "./resources/PECSS/PE-book.jpg";
-import OldScreens from "./resources/PECSS/old-screens.png";
-import Design1 from "./resources/PECSS/design1.png";
-import Design2 from "./resources/PECSS/design2.png";
-import Version2 from "./resources/PECSS/version2.png";
 import Welcome from "./resources/PECSS/welcome.png";
 
 const useStyles = makeStyles({
@@ -48,10 +44,7 @@ const textBlockStyle = {
     fontWeight: "normal",
     margin: "1rem 0 1rem 0",
 };
-const listStyle = {
-    fontWeight: "normal",
-    fontSize: "16px",
-};
+
 const subHeaderStyle = {
     fontWeight: "450",
     margin: "1rem 0 1rem 0",
@@ -68,28 +61,10 @@ const solutionImageStyle = {
     display: "block",
 };
 
-const imageStyle = {
-    margin: "1rem auto",
-    width: "90%",
-    maxWidth: "1200px",
-    height: "auto",
-    borderRadius: "10px",
-    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
-    display: "block",
-};
 const bookStyle = {
     margin: "1rem auto",
     width: "90%",
     maxWidth: "200px",
-    height: "auto",
-    borderRadius: "10px",
-    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
-    display: "block",
-};
-
-const screenStyle = {
-    margin: "1rem auto",
-    width: "96%",
     height: "auto",
     borderRadius: "10px",
     boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",

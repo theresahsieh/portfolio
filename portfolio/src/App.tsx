@@ -8,7 +8,6 @@ import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import Projects from "./Pages/Projects.js";
 import Resume from "./Pages/Resume.js";
 import About from "./Pages/About.js";
-
 import ProjectDetail from "./Pages/ProjectDetailPage";
 import { ProjectDetailContent } from "./Pages/ProjectDetailContent";
 
@@ -25,11 +24,6 @@ const App = () => (
                         content={ProjectDetailContent.pecss}
                     ></ProjectDetail>
                 </Route>
-                {/* <Route exact path="/projects/peq">
-                    <ProjectDetail
-                        content={ProjectDetailContent.peq}
-                    ></ProjectDetail>
-                </Route> */}
                 <Route exact path="/projects/klix">
                     <ProjectDetail
                         content={ProjectDetailContent.klix}
