@@ -125,7 +125,8 @@ const PECSSDetails = () => {
                 (MVP), meaning their goal was to show that the data collected on
                 the app could be retrieved and displayed on the dashboard. This
                 resulted in a functional application that could benefit from
-                additional design considerations.
+                additional design considerations. I have helped redesign the
+                dashboard's layout and implemented several key components.
             </Typography>
             <img
                 src={Welcome}
@@ -194,7 +195,7 @@ const PECSSDetails = () => {
                         emotional processing to change the fear structure and
                         reduce the negative effects of PTSD. Clinicians guide
                         patients through therapy sessions and assign exercises
-                        that help patient confront trauma-related thoughts and
+                        that help patients confront trauma-related thoughts and
                         situations and reduce avoidance behaviors.
                     </Typography>
                     <Typography
@@ -202,9 +203,9 @@ const PECSSDetails = () => {
                         component="p"
                         style={textBlockStyle}
                     >
-                        <strong>Subjective Units of Distress (SUDS) </strong>
+                        <strong>Subjective Units of Distress (SUD) </strong>
                         Patients learn how to quantify their feelings of stress
-                        and anxiety into SUDS, which allow therapists to measure
+                        and anxiety into SUDs, which allow therapists to measure
                         their emotions and track treatment progress.
                     </Typography>
                 </Grid>
@@ -217,8 +218,10 @@ const PECSSDetails = () => {
                     <HearingIcon className={classes.icon} fontSize="large" />
                     <strong>Imaginal Exposure</strong> Patients are asked to
                     recount their traumatic memory aloud through an imaginal
-                    narrative during therapy sessions. As homework, patients are
-                    asked to listen to a recording of their imaginal narrative.
+                    narrative during therapy sessions, and clinicians
+                    periodically monitor the patient's SUD score. As homework,
+                    patients are asked to listen to a recording of their
+                    imaginal narrative.
                 </Typography>
                 <Typography variant="h6" component="p" style={textBlockStyle}>
                     <LanguageIcon className={classes.icon} fontSize="large" />
@@ -249,7 +252,7 @@ const PECSSDetails = () => {
             </Typography> */}
             <Typography variant="h6" component="p" style={textBlockStyle}>
                 The clinician-facing dashboard is a critical tool that can help
-                clinicians monitor their patient's care. It provides clinicians
+                clinicians monitor their patients' care. It provides clinicians
                 access to treatment data collected by patients outside of
                 sessions with the therapist, including homework completion,
                 questionaire results, and additional device information relating
@@ -318,10 +321,10 @@ const PECSSDetails = () => {
                 </Typography>
             </span>
             <Typography variant="h6" component="p" style={textBlockStyle}>
-                I am currently working on this project as both a development 
-                team member and as an HCI researcher. We are planning to test 
-                our designs with patients and clinicians and continue to 
-                gather more insight on how we can improve PECSS to aid in PTSD 
+                I am currently working on this project as both a development
+                team member and as an HCI researcher. We are planning to test
+                our designs with patients and clinicians and continue to gather
+                more insight on how we can improve PECSS to aid in PTSD
                 treatment.
             </Typography>
             {/* <Typography variant="h6" component="p" style={textBlockStyle}>

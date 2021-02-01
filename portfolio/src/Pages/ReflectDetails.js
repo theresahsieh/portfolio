@@ -151,7 +151,7 @@ const ReflectDetails = () => {
                         style={textBlockStyle}
                     >
                         Our first design addressed the tab/subtab concern by
-                        creating a tree structure to the left with the work plan
+                        creating a tree structure to the left with the Workplan
                         with more systematic navigation to the right. This
                         allows users to keep track of their progress within the
                         Workplan steps on the left while also being able to
@@ -185,16 +185,16 @@ const ReflectDetails = () => {
                         component="p"
                         style={textBlockStyle}
                     >
-                        The second design also chose to display the 4 main
+                        The second design also choses to display the 4 main
                         elements Problem Statement, Workplan, Stakeholder
                         Analysis and Proposal on the main landing page. However,
                         we wanted to feature the Workplan in the middle to
                         emphasize the workflow process. We also decided to put a
-                        navigation bar on the top for other pages to separate
-                        the pieces not connected to the user's typical workflow,
-                        such as the Team Info page and external links such as
-                        the Glossary. Additionally, we felt it would would be
-                        aesthetically pleasing to put an image on the Dashboard.
+                        navigation bar on the top to separate the pieces not
+                        connected to the user's typical workflow, such as the
+                        Team Info page and external links such as the Glossary.
+                        Additionally, we felt it would would be aesthetically
+                        pleasing to put an image on the Dashboard.
                     </Typography>
                 </Grid>
                 <Grid item xs={12} md={6} lg={5}>
@@ -236,20 +236,20 @@ const ReflectDetails = () => {
             </Typography>
             <Typography variant="h6" component="p" style={textBlockStyle}>
                 In our final design, we decided to go with our second design
-                option. In the workplans, users don't encounter the Stakeholder
+                option. In the Workplans, users don't encounter the Stakeholder
                 and Proposal Development tasks early on, so we decided it would
                 be benefitial to hide these components until they reach that
-                step in their workplan. Therefore, if we had chosen the first
+                step in their Workplan. Therefore, if we had chosen the first
                 design, more than half of the main page would have either been
                 empty or had been filled with disabled buttons. However, using
-                the second design would avoid these issues, since the Workplan
-                is in the center of the page, so there would not be an imbalance
-                in layout.
+                the second design avoids these issues since the Workplan is in
+                the center of the page, so there would not be an imbalance in
+                layout.
             </Typography>
             <Typography variant="h6" component="p" style={textBlockStyle}>
                 We kept the colored borders from the first design because we
                 felt it provided a nice separation for the components from the
-                background and allowed us to add a bit of Georgia Tech colored
+                background and allowed us to add a bit of Georgia Tech inspired
                 theming to the system.
             </Typography>
             <img
@@ -268,10 +268,11 @@ const ReflectDetails = () => {
                 </Typography>
             </span>
             <Typography variant="h6" component="p" style={textBlockStyle}>
-                This was my first project involving UI/UX and frontend development.
-                In addition to learning React and GraphQL for developing components,
-                I gained design experience planning navigation and layout. Furthermore,
-                I learned protyping tools such as AdobeXD.
+                This was my first project involving UI/UX and frontend
+                development. In addition to learning React and GraphQL for
+                developing components, I gained design experience planning
+                navigation and layout. Furthermore, I learned protyping tools
+                such as AdobeXD.
             </Typography>
         </div>
     );

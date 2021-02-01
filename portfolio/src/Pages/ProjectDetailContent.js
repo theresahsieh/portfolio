@@ -43,7 +43,7 @@ export const ProjectDetailContent = {
         coverImage: PECSSCover,
         color: "#54D0E0",
         problemStatement:
-            "Managing personal health information to improve the continuity of care during PTSD treatment",
+            "Managing personal health information to improve the patient adherence to PTSD treatment.",
         roles: ["HCI Research", "UX Design", "Development"],
         timeline: ["Jan 2020 - present"],
         tools: ["Figma", "Angular JS"],
@@ -52,6 +52,7 @@ export const ProjectDetailContent = {
             "Dr. Andrew Sherrill",
             "Peter Presti",
             "Varnit Jain",
+            "Hayley Evans",
             "Marcus Wilder",
             "Catherine Deeter",
             "Adam Hayward",
@@ -82,7 +83,7 @@ export const ProjectDetailContent = {
                     information collected from patients can suffer from
                     subjectivity or sparseness. Improved data collection and
                     visualization tools would allow clinicians to better track
-                    and respond to patient's mental health needs.
+                    and respond to patients' mental health needs.
                 </Typography>
             </div>
         ),
@@ -104,7 +105,7 @@ export const ProjectDetailContent = {
                 <Typography variant="h6" component="p" style={textBlockStyle}>
                     This is a National Science Foundation (NSF) funded project
                     and due to the nature of our work, I am not able to share
-                    the details that have yet to be published. Below I share
+                    the details that have yet to be published. Below, I share
                     some context for the pieces of the project I have been
                     working on. Please contact me if you would like to learn
                     more and feel free to read the already published work.
@@ -297,7 +298,7 @@ export const ProjectDetailContent = {
                     Wicked problems are problems that can be framed in a variety
                     of ways based on the perspective of the person looking at
                     it. These are difficult issues that don't have a clear
-                    solutions and pose serious ethical challenges in the world.
+                    solution and pose serious ethical challenges in the world.
                     How do we deal with climate change, inequality, automation
                     in manufacturing?
                 </Typography>

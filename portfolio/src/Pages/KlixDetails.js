@@ -112,7 +112,7 @@ const KlixDetails = () => {
                 general idea about people's gaming habits. After one week, we
                 received 18 responses from a diverse set of gamers. We learned
                 that Twitter, Discord, Twitch and Reddit are the top social
-                media sites for gamers but many feel it is hard to find friends
+                media sites for gamers, but many feel it is hard to find friends
                 on these massive platforms. Furthermore, many respondents
                 reported that their desire to socialize with others online was
                 often hindered by the toxic culture within the gaming community.
@@ -152,8 +152,8 @@ const KlixDetails = () => {
                 difficulty with finding people to play with. Amongst current
                 friends, people cited scheduling issues as the number one
                 blocker. For finding strangers online, people said they wished
-                there was less toxicity, more acceptance of LGBT people and
-                people of color, and more acceptance of casual players
+                there was less toxicity, more acceptance of LGBTQ+ people and
+                people of color, and more acceptance of novice players
             </Typography>
 
             <img
@@ -328,7 +328,7 @@ const KlixDetails = () => {
                 and Reddit. Based on the Looking For Game (LFG) pages on Reddit,
                 we designed a customizable LFG posting section where users can
                 filter and find people or groups with openings for players.
-                Additionally, improving upon on Discord, where users have to
+                Additionally, improving upon Discord, where users have to
                 sign into specific servers to access those server’s channels,
                 our website design allows users to see a master list of the
                 group chats they are a member of on their Chat page
@@ -550,7 +550,7 @@ const KlixDetails = () => {
             </Typography>
             <Typography variant="h6" component="ul" style={listStyle}>
                 <li>Creating the gameplay schedule was not intuitive.</li>
-                <li>Profilse could use a bio section.</li>
+                <li>Profiles could use a bio section.</li>
                 <li>
                     The profile cards could have more information about
                     expertise level.
