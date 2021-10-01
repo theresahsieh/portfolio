@@ -69,9 +69,9 @@ const About = () => {
                         component="h3"
                         className={classes.text}
                     >
-                        I'm a computer science student at Georgia Tech with a
+                        I'm an HCI master's student at Georgia Tech with a
                         passion for UX design and frontend development. For my
-                        undergraduate degree, my concentration is in "People and
+                        undergraduate degree, my concentration was in "People and
                         Media" - where "computing meets users and design." I
                         enjoy designing rich user experiences and bringing them
                         to life with code.
@@ -98,10 +98,10 @@ const About = () => {
                         <Typography
                             variant="h6"
                             component={Link}
-                            href="mailto:thsieh37@gatech.edu"
+                            href="mailto:theresaying.hsieh@gmail.com"
                             className={classes.link}
                         >
-                            thsieh37@gatech.edu
+                            theresaying.hsieh@gmail.com
                         </Typography>
                         <Typography
                             variant="h6"

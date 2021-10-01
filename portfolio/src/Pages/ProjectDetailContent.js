@@ -39,7 +39,7 @@ export const ProjectDetailContent = {
         coverImage: PECSSCover,
         color: "#54D0E0",
         problemStatement:
-            "Managing personal health information to improve the patient adherence to PTSD treatment.",
+            "Managing personal health information to improve patient adherence to PTSD treatment.",
         roles: ["HCI Research", "UX Design", "Development"],
         timeline: ["Jan 2020 - present"],
         tools: ["Figma", "Angular JS"],

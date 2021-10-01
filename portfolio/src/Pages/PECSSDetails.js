@@ -121,7 +121,7 @@ const PECSSDetails = () => {
             </span>
             <Typography variant="h6" component="p" style={textBlockStyle}>
                 Within the dashboard, I have also been working on visualization
-                tools to display patient data in an useful and usable tool.
+                tools to display patient data in a useful and usable tool.
                 Taking into account both the clinician and patient perspective,
                 I have been working on creating a shared interface for
                 monitoring patient adherence to homework assignments.
@@ -164,7 +164,7 @@ const PECSSDetails = () => {
                         style={textBlockStyle}
                     >
                         <strong>Emotional Processing Theory</strong> PE Therapy
-                        is largely based on Emotionap Processing Theory (EPT).
+                        is largely based on Emotional Processing Theory (EPT).
                         It emphasizes that when fear is activated and new
                         information is incorporated, patients can engage in
                         emotional processing to change the fear structure and

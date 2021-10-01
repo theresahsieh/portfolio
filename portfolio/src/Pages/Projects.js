@@ -90,7 +90,7 @@ const Projects = () => {
             name: "PECSS",
             image: PECSSCover,
             description:
-                "Prolonged Exposure Collective Sensing System. Managing personal health information to improve the patient adherence to PTSD treatment.",
+                "Prolonged Exposure Collective Sensing System. Managing personal health information to improve patient adherence to PTSD treatment.",
             chips: (
                 <CardActions className={classes.cardChips}>
                     <span style={pecssChip}>HCI Research + UX Design + Angular JS</span>
@@ -141,8 +141,8 @@ const Projects = () => {
                 component="h2"
                 className={classes.splashText}
             >
-                I'm a UX designer and UI developer focused on creating
-                meaningful experiences.
+                I'm an HCI master's student @Georgia Tech that loves UI and UX. 
+                When I'm not designing or researching, you can find me painting, cooking, or rock climbing. 
             </Typography>
             <img
                 src={Icons}

@@ -19,8 +19,6 @@ const useStyles = makeStyles({
     information:{
         "@media (min-width: 600px)": {
             width: "90%",
-        marginRight: "5%",
-        marginLeft: "5%",
         },
         
     },

@@ -1,6 +1,7 @@
 import { Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import resume from "./resources/HsiehResume_2021.jpg";
+import LinkIcon from "@material-ui/icons/Link";
+import resume from "./resources/Resume2021.png";
 
 import { Link } from "@material-ui/core";
 
@@ -10,6 +11,11 @@ const useStyles = makeStyles({
         textDecoration: "none",
         color: "black",
         fontWeight: "500"
+    },
+    icon: {
+        verticalAlign: "middle",
+        marginRight: "6px",
+        padding: "5px",
     },
 });
 
@@ -31,10 +37,11 @@ const Resume = () => {
                 component={Link}
                 target="_blank"
                 href={
-                    "https://drive.google.com/file/d/1yYxdu8eK0JxaZMgbGaggdR8aA_D5OBto/view?usp=sharing"
+                    "https://drive.google.com/file/d/1_aFrJlBiKwfp9IdEkwJM5033XyGAAdul/view?usp=sharing"
                 }
             >
                 resume
+                <LinkIcon className={classes.icon} fontSize="large"/>
             </Typography>
             <div
                 style={{
