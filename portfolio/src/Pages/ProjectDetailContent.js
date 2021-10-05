@@ -4,12 +4,14 @@ import KlixDetails from "./KlixDetails";
 
 import PECSSCover from "./resources/PECSS/PECSS-cover.png";
 import PECSSDetails from "./PECSSDetails";
+import PECSSGoals from "./resources/PECSS/PECSS_Goals.png";
 
 import ReflectCover from "./resources/Reflect/Reflect-cover.png";
 import ReflectLogo from "./resources/Reflect/Reflect-logo.png";
 import ReflectDetails from "./ReflectDetails";
 
 import { Typography } from "@material-ui/core";
+import * as myStyles from "../MyStyles";
 
 const textBlockStyle = {
     fontWeight: "normal",
@@ -73,36 +75,58 @@ export const ProjectDetailContent = {
                     traumatic experiences through clinical sessions and homework
                     assignments.
                 </Typography>
-                <Typography variant="h6" component="p" style={textBlockStyle}>
-                    The efficacy of PE therapy can be hindered by its reliance
-                    on self reported data and clinician intuition. The
-                    information collected from patients can suffer from
-                    subjectivity or sparseness. Improved data collection and
-                    visualization tools would allow clinicians to better track
-                    and respond to patients' mental health needs.
+                <Typography
+                    variant="h5"
+                    component="p"
+                    style={{ ...textBlockStyle, marginLeft: "2.5rem" }}
+                >
+                    <em>
+                        The efficacy of PE therapy can be hindered by its
+                        reliance on self reported data and clinician intuition.
+                        The information collected from patients can suffer from
+                        subjectivity or sparseness. Improved data collection and
+                        visualization tools would allow clinicians to better
+                        track and respond to patients' mental health needs.
+                    </em>
                 </Typography>
             </div>
         ),
         solution: (
             <div>
                 <Typography variant="h6" component="p" style={textBlockStyle}>
-                    We propose the Prolonged Exposure Collective Sensing System
-                    (PECSS), a platform that uses a data-driven approach to
-                    provide clinicians the information they need to help
-                    patients succeed in their treatment. Including a
-                    patient-facing mobile application and clinician-facing,
-                    online dashboard, PECSS allows patients to contribute
-                    detailed records of their treatment progress and supplies
-                    clinicians the resources to optimize their therapeutic
-                    practices. The 3 major goals of the PECSS project are to
-                    improve continuity of care, point of care interactions, and
-                    patient engagement.
+                    We propose the{" "}
+                    <strong>
+                        {" "}
+                        Prolonged Exposure Collective Sensing System (PECSS)
+                    </strong>
+                    , a platform that uses a data-driven approach to provide
+                    clinicians the information they need to help patients
+                    succeed in their treatment. Including a patient-facing
+                    mobile application and clinician-facing online dashboard,
+                    PECSS allows patients to contribute detailed records of
+                    their treatment progress and supplies clinicians the
+                    resources to optimize their therapeutic practices. The 3
+                    major goals of the PECSS project are to:
                 </Typography>
+                <Typography
+                    variant="ul"
+                    component="ul"
+                    style={myStyles.bigListStyle}
+                >
+                    <li>Improve continuity of care</li>
+                    <li>Facilitate point of care interactions</li>
+                    <li>Increase patient engagement</li>
+                </Typography>
+                <img
+                    src={PECSSGoals}
+                    alt="dashboard version 2"
+                    style={myStyles.imageStyleNoShadow}
+                ></img>
                 <Typography variant="h6" component="p" style={textBlockStyle}>
                     This is a National Science Foundation (NSF) funded project
                     and due to the nature of our work, I am not able to share
-                    the details that have yet to be published. Below, I share
-                    some context for the pieces of the project I have been
+                    all the details that have yet to be published. Below, I
+                    share some context for the pieces of the project I have been
                     working on. Please contact me if you would like to learn
                     more and feel free to read the already published work.
                     <ul>
@@ -237,11 +261,10 @@ export const ProjectDetailContent = {
                     alt="Reflect! logo"
                     style={logoImageStyle}
                 />
-                 <Typography variant="h6" component="p" style={textBlockStyle}>
-                     This is a National Science Foundation (NSF) funded project
-                     and here are links to associated publications: 
-                     
-                 <ul>
+                <Typography variant="h6" component="p" style={textBlockStyle}>
+                    This is a National Science Foundation (NSF) funded project
+                    and here are links to associated publications:
+                    <ul>
                         <li>
                             <a
                                 href="http://dx.doi.org/10.1007/s11245-019-09640-x"
@@ -275,7 +298,8 @@ export const ProjectDetailContent = {
                                 }}
                                 target="blank"
                             >
-                                Reflective Consensus Building on Wicked Problems on the Reflect! Platform
+                                Reflective Consensus Building on Wicked Problems
+                                on the Reflect! Platform
                             </a>
                         </li>
                         <li>
@@ -287,12 +311,13 @@ export const ProjectDetailContent = {
                                 }}
                                 target="blank"
                             >
-                                Stimulating Reflection and Self-Correcting Reasoning Through Argument Mapping: Three Approaches
+                                Stimulating Reflection and Self-Correcting
+                                Reasoning Through Argument Mapping: Three
+                                Approaches
                             </a>
                         </li>
-                        </ul>
-                 </Typography>
-                
+                    </ul>
+                </Typography>
             </div>
         ),
         details: <ReflectDetails />,

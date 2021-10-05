@@ -19,6 +19,7 @@ import NASA from "./resources/Klix/NASA-tlx.png";
 import KlixScreens from "./resources/Klix/screens.png";
 
 import KlixFeatureGraphic from "./resources/Klix/featureGraphic.png";
+import * as myStyles from "../MyStyles";
 
 import { Grid, Typography, makeStyles } from "@material-ui/core";
 
@@ -50,52 +51,16 @@ const useStyles = makeStyles({
     },
 });
 
-const textBlockStyle = {
-    fontWeight: "normal",
-    margin: "1rem 0 1rem 0",
-};
-const listStyle = {
-    fontWeight: "normal",
-    fontSize: "16px",
-};
-const subHeaderStyle = {
-    fontWeight: "450",
-    margin: "1rem 0 1rem 0",
-    fontSize: "22px",
-};
-const imageStyle = {
-    margin: "1rem auto",
-    width: "90%",
-    maxWidth: "1200px",
-    height: "auto",
-    borderRadius: "10px",
-    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
-    display: "block",
-};
-
-const screenStyle = {
-    margin: "1rem auto",
-    width: "96%",
-    height: "auto",
-    borderRadius: "10px",
-    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
-    display: "block",
-};
-
-const blockStyle = {
-    backgroundColor: "#8576ed",
-    height: "2rem",
-    width: "2rem",
-    borderRadius: "6px",
-    display: "inline-flex",
-};
-
+const KlixBlockStyle = {
+    ...myStyles.blockStyle,
+    backgroundColor: "#8576ed"
+}
 const KlixDetails = () => {
     const classes = useStyles();
     return (
         <div>
             <span style={{ verticalAlign: "top" }}>
-                <span style={blockStyle} />
+                <span style={KlixBlockStyle} />
                 <Typography
                     variant="h5"
                     component="h2"
@@ -104,10 +69,10 @@ const KlixDetails = () => {
                     User Research
                 </Typography>
             </span>
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+            <Typography variant="h5" component="h4" style={myStyles.subHeaderStyle}>
                 Online Survey
             </Typography>
-            <Typography variant="h6" component="p" style={textBlockStyle}>
+            <Typography variant="h6" component="p" style={myStyles.textBlockStyle}>
                 We used an online survey to to reach gamers on Twitter to get a
                 general idea about people's gaming habits. After one week, we
                 received 18 responses from a diverse set of gamers. We learned
@@ -117,16 +82,16 @@ const KlixDetails = () => {
                 reported that their desire to socialize with others online was
                 often hindered by the toxic culture within the gaming community.
             </Typography>
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+            <Typography variant="h5" component="h4" style={myStyles.subHeaderStyle}>
                 Semi Structured Interivews
             </Typography>
-            <Typography variant="h6" component="p" style={textBlockStyle}>
+            <Typography variant="h6" component="p" style={myStyles.textBlockStyle}>
                 To gain a better understanding of the socialization practices of
                 the gaming community, we conducted semi-structured interviews.
                 These interviews were helpful for taking into account personal
                 experience and identifying themes and current pain points.
             </Typography>
-            <Typography variant="ul" component="ul" style={listStyle}>
+            <Typography variant="ul" component="ul" style={myStyles.listStyle}>
                 <li>How do you typically find people to play with you?</li>
                 <li>
                     What matchmaking systems do those video games use? Do you
@@ -146,7 +111,7 @@ const KlixDetails = () => {
                     or why not?
                 </li>
             </Typography>
-            <Typography variant="h6" component="p" style={textBlockStyle}>
+            <Typography variant="h6" component="p" style={myStyles.textBlockStyle}>
                 We interviewed 18 people (11 male, 7 female) with an age range
                 of 18-50 years old. Most people expressed some type of
                 difficulty with finding people to play with. Amongst current
@@ -159,46 +124,46 @@ const KlixDetails = () => {
             <img
                 src={KlixResearch}
                 alt="interview results"
-                style={imageStyle}
+                style={myStyles.imageStyle}
             ></img>
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+            <Typography variant="h5" component="h4" style={myStyles.subHeaderStyle}>
                 User Personas
             </Typography>
-            <Typography variant="h6" component="p" style={textBlockStyle}>
+            <Typography variant="h6" component="p" style={myStyles.textBlockStyle}>
                 We created a set of user personas that would help us understand
                 the goals and motivations of our users.
             </Typography>
             <Grid container spacing={1} alignItems="center">
-                <Grid item xs={12} sm={6} lg={3}>
+                <Grid item xs={12} sm={6}>
                     <img
                         src={Andrew}
                         alt="user persona 1"
-                        style={imageStyle}
+                        style={myStyles.imageStyle}
                     ></img>
                 </Grid>
-                <Grid item xs={12} sm={6} lg={3}>
-                    <img src={Mia} alt="user person 2" style={imageStyle}></img>
+                <Grid item xs={12} sm={6}>
+                    <img src={Mia} alt="user person 2" style={myStyles.imageStyle}></img>
                 </Grid>
-                <Grid item xs={12} sm={6} lg={3}>
+                <Grid item xs={12} sm={6}>
                     <img
                         src={Jordan}
                         alt="user persona 3"
-                        style={imageStyle}
+                        style={myStyles.imageStyle}
                     ></img>
                 </Grid>
-                <Grid item xs={12} sm={6} lg={3}>
-                    <img src={Ava} alt="user person 4" style={imageStyle}></img>
+                <Grid item xs={12} sm={6}>
+                    <img src={Ava} alt="user person 4" style={myStyles.imageStyle}></img>
                 </Grid>
             </Grid>
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+            <Typography variant="h5" component="h4" style={myStyles.subHeaderStyle}>
                 System Requirements
             </Typography>
-            <Typography variant="h6" component="p" style={textBlockStyle}>
+            <Typography variant="h6" component="p" style={myStyles.textBlockStyle}>
                 This information helped us form a set of system requirements
                 that detailed the functionality we wanted our design solutions
                 to include.
             </Typography>
-            <Typography variant="ul" component="ul" style={listStyle}>
+            <Typography variant="ul" component="ul" style={myStyles.listStyle}>
                 <li>Allows users to report other users for harassment.</li>
                 <li>
                     Allows users to enter their availability to match with other
@@ -234,7 +199,7 @@ const KlixDetails = () => {
             </Typography>
 
             <div style={{ verticalAlign: "top", marginTop: "1rem" }}>
-                <span style={blockStyle} />
+                <span style={KlixBlockStyle} />
                 <Typography
                     variant="h5"
                     component="h2"
@@ -247,14 +212,11 @@ const KlixDetails = () => {
                 <Grid
                     item
                     xs={12}
-                    md={6}
-                    style={{ verticalAlign: "middle" }}
-                    lg={5}
                 >
                     <Typography
                         variant="h6"
                         component="p"
-                        style={textBlockStyle}
+                        style={myStyles.textBlockStyle}
                     >
                         Using the results of our interviews and survey, we
                         decided to address 3 major paint points: finding new
@@ -263,19 +225,19 @@ const KlixDetails = () => {
                         ideation sessions, we came up with three unique designs.
                     </Typography>
                 </Grid>
-                <Grid item xs={12} md={6} lg={7}>
+                <Grid item xs={12}>
                     <img
                         src={KlixBrainstorm}
                         alt="brainstorming"
-                        style={imageStyle}
+                        style={myStyles.imageStyle}
                     ></img>
                 </Grid>
             </Grid>
 
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+            <Typography variant="h5" component="h4" style={myStyles.subHeaderStyle}>
                 Design Option #1: Mobile Application
             </Typography>
-            <Typography variant="h6" component="p" style={textBlockStyle}>
+            <Typography variant="h6" component="p" style={myStyles.textBlockStyle}>
                 Our first design was a mobile application that allows users to
                 find and create social networks with other gamers. By creating a
                 profile and entering their gameplay schedule, the application
@@ -294,35 +256,35 @@ const KlixDetails = () => {
                     <img
                         src={KlixDiscover1}
                         alt="Klix app design screenshot 1"
-                        style={imageStyle}
+                        style={myStyles.imageStyle}
                     ></img>
                 </Grid>
                 <Grid item xs={6} sm={3}>
                     <img
                         src={KlixDiscover2}
                         alt="Klix app design screenshot 2"
-                        style={imageStyle}
+                        style={myStyles.imageStyle}
                     ></img>
                 </Grid>
                 <Grid item xs={6} sm={3}>
                     <img
                         src={KlixChat1}
                         alt="Klix app designscreenshot 3"
-                        style={imageStyle}
+                        style={myStyles.imageStyle}
                     ></img>
                 </Grid>
                 <Grid item xs={6} sm={3}>
                     <img
                         src={KlixChat2}
                         alt="Klix app design screenshot 4"
-                        style={imageStyle}
+                        style={myStyles.imageStyle}
                     ></img>
                 </Grid>
             </Grid>
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+            <Typography variant="h5" component="h4" style={myStyles.subHeaderStyle}>
                 Design Option #2: Website
             </Typography>
-            <Typography variant="h6" component="p" style={textBlockStyle}>
+            <Typography variant="h6" component="p" style={myStyles.textBlockStyle}>
                 Our second design was a web application that drew from the
                 strengths and weaknesses of the popular gaming platforms Discord
                 and Reddit. Based on the Looking For Game (LFG) pages on Reddit,
@@ -342,21 +304,21 @@ const KlixDetails = () => {
                     <img
                         src={KlixWeb1}
                         alt="Klix web design screenshot 1"
-                        style={imageStyle}
+                        style={myStyles.imageStyle}
                     ></img>
                 </Grid>
                 <Grid item xs={12} sm={6}>
                     <img
                         src={KlixWeb2}
                         alt="Klix web design screenshot 2"
-                        style={imageStyle}
+                        style={myStyles.imageStyle}
                     ></img>
                 </Grid>
             </Grid>
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+            <Typography variant="h5" component="h4" style={myStyles.subHeaderStyle}>
                 Design Option #3: Discord Plugin
             </Typography>
-            <Typography variant="h6" component="p" style={textBlockStyle}>
+            <Typography variant="h6" component="p" style={myStyles.textBlockStyle}>
                 Our third design was a Discord plugin that helps players form
                 one-on-one relationships with the gamers already on their
                 server. By typing into a special channel with their time
@@ -369,17 +331,17 @@ const KlixDetails = () => {
             <img
                 src={KlixDiscord}
                 alt="Klix discord plugin design"
-                style={imageStyle}
+                style={myStyles.imageStyle}
             ></img>
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+            <Typography variant="h5" component="h4" style={myStyles.subHeaderStyle}>
                 Choosing a Design
             </Typography>
             <Grid container spacing={1} alignItems="top">
-                <Grid item xs={12} md={6} lg={7}>
+                <Grid item xs={12}>
                     <Typography
                         variant="h6"
                         component="p"
-                        style={textBlockStyle}
+                        style={myStyles.textBlockStyle}
                     >
                         We analyzed each design on 5 pieces of criteria:
                         Efficiency of finding new friends, Ease of schedule
@@ -393,7 +355,7 @@ const KlixDetails = () => {
                     <Typography
                         variant="h6"
                         component="p"
-                        style={textBlockStyle}
+                        style={myStyles.textBlockStyle}
                     >
                         Ultimately, we chose the mobile app design as it best
                         addressed the pain points we had identified.
@@ -403,17 +365,17 @@ const KlixDetails = () => {
                         to promote non-toxic behavior.
                     </Typography>
                 </Grid>
-                <Grid item xs={12} md={6} lg={5}>
+                <Grid item xs={12}>
                     <img
                         src={KlixDesignChart}
                         alt="Klix design comparisons"
-                        style={imageStyle}
+                        style={myStyles.imageStyle}
                     ></img>
                 </Grid>
             </Grid>
 
             <span style={{ verticalAlign: "top" }}>
-                <span style={blockStyle} />
+                <span style={KlixBlockStyle} />
                 <Typography
                     variant="h5"
                     component="h2"
@@ -439,9 +401,9 @@ const KlixDetails = () => {
             <img
                 src={KlixScreens}
                 alt="Klix prototype screens"
-                style={screenStyle}
+                style={myStyles.screenStyle}
             ></img>
-            <Typography variant="h6" component="p" style={textBlockStyle}>
+            <Typography variant="h6" component="p" style={myStyles.textBlockStyle}>
                 The screens illustrate the components needed for the five major
                 functions of the application: user signup, profile management,
                 player discovery, messaging, and event planning. We created the
@@ -453,11 +415,11 @@ const KlixDetails = () => {
             <img
                 src={KlixPrototype}
                 alt="Klix prototype screens"
-                style={imageStyle}
+                style={myStyles.imageStyle}
             ></img>
 
             <span style={{ verticalAlign: "top" }}>
-                <span style={blockStyle} />
+                <span style={KlixBlockStyle} />
                 <Typography
                     variant="h5"
                     component="h2"
@@ -466,7 +428,7 @@ const KlixDetails = () => {
                     Evaluation
                 </Typography>
             </span>
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+            <Typography variant="h5" component="h4" style={myStyles.subHeaderStyle}>
                 Think Aloud
             </Typography>
             <Typography
@@ -486,7 +448,7 @@ const KlixDetails = () => {
                     <Typography
                         variant="h5"
                         component="h4"
-                        style={subHeaderStyle}
+                        style={myStyles.subHeaderStyle}
                     >
                         Number of Clicks
                     </Typography>
@@ -506,7 +468,7 @@ const KlixDetails = () => {
                     <img
                         src={Clicks}
                         alt="Number of Clicks"
-                        style={imageStyle}
+                        style={myStyles.imageStyle}
                     ></img>
                 </Grid>
             </Grid>
@@ -516,7 +478,7 @@ const KlixDetails = () => {
                     <Typography
                         variant="h5"
                         component="h4"
-                        style={subHeaderStyle}
+                        style={myStyles.subHeaderStyle}
                     >
                         NASA TLX Survey
                     </Typography>
@@ -532,10 +494,10 @@ const KlixDetails = () => {
                     </Typography>
                 </Grid>
                 <Grid item xs={12} md={6} lg={5}>
-                    <img src={NASA} alt="NASA TLX" style={imageStyle}></img>
+                    <img src={NASA} alt="NASA TLX" style={myStyles.imageStyle}></img>
                 </Grid>
             </Grid>
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+            <Typography variant="h5" component="h4" style={myStyles.subHeaderStyle}>
                 Open-ended Questions
             </Typography>
             <Typography
@@ -548,7 +510,7 @@ const KlixDetails = () => {
                 following is a summary of the feedback we received from
                 participants:
             </Typography>
-            <Typography variant="h6" component="ul" style={listStyle}>
+            <Typography variant="h6" component="ul" style={myStyles.listStyle}>
                 <li>Creating the gameplay schedule was not intuitive.</li>
                 <li>Profiles could use a bio section.</li>
                 <li>
@@ -565,7 +527,7 @@ const KlixDetails = () => {
                     addition. People were also unsure how badges were earned.
                 </li>
             </Typography>
-            <Typography variant="h5" component="h4" style={subHeaderStyle}>
+            <Typography variant="h5" component="h4" style={myStyles.subHeaderStyle}>
                 Results
             </Typography>
             <Typography
@@ -582,7 +544,7 @@ const KlixDetails = () => {
                 badges and reporting users clearer.
             </Typography>
             <span style={{ verticalAlign: "top" }}>
-                <span style={blockStyle} />
+                <span style={KlixBlockStyle} />
                 <Typography
                     variant="h5"
                     component="h2"
@@ -605,7 +567,7 @@ const KlixDetails = () => {
                 for creating mockups and working prototypes.
             </Typography>
             <span style={{ verticalAlign: "top" }}>
-                <span style={blockStyle} />
+                <span style={KlixBlockStyle} />
                 <Typography
                     variant="h5"
                     component="h2"
@@ -621,13 +583,12 @@ const KlixDetails = () => {
             >
                 With another group of teammates (Kevin Chen, Sabrina Aang, Suraj
                 Masand, and Benson Huang), I helped develop Klix into an Android
-                application. An early version of the app is currently on the the
-                Android Play Store.
+                application. 
             </Typography>
             <img
                 src={KlixFeatureGraphic}
                 alt="Klix feature graphic"
-                style={screenStyle}
+                style={myStyles.screenStyle}
             ></img>
         </div>
     );

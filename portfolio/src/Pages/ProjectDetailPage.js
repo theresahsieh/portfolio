@@ -136,7 +136,7 @@ const ProjectDetail = (props) => {
 
                 <hr style={lineStyle} />
                 <Container className={classes.information}>
-                <span style={{ verticalAlign: "top" }}>
+                <span style={{ verticalAlign: "top"}}>
                     <span style={blockStyle} />
                     <Typography
                         variant="h5"
