@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/static/js/main.b549a1a8.chunk.js",
-    "main.js.map": "/static/js/main.b549a1a8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.f4df89a6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.f4df89a6.js.map",
-    "static/js/2.10fc30e6.chunk.js": "/static/js/2.10fc30e6.chunk.js",
-    "static/js/2.10fc30e6.chunk.js.map": "/static/js/2.10fc30e6.chunk.js.map",
-    "static/js/3.8b377f69.chunk.js": "/static/js/3.8b377f69.chunk.js",
-    "static/js/3.8b377f69.chunk.js.map": "/static/js/3.8b377f69.chunk.js.map",
+    "main.js": "/static/js/main.d80d425c.chunk.js",
+    "main.js.map": "/static/js/main.d80d425c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.134cfe03.js",
+    "runtime-main.js.map": "/static/js/runtime-main.134cfe03.js.map",
+    "static/js/2.4802846a.chunk.js": "/static/js/2.4802846a.chunk.js",
+    "static/js/2.4802846a.chunk.js.map": "/static/js/2.4802846a.chunk.js.map",
+    "static/js/3.106b66b8.chunk.js": "/static/js/3.106b66b8.chunk.js",
+    "static/js/3.106b66b8.chunk.js.map": "/static/js/3.106b66b8.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.10fc30e6.chunk.js.LICENSE.txt": "/static/js/2.10fc30e6.chunk.js.LICENSE.txt",
+    "static/js/2.4802846a.chunk.js.LICENSE.txt": "/static/js/2.4802846a.chunk.js.LICENSE.txt",
     "static/media/AdamPatient.4acdd098.png": "/static/media/AdamPatient.4acdd098.png",
     "static/media/Andrew.b351f1cd.png": "/static/media/Andrew.b351f1cd.png",
     "static/media/Ava.731d2533.png": "/static/media/Ava.731d2533.png",
     "static/media/CarrieClinician.9fe9fb20.png": "/static/media/CarrieClinician.9fe9fb20.png",
+    "static/media/Fiserv-cover.ec3727bb.png": "/static/media/Fiserv-cover.ec3727bb.png",
     "static/media/Jordan.ba22bc28.png": "/static/media/Jordan.ba22bc28.png",
     "static/media/Klix-cover.3b2365bb.png": "/static/media/Klix-cover.3b2365bb.png",
     "static/media/Mia.2f6bd79b.png": "/static/media/Mia.2f6bd79b.png",
@@ -36,6 +37,7 @@
     "static/media/chat1.a66d1501.png": "/static/media/chat1.a66d1501.png",
     "static/media/chat2.e8b1cf62.png": "/static/media/chat2.e8b1cf62.png",
     "static/media/clicks.44baa728.png": "/static/media/clicks.44baa728.png",
+    "static/media/cryptoStakeholders.edcc0d11.png": "/static/media/cryptoStakeholders.edcc0d11.png",
     "static/media/designComparison.659c9440.png": "/static/media/designComparison.659c9440.png",
     "static/media/discord.452680d1.png": "/static/media/discord.452680d1.png",
     "static/media/discover1.0ffa0b10.png": "/static/media/discover1.0ffa0b10.png",
@@ -56,9 +58,9 @@
     "static/media/workplan.68e0b832.png": "/static/media/workplan.68e0b832.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f4df89a6.js",
-    "static/js/2.10fc30e6.chunk.js",
+    "static/js/runtime-main.134cfe03.js",
+    "static/js/2.4802846a.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.b549a1a8.chunk.js"
+    "static/js/main.d80d425c.chunk.js"
   ]
 }
