@@ -4,6 +4,7 @@ import {
     CardMedia,
     CardContent,
     CardActions,
+    Grid,
 } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import { useEffect } from "react";
@@ -11,22 +12,27 @@ import { useEffect } from "react";
 import KlixCover from "./resources/Klix/Klix-cover.png";
 import PECSSCover from "./resources/PECSS/PECSS-cover.png";
 import ReflectCover from "./resources/Reflect/Reflect-cover.png";
+import FiservCover from "./resources/Fiserv/Fiserv-cover.png";
+import MastercardCover from "./resources/Mastercard/Mastercard-cover.png";
 import Icons from "./resources/icons.png";
+import * as myStyles from "../MyStyles";
 import { Link } from "react-router-dom";
 
 const useStyles = makeStyles({
     title: {
-        margin: "0 0 1.5rem 1.5rem",
+        margin: "0 0 1.5rem 0",
         fontWeight: "500",
     },
     splashTitle: {
-        margin: "1.5rem 0 1rem 1.5rem",
+        margin: "3.5rem 1.5rem 1rem 1.5rem",
+        textAlign: "center",
+        fontSize: "3.5rem",
     },
     splashText: {
-        margin: "0 0 1rem 1.5rem",
+        margin: "0 1.5rem 3rem 1.5rem",
         fontWeight: "normal",
-        display: "inline-flex",
         verticalAlign: "top",
+        textAlign: "center",
     },
     projectName: {
         fontWeight: "bold",
@@ -39,6 +45,7 @@ const useStyles = makeStyles({
             width: 768,
         },
         width: "80vw",
+        margin: "auto",
         borderRadius: 10,
         marginBottom: "1.5rem",
         transition: "all 0.3s ease-in-out 0s",
@@ -79,6 +86,8 @@ const klixChip = { ...chipStyle, backgroundColor: "#8576ed" };
 const pecssChip = { ...chipStyle, backgroundColor: "#54D0E0" };
 const yearChip = { ...chipStyle, backgroundColor: "#E5E5E5" };
 const reflectChip = { ...chipStyle, backgroundColor: "#2993FC" };
+const fiservChip = { ...chipStyle, backgroundColor: "#FF9A57" };
+const mastercardChip = { ...chipStyle, backgroundColor: "#ED5754" };
 
 const Projects = () => {
     const classes = useStyles();
@@ -93,11 +102,39 @@ const Projects = () => {
                 "Prolonged Exposure Collective Sensing System. Managing personal health information to improve patient adherence to PTSD treatment.",
             chips: (
                 <CardActions className={classes.cardChips}>
-                    <span style={pecssChip}>HCI Research + UX Design + Angular JS</span>
+                    <span style={pecssChip}>
+                        HCI Research + UX Design + Angular JS
+                    </span>
                     <span style={yearChip}>2020 - present</span>
                 </CardActions>
             ),
             path: "pecss",
+        },
+        {
+            name: "Fiserv: Crypto + Online Banking",
+            image: FiservCover,
+            description:
+                "Revolutionizing online banking with intergrations with cryptocurrencies",
+            chips: (
+                <CardActions className={classes.cardChips}>
+                    <span style={fiservChip}>UX Research + UX Design</span>
+                    <span style={yearChip}>2021-present</span>
+                </CardActions>
+            ),
+            path: "fiserv",
+        },
+        {
+            name: "Mastercard Data and Services",
+            image: MastercardCover,
+            description:
+                "Improving the SpendingPulse product for users",
+            chips: (
+                <CardActions className={classes.cardChips}>
+                    <span style={mastercardChip}>ReactJS + UX Research + UX Design</span>
+                    <span style={yearChip}>Summer 2021</span>
+                </CardActions>
+            ),
+            path: "mastercard",
         },
         {
             name: "Klix",
@@ -141,8 +178,9 @@ const Projects = () => {
                 component="h2"
                 className={classes.splashText}
             >
-                I'm an HCI master's student @Georgia Tech that loves UI and UX. 
-                When I'm not designing or researching, you can find me painting, cooking, or rock climbing. 
+                I'm an HCI master's student @Georgia Tech that loves UI and UX.
+                When I'm not designing or researching, you can find me painting,
+                cooking, or rock climbing.
             </Typography>
             <img
                 src={Icons}
@@ -155,57 +193,54 @@ const Projects = () => {
                 }}
             ></img>
             <hr style={lineStyle} />
-            <div style={{ padding: "1rem" }}>
-                <Typography
-                    variant="h4"
-                    component="h1"
-                    className={classes.title}
-                >
-                    projects
-                </Typography>
-                <div
-                    style={{
-                        flexDirection: "column",
-                        margin: "auto",
-                        display: "flex",
-                        alignItems: "center",
-                        justify: "center",
-                    }}
-                >
-                    {projects.map((value) => (
-                        <Link
-                            to={`/projects/${value.path}`}
-                            className={classes.cardLink}
-                            key={value.path}
+            <div style={{ justifyContent: "center" }}>
+                <Grid container spacing={1} style={myStyles.container}>
+                    <Grid item xs={12} style={{ textAlign: "center" }}>
+                        <Typography
+                            variant="h4"
+                            component="h1"
+                            className={classes.title}
                         >
-                            <Card className={classes.mainCard}>
-                                <CardMedia
-                                    className={classes.cardImage}
-                                    image={value.image}
-                                    title={value.name}
-                                ></CardMedia>
-                                <CardContent>
-                                    <Typography
-                                        gutterBottom
-                                        variant="h6"
-                                        component="h2"
-                                        className={classes.projectName}
-                                    >
-                                        {value.name}
-                                    </Typography>
-                                    <Typography
-                                        variant="body2"
-                                        color="textSecondary"
-                                        component="p"
-                                    >
-                                        {value.description}
-                                    </Typography>
-                                </CardContent>
-                                {value.chips}
-                            </Card>
-                        </Link>
+                            projects
+                        </Typography>
+                        
+                    </Grid>
+                    {projects.map((value) => (
+                        <Grid item xs={12} style={{ justifyContent: "center" }}>
+                            <Link
+                                to={`/projects/${value.path}`}
+                                className={classes.cardLink}
+                                key={value.path}
+                            >
+                                <Card className={classes.mainCard}>
+                                    <CardMedia
+                                        className={classes.cardImage}
+                                        image={value.image}
+                                        title={value.name}
+                                    ></CardMedia>
+                                    <CardContent>
+                                        <Typography
+                                            gutterBottom
+                                            variant="h6"
+                                            component="h2"
+                                            className={classes.projectName}
+                                        >
+                                            {value.name}
+                                        </Typography>
+                                        <Typography
+                                            variant="body2"
+                                            color="textSecondary"
+                                            component="p"
+                                        >
+                                            {value.description}
+                                        </Typography>
+                                    </CardContent>
+                                    {value.chips}
+                                </Card>
+                            </Link>
+                        </Grid>
                     ))}
-                </div>
+                </Grid>
             </div>
         </div>
     );

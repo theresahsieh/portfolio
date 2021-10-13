@@ -1,4 +1,4 @@
-import { Grid, Typography, makeStyles } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 import OldNew from "./resources/Reflect/Old-New.png";
 import Design1 from "./resources/Reflect/reflect-design1.png";
 import Design2 from "./resources/Reflect/reflect-design2.png";

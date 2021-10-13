@@ -3,9 +3,9 @@ import me from "./resources/TheresaHsieh.png";
 
 const useStyles = makeStyles({
     title: {
-        margin: "0 0 1.5rem 1.5rem",
-        fontWeight: "500"
-    },
+        margin: "0 0 1.5rem 0",
+        fontWeight: "500",
+    } ,
     intro: {
         color: "#AB72E3",
     },
@@ -40,9 +40,6 @@ const About = () => {
     const classes = useStyles();
     return (
         <div style={{ padding: "1rem" }}>
-            <Typography variant="h4" component="h1" className={classes.title}>
-                about
-            </Typography>
             <div
                 style={{
                     flexDirection: "column",
@@ -52,7 +49,13 @@ const About = () => {
                     justify: "center",
                 }}
             ></div>
+            
             <Grid container spacing={2} className={classes.container}>
+            <Grid item xs={12} >
+            <Typography variant="h4" component="h1" className={classes.title}>
+                about
+            </Typography>
+                </Grid>
                 <Grid item xs={12} sm={5} md={4}>
                     <img src={me} alt="MyPicture" style={picStyle} />
                 </Grid>

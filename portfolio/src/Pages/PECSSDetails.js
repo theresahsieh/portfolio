@@ -3,22 +3,15 @@ import PEBook from "./resources/PECSS/PE-book.jpg";
 import scenario1 from "./resources/PECSS/PECSS_scenario1.png";
 import scenario2 from "./resources/PECSS/PECSS_scenario2.png";
 import scenario3 from "./resources/PECSS/PECSS_scenario3.png";
-import scenario4 from "./resources/PECSS/PECSS_scenario4.png";
+import Stakeholders from "./resources/PECSS/PECSS_scenario4.png";
 import carrie from "./resources/PECSS/CarrieClinician.png";
 import adam from "./resources/PECSS/AdamPatient.png";
 import Welcome from "./resources/PECSS/welcome.png";
 import PECSSGoals from "./resources/PECSS/PECSS_Goals.png";
+import sketches from "./resources/PECSS/sketches.png";
+import hw1 from "./resources/PECSS/Homework1.png";
+import hw2 from "./resources/PECSS/Homework2.png";
 import * as myStyles from "../MyStyles";
-
-const solutionImageStyle = {
-    margin: "1rem auto",
-    width: "90%",
-    maxWidth: "600px",
-    height: "auto",
-    borderRadius: "10px",
-    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
-    display: "block",
-};
 
 const bookStyle = {
     margin: "1rem auto",
@@ -93,12 +86,13 @@ const PECSSDetails = () => {
                     Prolonged Exposure Collective Sensing System (PECSS)
                 </strong>
                 , a platform that uses a data-driven approach to provide
-                clinicians with the information they need to help patients succeed in
-                their treatment. Including a patient-facing mobile application
-                and clinician-facing online dashboard, PECSS allows patients to
-                contribute detailed records of their treatment progress and
-                supplies clinicians the resources to optimize their therapeutic
-                practices. The 3 major goals of the PECSS project are to:
+                clinicians with the information they need to help patients
+                succeed in their treatment. Including a patient-facing mobile
+                application and clinician-facing online dashboard, PECSS allows
+                patients to contribute detailed records of their treatment
+                progress and supplies clinicians the resources to optimize their
+                therapeutic practices. The 3 major goals of the PECSS project
+                are to:
             </Typography>
             <Typography
                 variant="ul"
@@ -167,14 +161,15 @@ const PECSSDetails = () => {
             <Typography variant="h5" component="h4" style={myStyles.subHeader}>
                 Prolonged Exposure Therapy
             </Typography>
-            <Typography variant="h6" component="p" style={myStyles.textBlock}>
+            
+            <Grid container spacing={1} alignItems="top">
+                <Grid item sm={12} md={8}>
+                <Typography variant="h6" component="p" style={myStyles.textBlock}>
                 The first step in understanding PE Therapy was reading the
                 therapist guide meant for clinicians familiar with cognitive
                 behavioral therapy (CBT) with experience from PE training
                 workshops.
             </Typography>
-            <Grid container spacing={1} alignItems="top">
-                <Grid item xs={12} sm={8}>
                     <Typography
                         variant="h6"
                         component="p"
@@ -196,28 +191,10 @@ const PECSSDetails = () => {
                         during treatment.
                     </Typography>
                 </Grid>
-                <Grid item xs={12} sm={4}>
+                <Grid item sm={12} md={4}>
                     <img src={PEBook} alt="PE book" style={bookStyle}></img>
                 </Grid>
             </Grid>
-
-            <Typography variant="h5" component="h4" style={myStyles.subHeader}>
-                Goals
-            </Typography>
-            <Typography variant="h6" component="p" style={myStyles.textBlock}>
-                The clinician-facing dashboard is a critical tool that can help
-                clinicians monitor their patients' care. It provides clinicians
-                access to treatment data collected by patients outside of
-                sessions with the therapist, including homework completion,
-                questionnaire results, and additional device information relating
-                to their homework assignments. This data allows clinicians to
-                better monitor patient adherence to treatment and tailor
-                in-person sessions to address any issues they see in homework
-                assignments. Avoidance behaviors in PTSD patients are very
-                common, so having objective data that pinpoints areas for
-                improvement aids the clinician in identifying how to support
-                their patients.
-            </Typography>
             <Typography variant="h5" component="h4" style={myStyles.subHeader}>
                 User Personas
             </Typography>
@@ -302,7 +279,7 @@ const PECSSDetails = () => {
                 </Grid>
                 <Grid item xs={12} sm={6} md={3}>
                     <img
-                        src={scenario4}
+                        src={Stakeholders}
                         alt="storyboard 4"
                         style={myStyles.storyBoardImage}
                     ></img>
@@ -316,7 +293,7 @@ const PECSSDetails = () => {
                     </Typography>
                 </Grid>
             </Grid>
-            <span style={{ display: "inline-flex" }}>
+            {/* <span style={{ display: "inline-flex" }}>
                 <span style={PECSS_BulletSquare} />
                 <Typography
                     variant="h5"
@@ -333,7 +310,7 @@ const PECSSDetails = () => {
                     <li>Prototype Demonstrations</li>
                     <li>Angular JS Development</li>
                 </ul>
-            </Typography>
+            </Typography> */}
             <span style={{ display: "inline-flex" }}>
                 <span style={PECSS_BulletSquare} />
                 <Typography
@@ -344,21 +321,132 @@ const PECSSDetails = () => {
                     Clinician-Facing Dashboard
                 </Typography>
             </span>
+
+            <Grid container spacing={1} alignItems="top">
+                <Grid item xs={12} md={6}>
+                    <Typography
+                        variant="h6"
+                        component="p"
+                        style={myStyles.textBlock}
+                    >
+                        I have been working on improving the clinician-facing
+                        dashboard. When I first joined the project, the team
+                        working on the dashboard was focused on creating a
+                        minimum viable product (MVP), meaning their goal was to
+                        show that the data collected on the app could be
+                        retrieved and displayed on the dashboard. This resulted
+                        in a functional application that could benefit from
+                        additional design considerations. I have helped redesign
+                        the dashboard's layout and implemented several key
+                        components.
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <img
+                        src={Welcome}
+                        alt="Clinician-facing dashboard"
+                        style={myStyles.solutionImageStyle}
+                    ></img>
+                </Grid>
+            </Grid>
             <Typography variant="h6" component="p" style={myStyles.textBlock}>
-                I have been working on improving the clinician-facing dashboard.
-                When I first joined the project, the team working on the
-                dashboard was focused on creating a minimum viable product
-                (MVP), meaning their goal was to show that the data collected on
-                the app could be retrieved and displayed on the dashboard. This
-                resulted in a functional application that could benefit from
-                additional design considerations. I have helped redesign the
-                dashboard's layout and implemented several key components.
+                <strong>Goals</strong> The clinician-facing dashboard is a critical tool that can help
+                clinicians monitor their patients' care. It provides clinicians
+                access to treatment data collected by patients outside of
+                sessions with the therapist, including homework completion,
+                questionnaire results, and additional device information
+                relating to their homework assignments. This data allows
+                clinicians to better monitor patient adherence to treatment and
+                tailor in-person sessions to address any issues they see in
+                homework assignments. Avoidance behaviors in PTSD patients are
+                very common, so having objective data that pinpoints areas for
+                improvement aids the clinician in identifying how to support
+                their patients.
             </Typography>
-            <img
-                src={Welcome}
-                alt="Clinician-facing dashboard"
-                style={solutionImageStyle}
-            ></img>
+            <Typography variant="h5" component="h4" style={myStyles.subHeader}>
+                Example Project: Assigning Homework
+            </Typography>
+            <Typography variant="h6" component="p" style={myStyles.textBlock}>
+                An important goal of the dashboard is to allow clinicians to
+                keep track of patient homework assignments, and a key function
+                to this is being able to enter homework assignments.
+            </Typography>
+            <Typography variant="h6" component="p" style={myStyles.textBlock}>
+                We received feedback from users that the initial method for
+                assigning homework was cumbersome because it required entering
+                each assignment one at a time. After discussing with clinicians,
+                we were able to understand their mental model for homework
+                assignments and determine their expectations for the homework
+                assignment process.
+            </Typography>
+            <Grid container spacing={1} alignItems="top">
+                <Grid item xs={12} md={6}>
+                    <Typography
+                        variant="h6"
+                        component="p"
+                        style={myStyles.textBlock}
+                    >
+                        <strong>Ideation </strong>
+                        Along with Althea and Khusbu, I brainstormed some ideas
+                        of how to address the issue. When brainstorming, we also
+                        kept in mind development constraints such as{" "}
+                        <em>
+                            how much of our code would we have to change?
+                        </em>{" "}
+                        and
+                        <em> how long would these development changes take?</em>
+                    </Typography>
+                    <Typography
+                        variant="h6"
+                        component="p"
+                        style={myStyles.textBlock}
+                    >
+                        Together, we decided on a design that extended the
+                        current functionality of the popup modal but allowed the
+                        user to choose multiple dates in the date picker and
+                        also support different in vivo assignments for the same
+                        day.
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <img
+                        src={sketches}
+                        alt="sketches"
+                        style={myStyles.storyBoardImage}
+                    ></img>
+                </Grid>
+            </Grid>
+            <Grid container spacing={1} alignItems="top">
+                <Grid item xs={12}>
+                    <Typography
+                        variant="h6"
+                        component="p"
+                        style={myStyles.textBlock}
+                    >
+                        <strong>Mockups </strong>
+                        Next, I took the idea that we decided on and created
+                        mockups in Figma that show the different ways a clinician
+                        might interact with the new modal. The design reuses
+                        several components from the original assignment modal so
+                        that it is easy to implement this design for a short
+                        development time frame.
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <img
+                        src={hw1}
+                        alt="design ideas for homework assignment"
+                        style={myStyles.storyBoardImage}
+                    ></img>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <img
+                        src={hw2}
+                        alt="design ideas for homework assignment"
+                        style={myStyles.storyBoardImage}
+                    ></img>
+                </Grid>
+            </Grid>
             <span style={{ display: "inline-flex" }}>
                 <span style={PECSS_BulletSquare} />
                 <Typography

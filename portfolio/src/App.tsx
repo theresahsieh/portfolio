@@ -1,4 +1,3 @@
-import React from "react";
 import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import theme from "./theme";
@@ -22,6 +21,16 @@ const App = () => (
                 <Route exact path="/projects/pecss">
                     <ProjectDetail
                         content={ProjectDetailContent.pecss}
+                    ></ProjectDetail>
+                </Route>
+                <Route exact path="/projects/fiserv">
+                    <ProjectDetail
+                        content={ProjectDetailContent.fiserv}
+                    ></ProjectDetail>
+                </Route>
+                <Route exact path="/projects/mastercard">
+                    <ProjectDetail
+                        content={ProjectDetailContent.mastercard}
                     ></ProjectDetail>
                 </Route>
                 <Route exact path="/projects/klix">

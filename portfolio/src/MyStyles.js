@@ -1,7 +1,7 @@
 export const title= {
     margin: "1.5rem 0 1.5rem 0",
     fontWeight: "bold",
-    fontSize: "4rem"
+    fontSize: "3.5rem"
 }
 
 export const listStyle = {
@@ -43,6 +43,11 @@ export const subHeader = {
     margin: "1.5rem 0 0 0",
     fontSize: "24px",
 };
+
+export const imageSubtitle = {
+    fontSize: "1rem",
+    textAlign: "center"
+}
 
 export const screenStyle = {
     margin: "1rem auto",
@@ -113,4 +118,11 @@ export const logoImageStyle = {
     ...solutionImageStyle,
     padding: "1rem",
     border: " 4px solid dodgerBlue",
+};
+
+export const icon= {
+    verticalAlign: "middle",
+    marginRight: "6px",
+    padding: "5px",
+    borderRadius: "5px",
 };

@@ -4,9 +4,14 @@ import KlixDetails from "./KlixDetails";
 import PECSSCover from "./resources/PECSS/PECSS-cover.png";
 import PECSSDetails from "./PECSSDetails";
 
-
 import ReflectCover from "./resources/Reflect/Reflect-cover.png";
 import ReflectDetails from "./ReflectDetails";
+
+import FiservCover from "./resources/Fiserv/Fiserv-cover.png";
+import FiservDetails from "./FiservDetails";
+
+import MastercardCover from "./resources/Mastercard/Mastercard-cover.png";
+import MastercardDetails from "./MastercardDetails";
 
 export const ProjectDetailContent = {
     pecss: {
@@ -22,17 +27,51 @@ export const ProjectDetailContent = {
         teamMembers: [
             "Dr. Rosa Arriaga",
             "Dr. Andrew Sherrill",
-            "Peter Presti",
             "Varnit Jain",
             "Hayley Evans",
-            "Marcus Wilder",
-            "Catherine Deeter",
-            "Adam Hayward",
-            "Kenneth Akers",
             "Jiawei Zhou",
+            "Aletha Luo",
+            "Khusbu Patel"
         ],
         details: <PECSSDetails />,
     },
+    fiserv: {
+        title: "Fiserv: Crypto + Online Banking",
+        coverImage: FiservCover,
+        color: "#FF9A57",
+        problemStatement:
+            "Revolutionizing online banking with integrations with cryptocurrencies",
+        roles: ["UX Research", "UX Design"],
+        timeline: ["Aug 2021 - present"],
+        tools: ["Figma", "AdobeXd", "Miro", "Qualtrics"],
+        teamMembers: [
+            "Annie Chen",
+            "Kyle Leinart",
+            "Robert MacDonald",
+            "Vidushi Jain"
+        ],
+        details: <FiservDetails />,
+    },
+    mastercard: {
+        title: "Mastercard Data and Services",
+        coverImage: MastercardCover,
+        color: "#ED5754",
+        problemStatement:
+            "Improving the SpendingPulse product for users",
+        roles: ["Development", "UX Research", "UX Design"],
+        timeline: ["Summer 2021 "],
+        tools: ["ReactJS", "Redux"],
+        teamMembers: [
+            "Natalie Pierce",
+            "Thomas Lomont",
+            "Micah Arnson-Serotta",
+            "Emmie Wang",
+            "Jieyu Xiong",
+            "Alex Li Chen",
+        ],
+        details: <MastercardDetails />,
+    },
+
     klix: {
         title: "Klix",
         coverImage: KlixCover,
