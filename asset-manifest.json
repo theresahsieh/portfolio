@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/static/js/main.6bfcb060.chunk.js",
-    "main.js.map": "/static/js/main.6bfcb060.chunk.js.map",
+    "main.js": "/static/js/main.5de98bbc.chunk.js",
+    "main.js.map": "/static/js/main.5de98bbc.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.134cfe03.js",
     "runtime-main.js.map": "/static/js/runtime-main.134cfe03.js.map",
     "static/js/2.50a3591e.chunk.js": "/static/js/2.50a3591e.chunk.js",
@@ -22,7 +22,7 @@
     "static/media/Jordan.ba22bc28.png": "/static/media/Jordan.ba22bc28.png",
     "static/media/Klix-cover.3b2365bb.png": "/static/media/Klix-cover.3b2365bb.png",
     "static/media/Mastercard-cover.f8e3709c.png": "/static/media/Mastercard-cover.f8e3709c.png",
-    "static/media/MastercardProjects.753ea94b.png": "/static/media/MastercardProjects.753ea94b.png",
+    "static/media/MastercardProjects.49b9d23b.png": "/static/media/MastercardProjects.49b9d23b.png",
     "static/media/Mia.2f6bd79b.png": "/static/media/Mia.2f6bd79b.png",
     "static/media/NASA-tlx.83420ef2.png": "/static/media/NASA-tlx.83420ef2.png",
     "static/media/Old-New.7a3a6dce.png": "/static/media/Old-New.7a3a6dce.png",
@@ -66,6 +66,6 @@
     "static/js/runtime-main.134cfe03.js",
     "static/js/2.50a3591e.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.6bfcb060.chunk.js"
+    "static/js/main.5de98bbc.chunk.js"
   ]
 }
