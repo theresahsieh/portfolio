@@ -47,7 +47,7 @@ const MastercardDetails = () => {
                 </Typography>
             </span>
             <Grid container spacing={1} alignItems="top">
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={5}>
                     <Typography
                         variant="h6"
                         component="p"
@@ -72,7 +72,7 @@ const MastercardDetails = () => {
                         and evaluation phases.
                     </Typography>
                 </Grid>
-                <Grid item xs={12} md={6}>
+                <Grid item xs={12} md={7}>
                     <img
                         src={Projects}
                         alt="Clinician-facing dashboard"
@@ -91,9 +91,12 @@ const MastercardDetails = () => {
                         Using my technical background, I took the mockups
                         provided by the designers and iterated upon them with
                         the constraints of the codebase in mind. This process
-                        allowed me to modify the original designs to better <em>fit
-                        development timelines and existing technical
-                        infrastructure</em>.
+                        allowed me to modify the original designs to better{" "}
+                        <em>
+                            fit development timelines and existing technical
+                            infrastructure
+                        </em>
+                        .
                     </Typography>
                     <Typography
                         variant="h6"

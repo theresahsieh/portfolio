@@ -5,18 +5,21 @@ import nsf from "./resources/nsf.png";
 
 import * as myStyles from "../MyStyles";
 
+import { makeStyles } from "@material-ui/core/styles";
+const useStyles = makeStyles({
+    information: {
+        "@media (max-width: 600px)": {
+            width: "100%",
+        },
+        width:"80%"
+    }
+});
+
 const coverImageStyle = {
     margin: "10px 5% 10px 5%",
     width: "90%",
     height: "auto",
     borderRadius: "10px",
-    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
-};
-
-const information = {
-    "@media (min-width: 600px)": {
-        width: "80%",
-    },
 };
 
 const lineStyle = {
@@ -32,11 +35,7 @@ const ProjectDetail = (props) => {
         window.scrollTo(0, 0);
     }, []);
     const content = props.content;
-    const bulletSquare = {
-        ...myStyles.bulletSquare,
-        backgroundColor: content.color,
-    };
-
+    const classes = useStyles();
     return (
         <div>
             <img
@@ -105,7 +104,7 @@ const ProjectDetail = (props) => {
                 )}
 
                 <hr style={lineStyle} />
-                <Container style={information}>
+                <Container className={classes.information}>
                     {content.details}
                 </Container>
             </div>

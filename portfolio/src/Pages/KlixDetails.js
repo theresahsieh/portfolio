@@ -147,28 +147,28 @@ const KlixDetails = () => {
                 the goals and motivations of our users.
             </Typography>
             <Grid container spacing={1} alignItems="center">
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} md={6}>
                     <img
                         src={Andrew}
                         alt="user persona 1"
                         style={myStyles.imageStyle}
                     ></img>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} md={6}>
                     <img
                         src={Mia}
                         alt="user person 2"
                         style={myStyles.imageStyle}
                     ></img>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} md={6}>
                     <img
                         src={Jordan}
                         alt="user persona 3"
                         style={myStyles.imageStyle}
                     ></img>
                 </Grid>
-                <Grid item xs={12} sm={6}>
+                <Grid item xs={12} md={6}>
                     <img
                         src={Ava}
                         alt="user person 4"

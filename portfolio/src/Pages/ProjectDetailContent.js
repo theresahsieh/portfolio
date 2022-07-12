@@ -60,7 +60,7 @@ export const ProjectDetailContent = {
             "Improving the SpendingPulse product for users",
         roles: ["Development", "UX Research", "UX Design"],
         timeline: ["Summer 2021 "],
-        tools: ["ReactJS", "Redux"],
+        tools: ["ReactJS", "Redux", "SQL"],
         teamMembers: [
             "Natalie Pierce",
             "Thomas Lomont",

@@ -14,7 +14,7 @@ import PECSSCover from "./resources/PECSS/PECSS-cover.png";
 import ReflectCover from "./resources/Reflect/Reflect-cover.png";
 import FiservCover from "./resources/Fiserv/Fiserv-cover.png";
 import MastercardCover from "./resources/Mastercard/Mastercard-cover.png";
-import Icons from "./resources/icons.png";
+import Splash from "./resources/Splash.svg";
 import * as myStyles from "../MyStyles";
 import { Link } from "react-router-dom";
 
@@ -24,15 +24,16 @@ const useStyles = makeStyles({
         fontWeight: "500",
     },
     splashTitle: {
-        margin: "3.5rem 1.5rem 1rem 1.5rem",
-        textAlign: "center",
-        fontSize: "3.5rem",
+        margin: "3.5rem 1.5rem 1rem 3.5rem",
+        textAlign: "left",
+        fontSize: "2.5rem",
     },
     splashText: {
-        margin: "0 1.5rem 3rem 1.5rem",
+        margin: "0 1.5rem 3rem 3.5rem",
         fontWeight: "normal",
         verticalAlign: "top",
-        textAlign: "center",
+        textAlign: "left",
+        fontSize: "1rem",
     },
     projectName: {
         fontWeight: "bold",
@@ -126,11 +127,12 @@ const Projects = () => {
         {
             name: "Mastercard Data and Services",
             image: MastercardCover,
-            description:
-                "Improving the SpendingPulse product for users",
+            description: "Improving the SpendingPulse product for users",
             chips: (
                 <CardActions className={classes.cardChips}>
-                    <span style={mastercardChip}>ReactJS + UX Research + UX Design</span>
+                    <span style={mastercardChip}>
+                        ReactJS + UX Research + UX Design
+                    </span>
                     <span style={yearChip}>Summer 2021</span>
                 </CardActions>
             ),
@@ -166,32 +168,40 @@ const Projects = () => {
 
     return (
         <div>
-            <Typography
-                variant="h4"
-                component="h1"
-                className={classes.splashTitle}
-            >
-                Hi, I'm Theresa
-            </Typography>
-            <Typography
-                variant="h6"
-                component="h2"
-                className={classes.splashText}
-            >
-                I'm an HCI master's student @Georgia Tech that loves UI and UX.
-                When I'm not designing or researching, you can find me painting,
-                cooking, or rock climbing.
-            </Typography>
-            <img
-                src={Icons}
-                alt="icons"
-                style={{
-                    width: "80%",
-                    maxWidth: "600px",
-                    margin: "auto",
-                    display: "block",
-                }}
-            ></img>
+            <Grid container spacing={1} alignItems="center">
+                <Grid item xs={12} md={6}>
+                    <Typography
+                        variant="h4"
+                        component="h1"
+                        className={classes.splashTitle}
+                    >
+                        Hi, I'm Theresa!
+                    </Typography>
+                    <Typography
+                        variant="h6"
+                        component="h2"
+                        className={classes.splashText}
+                    >
+                        I'm an HCI master's student @Georgia Tech that loves UI
+                        and UX. When I'm not designing or researching, you can
+                        find me painting, cooking, or rock climbing.
+                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={6}>
+                    <img
+                        src={Splash}
+                        alt="icons"
+                        style={{
+                            width: "80%",
+                            maxWidth: "400px",
+                            margin: "auto",
+                            display: "block",
+                            marginTop: "1rem"
+                        }}
+                    ></img>
+                </Grid>
+            </Grid>
+
             <hr style={lineStyle} />
             <div style={{ justifyContent: "center" }}>
                 <Grid container spacing={1} style={myStyles.container}>
@@ -203,7 +213,6 @@ const Projects = () => {
                         >
                             projects
                         </Typography>
-                        
                     </Grid>
                     {projects.map((value) => (
                         <Grid item xs={12} style={{ justifyContent: "center" }}>
