@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/static/js/main.b2de8501.chunk.js",
-    "main.js.map": "/static/js/main.b2de8501.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.134cfe03.js",
-    "runtime-main.js.map": "/static/js/runtime-main.134cfe03.js.map",
-    "static/js/2.8b80cd9b.chunk.js": "/static/js/2.8b80cd9b.chunk.js",
-    "static/js/2.8b80cd9b.chunk.js.map": "/static/js/2.8b80cd9b.chunk.js.map",
-    "static/js/3.106b66b8.chunk.js": "/static/js/3.106b66b8.chunk.js",
-    "static/js/3.106b66b8.chunk.js.map": "/static/js/3.106b66b8.chunk.js.map",
+    "main.css": "/static/css/main.a36c6ae2.chunk.css",
+    "main.js": "/static/js/main.ab4ffc75.chunk.js",
+    "main.js.map": "/static/js/main.ab4ffc75.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.fdd2eb50.js",
+    "runtime-main.js.map": "/static/js/runtime-main.fdd2eb50.js.map",
+    "static/js/2.782e3910.chunk.js": "/static/js/2.782e3910.chunk.js",
+    "static/js/2.782e3910.chunk.js.map": "/static/js/2.782e3910.chunk.js.map",
+    "static/js/3.516078de.chunk.js": "/static/js/3.516078de.chunk.js",
+    "static/js/3.516078de.chunk.js.map": "/static/js/3.516078de.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.8b80cd9b.chunk.js.LICENSE.txt": "/static/js/2.8b80cd9b.chunk.js.LICENSE.txt",
+    "static/css/main.a36c6ae2.chunk.css.map": "/static/css/main.a36c6ae2.chunk.css.map",
+    "static/js/2.782e3910.chunk.js.LICENSE.txt": "/static/js/2.782e3910.chunk.js.LICENSE.txt",
     "static/media/AdamPatient.acfc6dd6.png": "/static/media/AdamPatient.acfc6dd6.png",
     "static/media/Andrew.b351f1cd.png": "/static/media/Andrew.b351f1cd.png",
     "static/media/Ava.731d2533.png": "/static/media/Ava.731d2533.png",
@@ -23,6 +23,7 @@
     "static/media/Klix-cover.3b2365bb.png": "/static/media/Klix-cover.3b2365bb.png",
     "static/media/Mastercard-cover.f8e3709c.png": "/static/media/Mastercard-cover.f8e3709c.png",
     "static/media/MastercardProjects.49b9d23b.png": "/static/media/MastercardProjects.49b9d23b.png",
+    "static/media/Me.eb00d90a.svg": "/static/media/Me.eb00d90a.svg",
     "static/media/Mia.2f6bd79b.png": "/static/media/Mia.2f6bd79b.png",
     "static/media/NASA-tlx.83420ef2.png": "/static/media/NASA-tlx.83420ef2.png",
     "static/media/Old-New.7a3a6dce.png": "/static/media/Old-New.7a3a6dce.png",
@@ -35,8 +36,6 @@
     "static/media/PECSS_scenario4.0e440915.png": "/static/media/PECSS_scenario4.0e440915.png",
     "static/media/Reflect-cover.4aa9454d.png": "/static/media/Reflect-cover.4aa9454d.png",
     "static/media/Reflect-logo.1a3d24c6.png": "/static/media/Reflect-logo.1a3d24c6.png",
-    "static/media/Resume2021.edee1c1e.png": "/static/media/Resume2021.edee1c1e.png",
-    "static/media/Splash.3e8aa128.svg": "/static/media/Splash.3e8aa128.svg",
     "static/media/TheresaHsieh.b9cb608a.png": "/static/media/TheresaHsieh.b9cb608a.png",
     "static/media/brainstorm.8e1448ec.png": "/static/media/brainstorm.8e1448ec.png",
     "static/media/chat1.a66d1501.png": "/static/media/chat1.a66d1501.png",
@@ -63,9 +62,9 @@
     "static/media/workplan.68e0b832.png": "/static/media/workplan.68e0b832.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.134cfe03.js",
-    "static/js/2.8b80cd9b.chunk.js",
-    "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.b2de8501.chunk.js"
+    "static/js/runtime-main.fdd2eb50.js",
+    "static/js/2.782e3910.chunk.js",
+    "static/css/main.a36c6ae2.chunk.css",
+    "static/js/main.ab4ffc75.chunk.js"
   ]
 }
