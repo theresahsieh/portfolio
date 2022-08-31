@@ -72,7 +72,7 @@ export const sectionHeader= {
     display: "inline-flex",
     paddingLeft: ".5rem",
     verticalAlign: "middle",
-    margin:"2rem 0 0 0" 
+    margin:"2rem 0 2.5rem 0" 
 }
 
 export const storyBoardImage = {
@@ -126,3 +126,49 @@ export const icon= {
     padding: "5px",
     borderRadius: "5px",
 };
+
+export const coverImageStyle = {
+    width: "100%",
+    height: "auto",
+};
+
+export const purple={
+    zero: "#7326C0",
+    four: "#F6F3FF"
+ };
+ 
+ export const grey={
+     one:"#1A1A1A",
+     two:"#414141",
+     three:"#D9D9D9"
+ }
+ 
+ export const mastercard={
+     primary:"#ED5754"
+ }
+
+ export const fiserv={
+     primary:"#4799CC",
+ }
+
+export const chipStyle = {
+    padding: "4px 16px ",
+    marginRight: "8px",
+    marginTop: "8px",
+    borderRadius: "50px",
+    fontSize: "0.75rem",
+    fontWeight: "bold",
+    borderColor: grey.three,
+    borderStyle: "solid",
+    borderWidth: "thin",
+    display: "inline-flex",
+    flexWrap: "wrap"
+};
+
+export const gridInformation = {
+    padding: "1rem 1.5rem 1rem 1.5rem",
+    justifyContent: "center",
+    width: "100%",
+}
+
+

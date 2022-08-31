@@ -5,10 +5,13 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import Projects from "./Pages/Projects.js";
-import Resume from "./Pages/Resume.js";
 import About from "./Pages/About.js";
 import ProjectDetail from "./Pages/ProjectDetailPage";
 import { ProjectDetailContent } from "./Pages/ProjectDetailContent";
+import MastercardDetails from "./Pages/MastercardDetails";
+import PECSSDetails from "./Pages/PECSSDetails";
+import FiservDetails from "./Pages/FiservDetails";
+import KlixDetails from "./Pages/KlixDetails";
 
 const App = () => (
     <ThemeProvider theme={theme}>
@@ -19,31 +22,17 @@ const App = () => (
             <Switch>
                 <Route exact path="/projects" component={Projects} />
                 <Route exact path="/projects/pecss">
-                    <ProjectDetail
-                        content={ProjectDetailContent.pecss}
-                    ></ProjectDetail>
+                    <PECSSDetails/>
                 </Route>
                 <Route exact path="/projects/fiserv">
-                    <ProjectDetail
-                        content={ProjectDetailContent.fiserv}
-                    ></ProjectDetail>
+                    <FiservDetails/>
                 </Route>
                 <Route exact path="/projects/mastercard">
-                    <ProjectDetail
-                        content={ProjectDetailContent.mastercard}
-                    ></ProjectDetail>
+                    <MastercardDetails/>
                 </Route>
                 <Route exact path="/projects/klix">
-                    <ProjectDetail
-                        content={ProjectDetailContent.klix}
-                    ></ProjectDetail>
+                    <KlixDetails/>
                 </Route>
-                <Route exact path="/projects/reflect">
-                    <ProjectDetail
-                        content={ProjectDetailContent.reflect}
-                    ></ProjectDetail>
-                </Route>
-                <Route exact path="/resume" component={Resume} />
                 <Route exact path="/about" component={About} />
                 <Route
                     exact

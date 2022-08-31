@@ -14,6 +14,7 @@ import {
 import { Menu as MenuIcon } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link, useLocation } from "react-router-dom";
+import * as myStyles from "./MyStyles.js";
 
 import t2 from "./Pages/resources/logo.png";
 const useStyles = makeStyles({
@@ -26,7 +27,7 @@ const useStyles = makeStyles({
     navBar: {
         position:"fixed",
         backgroundColor: "white",
-        boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.05)",
+        boxShadow: "0px 2px 4px -1px rgba(0,0,0,0.04)",
     },
     navDisplayFlex: {
         display: `flex`,
@@ -36,7 +37,8 @@ const useStyles = makeStyles({
         textDecoration: `none`,
     },
     navListText: {
-        color: "rgba(0, 0, 0, 0.87)",
+        color: myStyles.grey.one,
+        fontSize: "1rem"
     },
     navListButton: {
         "&$selected": {
@@ -58,7 +60,7 @@ const useStyles = makeStyles({
             right: "10%",
             width: "80%",
             bottom: "0",
-            border: "1px solid #AB72E3",
+            border: `1px solid ${myStyles.purple.zero}`,
             visbility: "hidden",
             transform: "scaleX(0)",
             transition: "all 0.3s ease-in-out 0s",
@@ -72,7 +74,7 @@ const useStyles = makeStyles({
         "@media (max-width: 600px)": {
             top: "56px"
         },
-        backgroundColor: "#AB72E3",
+        backgroundColor: `${myStyles.purple.zero}`,
         boxShadow:
             "0px 2px 4px -1px rgba(0,0,0,0.05), 0px 2px 4px -1px rgba(0,0,0,0.05)",
     },
@@ -99,16 +101,17 @@ const useStyles = makeStyles({
             transform: "scaleX(0)",
             transition: "all 0.3s ease-in-out 0s",
         },
+        fontSize: "1rem"
     },
     drawerLinkText: {
         color: "white",
+        fontSize: "1rem"
     },
 });
 
 const Header = () => {
     const navLinks = [
         { title: "projects", path: "/projects" },
-        { title: "resume", path: "/resume" },
         { title: "about", path: "/about" },
     ];
     const [openDrawer, setOpenDrawer] = React.useState(false);
@@ -169,7 +172,6 @@ const Header = () => {
                             }}
                         />
                         <Typography
-                            variant="h6"
                             className={classes.name}
                             component="h1"
                             to={"/"}
@@ -185,7 +187,6 @@ const Header = () => {
                             className={classes.navbarDisplayFlex}
                         >
                             <List
-                                component="nav"
                                 aria-labelledby="main navigation"
                                 className={classes.navDisplayFlex}
                             >
@@ -200,8 +201,8 @@ const Header = () => {
                                         <ListItemText
                                             style={
                                                 path === location.pathname
-                                                    ? { color: "#7326C0" }
-                                                    : {}
+                                                    ? { color: myStyles.purple.zero, fontSize:"1rem" }
+                                                    : { fontSize:"1rem" }
                                             }
                                             className={`${classes.navListText}`}
                                             primary={title}

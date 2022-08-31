@@ -1,141 +1,190 @@
 import { Grid, Typography } from "@material-ui/core";
 import * as myStyles from "../MyStyles";
-import Projects from "./resources/Mastercard/MastercardProjects.png";
-
-const Mastercard_BulletSquare = {
-    ...myStyles.bulletSquare,
-    backgroundColor: "#ED5754",
-};
+import MastercardCover from "./resources/Mastercard/MastercardCover.png";
+import newFeatureComp from "./resources/Mastercard/newFeatureComp.png";
+import appRedesign1 from "./resources/Mastercard/appRedesign1.png";
+import appRedesign2 from "./resources/Mastercard/appRedesign2.png";
+import appRedesign3 from "./resources/Mastercard/appRedesign3.png";
+import SectionHeader from "./SectionHeader";
 
 const MastercardDetails = () => {
     return (
         <div>
-            <span style={{ display: "inline-flex" }}>
-                <span style={Mastercard_BulletSquare} />
-                <Typography
-                    variant="h5"
-                    component="h2"
-                    style={myStyles.sectionHeader}
-                >
-                    Project Space
-                </Typography>
-            </span>
-            <Typography variant="h6" component="p" style={myStyles.textBlock}>
-                "The SpendingPulse Next Generation platform enables
-                organizations to visualize consumer spending patterns in near
-                real-time, powering decisions across a range of applications
-                with detailed historical insights and sales forecasts."
-            </Typography>
-            <Typography
-                variant="h5"
-                component="p"
-                style={{ ...myStyles.textBlock, marginLeft: "2.5rem" }}
+            <img
+                src={MastercardCover}
+                alt="Cover"
+                style={myStyles.coverImageStyle}
+            ></img>
+            <Grid
+                container
+                spacing={1}
+                alignItems="top"
+                style={myStyles.gridInformation}
             >
-                <em>
-                    How can we add value to the current experience with the
-                    SpendingPulse product?
-                </em>
-            </Typography>
-            <span style={{ display: "inline-flex" }}>
-                <span style={Mastercard_BulletSquare} />
-                <Typography
-                    variant="h5"
-                    component="h2"
-                    style={myStyles.sectionHeader}
-                >
-                    Contributions
-                </Typography>
-            </span>
-            <Grid container spacing={1} alignItems="top">
-                <Grid item xs={12} md={5}>
-                    <Typography
-                        variant="h6"
-                        component="p"
-                        style={myStyles.textBlock}
-                    >
-                        I worked on implementing error handling for missing data
-                        scenarios, enabling sharing of visualizations, and
-                        creating customizable insights for users.
-                    </Typography>
-                    <Typography
-                        variant="h6"
-                        component="p"
-                        style={myStyles.textBlock}
-                    >
-                        As a Software Development Engineer intern, I was part of
-                        the development team in charge of implementing design
-                        changes. I worked very closely with the user experience
-                        designers and product managers to determine the scope of
-                        the features I worked on. I also participated in
-                        <strong> brainstorming sessions</strong> and
-                        <strong> client interviews</strong> during the ideation
-                        and evaluation phases.
-                    </Typography>
+                <Grid container item xs={12} md={8}>
+                    <div>
+                        <Typography variant="h1">
+                            Mastercard Product Experience Design
+                        </Typography>
+                        <div style={{ paddingBottom: "32px" }}>
+                            <span style={myStyles.chipStyle}>Internship</span>
+                            <span style={myStyles.chipStyle}>UX Design</span>
+                            <span style={myStyles.chipStyle}>B2B + B2C</span>
+                        </div>
+                    </div>
                 </Grid>
-                <Grid item xs={12} md={7}>
+                <Grid container item xs={12} md={8}>
+                    <Grid item md={3}>
+                        <Typography
+                            variant="h3"
+                            style={{ margin: "0  0 1.3rem 0" }}
+                        >
+                            Overview
+                        </Typography>
+                    </Grid>
+                    <Grid item md={9}>
+                        <Typography variant="body2" component="p">
+                            During the summer of 2022, I worked as a product
+                            design intern for the Product Experience Design team
+                            under Mastercard’s Operations and Technology
+                            department.
+                        </Typography>
+                        <Typography variant="body2" component="p">
+                            I collaborated with designers, researchers, PMs, and
+                            developers on various teams to improve the user
+                            experience of different applications.
+                        </Typography>
+                        <Typography variant="body2" component="p">
+                            This work is <strong>protected by NDA</strong>, so
+                            the following includes an overview of a sample of
+                            projects I worked on, focusing on my design process.
+                            Please feel free to reach out to learn more.
+                        </Typography>
+                    </Grid>
+                </Grid>
+                <Grid container item xs={12} md={8}>
+                    <SectionHeader
+                        color={myStyles.mastercard.primary}
+                        header={"New feature onboarding pattern"}
+                    />
+                    <Typography variant="body2" component="p">
+                        To develop a <strong> reusable design pattern </strong>{" "}
+                        for introducing users to new features, I conducted a
+                        comparative analysis of onboarding practices. I analyzed
+                        onboarding flows from a variety of desktop applications,
+                        noting the use cases, advantages, and limitations of
+                        each design.
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        I created a feature audit and compiled the best
+                        practices for the most relevant features from various
+                        design systems. After feedback sessions with other
+                        designers, I presented my findings and reccomendations
+                        in a slide deck.
+                    </Typography>
                     <img
-                        src={Projects}
-                        alt="Clinician-facing dashboard"
-                        style={myStyles.solutionImageStyle}
+                        src={newFeatureComp}
+                        alt="slides with comparative analysis"
+                        style={{ width: "100%", margin: "24px 0" }}
                     ></img>
-                </Grid>
-                <Grid item xs={12}>
                     <Typography
-                        variant="h6"
-                        component="p"
-                        style={myStyles.textBlock}
+                        variant="subtitle1"
+                        style={{ width: "100%", textAlign: "center" }}
                     >
-                        Working as a developer, I played a large role in
-                        deciding the
-                        <strong> interaction design</strong> for each feature.
-                        Using my technical background, I took the mockups
-                        provided by the designers and iterated upon them with
-                        the constraints of the codebase in mind. This process
-                        allowed me to modify the original designs to better{" "}
-                        <em>
-                            fit development timelines and existing technical
-                            infrastructure
-                        </em>
-                        .
+                        Comparative analysis of onboarding practices and feature
+                        comparison
                     </Typography>
-                    <Typography
-                        variant="h6"
-                        component="p"
-                        style={myStyles.textBlock}
-                    >
+                </Grid>
+                <Grid container item xs={12} md={8}>
+                    <SectionHeader
+                        color={myStyles.mastercard.primary}
+                        header={"Application redesign"}
+                    />
+                    <Typography variant="body2" component="p">
+                        Working with one other designer, I redesigned a
+                        product’s web-based content to align with Mastercard’s
+                        design system. Furthermore, we were able to{" "}
                         <strong>
-                            <em>Project content under NDA</em>
+                            restructure the information organization{" "}
                         </strong>
+                        to improve clarity and usability.
+                    </Typography>
+
+                    <Typography variant="h3">Requirements gathering</Typography>
+                    <Grid container item>
+                        <Grid item xs={12} md={8}>
+                            <img
+                                src={appRedesign1}
+                                alt="slides with comparative analysis"
+                                style={{ width: "100%", margin: "24px 0" }}
+                            ></img>
+                            <Typography
+                                variant="subtitle1"
+                                style={{ width: "100%", textAlign: "center" }}
+                            >
+                                Sample of insights from product walkthrough
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} md={4}>
+                            <Typography variant="body2" component="p">
+                                Working with a team of PMs, we had meetings to
+                                walk through the product to{" "}
+                                <strong>understand current usage </strong>and{" "}
+                                <strong>oppurtunities for improvement.</strong>
+                            </Typography>
+                            <Typography variant="body2" component="p">
+                                We also discussed how our efforts would fit into
+                                the team’s{" "}
+                                <strong>
+                                    future development goals and timeline.
+                                </strong>
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Typography variant="h3">Design and iteration</Typography>
+                    <Typography variant="body2" component="p">
+                        Within four weeks, following design critque sessions
+                        with the UX team and check-ins with the product team, we
+                        were able to deliver the final designs. I carefully
+                        organized and labeled the Figma designs and meticulously
+                        inspected the components to ensure the designs were
+                        <strong> pixel perfect </strong> and easy for developers
+                        to follow.
+                    </Typography>
+                    <img
+                        src={appRedesign2}
+                        alt="slides with comparative analysis"
+                        style={{ width: "100%", margin: "24px 0" }}
+                    ></img>
+                    <Typography
+                        variant="subtitle1"
+                        style={{ width: "100%", textAlign: "center" }}
+                    >
+                        Sample of insights from product walkthrough
+                    </Typography>
+                    <Typography variant="h3">
+                        Improving Information Architecture
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        In addition to refreshing the UI elements of the
+                        application, our goal was to improve the overall
+                        usability of the product. We wanted to improve the
+                        navigation and structure of the landing page to make it
+                        easier for users to find what they needed.
+                    </Typography>
+                    <img
+                        src={appRedesign3}
+                        alt="slides with comparative analysis"
+                        style={{ width: "100%", margin: "24px 0" }}
+                    ></img>
+                    <Typography
+                        variant="subtitle1"
+                        style={{ width: "100%", textAlign: "center" }}
+                    >
+                        Sample of annotated redesign efforts
                     </Typography>
                 </Grid>
             </Grid>
-
-            <span style={{ display: "inline-flex" }}>
-                <span style={Mastercard_BulletSquare} />
-                <Typography
-                    variant="h5"
-                    component="h2"
-                    style={myStyles.sectionHeader}
-                >
-                    Lessons Learned
-                </Typography>
-            </span>
-            <Typography variant="h6" component="p" style={myStyles.textBlock}>
-                Working on this cross-functional team, I learned a lot about
-                <strong> coordinating with different stakeholders </strong> -
-                designers, product managers, and developers. Our team worked
-                very quickly, so I worked very closely with my team members on
-                rapid iterations, making design and technical changes as new
-                system changes arose.
-            </Typography>
-            <Typography variant="h6" component="p" style={myStyles.textBlock}>
-                A large portion of one of the projects I worked on was
-                integrating the company design system into our product. During
-                this process, I encountered several new use cases for common
-                components and developed my{" "}
-                <strong> communication skills </strong> as I worked with other
-                teams to discuss how to address these different scenarios.
-            </Typography>
         </div>
     );
 };
