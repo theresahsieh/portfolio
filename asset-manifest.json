@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a36c6ae2.chunk.css",
-    "main.js": "/static/js/main.09fba7f9.chunk.js",
-    "main.js.map": "/static/js/main.09fba7f9.chunk.js.map",
+    "main.js": "/static/js/main.1ed4689e.chunk.js",
+    "main.js.map": "/static/js/main.1ed4689e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c8a395c7.js",
     "runtime-main.js.map": "/static/js/runtime-main.c8a395c7.js.map",
     "static/js/2.1572685c.chunk.js": "/static/js/2.1572685c.chunk.js",
@@ -53,6 +53,7 @@
     "static/media/fiserv-affinity.dc94ba87.jpeg": "/static/media/fiserv-affinity.dc94ba87.jpeg",
     "static/media/fiservStakeholders.2b6fcdce.jpeg": "/static/media/fiservStakeholders.2b6fcdce.jpeg",
     "static/media/flow.6d60546b.png": "/static/media/flow.6d60546b.png",
+    "static/media/initial-feedback.3e9ad931.jpeg": "/static/media/initial-feedback.3e9ad931.jpeg",
     "static/media/interview1.002cdaa6.jpeg": "/static/media/interview1.002cdaa6.jpeg",
     "static/media/litreview.37490086.png": "/static/media/litreview.37490086.png",
     "static/media/methods.975cc9a1.png": "/static/media/methods.975cc9a1.png",
@@ -66,6 +67,7 @@
     "static/media/screens.105d7475.png": "/static/media/screens.105d7475.png",
     "static/media/sitemap.765e80f4.png": "/static/media/sitemap.765e80f4.png",
     "static/media/sketch.dfa66d0e.svg": "/static/media/sketch.dfa66d0e.svg",
+    "static/media/sketches.27a432ea.png": "/static/media/sketches.27a432ea.png",
     "static/media/sketches.8f17316e.png": "/static/media/sketches.8f17316e.png",
     "static/media/sol.b3adde95.png": "/static/media/sol.b3adde95.png",
     "static/media/storyboard1.aacd0c1b.jpeg": "/static/media/storyboard1.aacd0c1b.jpeg",
@@ -79,6 +81,6 @@
     "static/js/runtime-main.c8a395c7.js",
     "static/js/2.1572685c.chunk.js",
     "static/css/main.a36c6ae2.chunk.css",
-    "static/js/main.09fba7f9.chunk.js"
+    "static/js/main.1ed4689e.chunk.js"
   ]
 }
