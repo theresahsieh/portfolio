@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a36c6ae2.chunk.css",
-    "main.js": "/static/js/main.8af7af75.chunk.js",
-    "main.js.map": "/static/js/main.8af7af75.chunk.js.map",
+    "main.js": "/static/js/main.09fba7f9.chunk.js",
+    "main.js.map": "/static/js/main.09fba7f9.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c8a395c7.js",
     "runtime-main.js.map": "/static/js/runtime-main.c8a395c7.js.map",
     "static/js/2.1572685c.chunk.js": "/static/js/2.1572685c.chunk.js",
@@ -44,18 +44,22 @@
     "static/media/chat1.a66d1501.png": "/static/media/chat1.a66d1501.png",
     "static/media/chat2.e8b1cf62.png": "/static/media/chat2.e8b1cf62.png",
     "static/media/clicks.44baa728.png": "/static/media/clicks.44baa728.png",
+    "static/media/coinbase-task.84369252.jpg": "/static/media/coinbase-task.84369252.jpg",
     "static/media/designComparison.659c9440.png": "/static/media/designComparison.659c9440.png",
     "static/media/discord.452680d1.png": "/static/media/discord.452680d1.png",
     "static/media/discover1.0ffa0b10.png": "/static/media/discover1.0ffa0b10.png",
     "static/media/discover2.cabb0965.png": "/static/media/discover2.cabb0965.png",
     "static/media/featureGraphic.f27fa1b2.png": "/static/media/featureGraphic.f27fa1b2.png",
+    "static/media/fiserv-affinity.dc94ba87.jpeg": "/static/media/fiserv-affinity.dc94ba87.jpeg",
     "static/media/fiservStakeholders.2b6fcdce.jpeg": "/static/media/fiservStakeholders.2b6fcdce.jpeg",
     "static/media/flow.6d60546b.png": "/static/media/flow.6d60546b.png",
     "static/media/interview1.002cdaa6.jpeg": "/static/media/interview1.002cdaa6.jpeg",
     "static/media/litreview.37490086.png": "/static/media/litreview.37490086.png",
     "static/media/methods.975cc9a1.png": "/static/media/methods.975cc9a1.png",
     "static/media/newFeatureComp.4fb639eb.png": "/static/media/newFeatureComp.4fb639eb.png",
-    "static/media/process.34ca9a53.png": "/static/media/process.34ca9a53.png",
+    "static/media/persona1.f6d46887.png": "/static/media/persona1.f6d46887.png",
+    "static/media/persona2.bb9b9d19.png": "/static/media/persona2.bb9b9d19.png",
+    "static/media/process.0bf83671.png": "/static/media/process.0bf83671.png",
     "static/media/prototype.a3a8ce15.png": "/static/media/prototype.a3a8ce15.png",
     "static/media/prototype.f693717d.png": "/static/media/prototype.f693717d.png",
     "static/media/research.7eb4d5e3.png": "/static/media/research.7eb4d5e3.png",
@@ -64,6 +68,8 @@
     "static/media/sketch.dfa66d0e.svg": "/static/media/sketch.dfa66d0e.svg",
     "static/media/sketches.8f17316e.png": "/static/media/sketches.8f17316e.png",
     "static/media/sol.b3adde95.png": "/static/media/sol.b3adde95.png",
+    "static/media/storyboard1.aacd0c1b.jpeg": "/static/media/storyboard1.aacd0c1b.jpeg",
+    "static/media/storyboard2.eb4f18f0.jpeg": "/static/media/storyboard2.eb4f18f0.jpeg",
     "static/media/teams.99d0cd87.png": "/static/media/teams.99d0cd87.png",
     "static/media/web1.f33eabbd.png": "/static/media/web1.f33eabbd.png",
     "static/media/web2.e113e3de.png": "/static/media/web2.e113e3de.png",
@@ -73,6 +79,6 @@
     "static/js/runtime-main.c8a395c7.js",
     "static/js/2.1572685c.chunk.js",
     "static/css/main.a36c6ae2.chunk.css",
-    "static/js/main.8af7af75.chunk.js"
+    "static/js/main.09fba7f9.chunk.js"
   ]
 }
