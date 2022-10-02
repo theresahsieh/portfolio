@@ -5,9 +5,15 @@ import newFeatureComp from "./resources/Mastercard/newFeatureComp.png";
 import appRedesign1 from "./resources/Mastercard/appRedesign1.png";
 import appRedesign2 from "./resources/Mastercard/appRedesign2.png";
 import appRedesign3 from "./resources/Mastercard/appRedesign3.png";
+import flow from "./resources/Mastercard/flow.png";
+import prototype from "./resources/Mastercard/prototype.png";
+import sketch from "./resources/Mastercard/sketch.svg";
+import sitemap from "./resources/Mastercard/sitemap.png";
+import teams from "./resources/Mastercard/teams.png";
 import SectionHeader from "./SectionHeader";
 
 const MastercardDetails = () => {
+    
     return (
         <div>
             <img
@@ -24,7 +30,7 @@ const MastercardDetails = () => {
                 <Grid container item xs={12} md={8}>
                     <div>
                         <Typography variant="h1">
-                            Mastercard Product Experience Design
+                            Mastercard: Product Experience Design
                         </Typography>
                         <div style={{ paddingBottom: "32px" }}>
                             <span style={myStyles.chipStyle}>Internship</span>
@@ -61,8 +67,6 @@ const MastercardDetails = () => {
                             Please feel free to reach out to learn more.
                         </Typography>
                     </Grid>
-                </Grid>
-                <Grid container item xs={12} md={8}>
                     <SectionHeader
                         color={myStyles.mastercard.primary}
                         header={"New feature onboarding pattern"}
@@ -94,8 +98,6 @@ const MastercardDetails = () => {
                         Comparative analysis of onboarding practices and feature
                         comparison
                     </Typography>
-                </Grid>
-                <Grid container item xs={12} md={8}>
                     <SectionHeader
                         color={myStyles.mastercard.primary}
                         header={"Application redesign"}
@@ -163,7 +165,7 @@ const MastercardDetails = () => {
                         Sample of insights from product walkthrough
                     </Typography>
                     <Typography variant="h3">
-                        Improving Information Architecture
+                        Improving information architecture
                     </Typography>
                     <Typography variant="body2" component="p">
                         In addition to refreshing the UI elements of the
@@ -182,6 +184,151 @@ const MastercardDetails = () => {
                         style={{ width: "100%", textAlign: "center" }}
                     >
                         Sample of annotated redesign efforts
+                    </Typography>
+                    <SectionHeader
+                        color={myStyles.mastercard.primary}
+                        header={"Desktop platform overhaul"}
+                    />
+                    <Typography variant="body2" component="p">
+                        On a team of two designers and two researchers, I helped
+                        to transition an outdated desktop application into a
+                        more streamlined web application. I took lead on the
+                        designs for the redesign, creating different mockups and
+                        the prototypes used for user testing.
+                    </Typography>
+
+                    <Typography variant="h3">Focusing On User Flows</Typography>
+                    <Typography variant="body2" component="p">
+                        One of the challenging aspects of this project was
+                        communicating with other stakeholders. The team we were
+                        working with had initially envisioned a “reskin” of the
+                        application, looking for individual screens to be remade
+                        with the new styles.
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        We were explained how our team’s design process focuses
+                        on <strong>user flows</strong> — designing screens that
+                        follow how a user completes a task because this allows
+                        us to consider the
+                        <strong> full context of the user goals</strong> and
+                        best account for their needs.
+                    </Typography>
+                    <img
+                        src={flow}
+                        alt="user flow diagram"
+                        style={{ width: "100%", margin: "24px 0" }}
+                    ></img>
+                    <Typography variant="h3">User interviews</Typography>
+                    <Typography variant="body2" component="p">
+                        We interviewed users to understand how they currently
+                        navigate the platform and identify their pain points. We
+                        found that number of clicks was important to users, as
+                        they found completion modals intrusive and often made
+                        use of keyboard shortcuts.
+                    </Typography>
+                    <img
+                        src={teams}
+                        alt="screen share of application on MS Teams "
+                        style={{ width: "80%", margin: "24px auto" }}
+                    ></img>
+                    <Typography
+                        variant="subtitle1"
+                        style={{ width: "100%", textAlign: "center" }}
+                    >
+                        User interviews with virtual screen share
+                    </Typography>
+                    <Typography variant="h3">Site map</Typography>
+                    <Typography variant="body2" component="p">
+                        Due to the complexity of the application, our team
+                        wanted to organize the relationship between pages
+                        through a site map. By creating such a visualization, I
+                        helped the team understand the current navigation and
+                        better visualize workflow pathways as we worked to
+                        improve user flows.
+                    </Typography>
+                    <img
+                        src={sitemap}
+                        alt="partial site map of application"
+                        style={{ width: "100%", margin: "24px 0" }}
+                    ></img>
+                    <Typography
+                        variant="subtitle1"
+                        style={{ width: "100%", textAlign: "center" }}
+                    >
+                        Partial site map of application
+                    </Typography>
+
+                    <Typography variant="h3">
+                        Rethinking Information Organization
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        One of the key ways I worked to improve the application
+                        was to imagine new ways of structuring information. The
+                        application previously relied on users managing multiple
+                        windows and popups, and there was no easy way to pull up
+                        related information for a task.
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        To address this, I came up with better navigation
+                        strategies and content layout that grouped related
+                        information and integrated features into the page rather
+                        than into new popups.
+                    </Typography>
+
+                    <img
+                        src={sketch}
+                        alt="example of ideation sketches"
+                        style={{ width: "80%", margin: "36px auto" }}
+                    ></img>
+                    <Typography
+                        variant="subtitle1"
+                        style={{ width: "100%", textAlign: "center" }}
+                    >
+                        Example of ideation sketches
+                    </Typography>
+                    <Typography variant="h3">
+                        Rapid Prototyping and Concept Testing
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        I created a number of interactive prototypes of user
+                        flows to get feedback from customer service users on
+                        proposed changes. We wanted to make sure we tested our
+                        concepts early and often with internal users to validate
+                        our assumptions and refine our understanding of the
+                        application.
+                    </Typography>
+
+                    <img
+                        src={prototype}
+                        alt="prototype screenshot"
+                        style={{ width: "100%", margin: "24px auto" }}
+                    ></img>
+                    <SectionHeader
+                        color={myStyles.mastercard.primary}
+                        header={"Business Impact"}
+                    />
+                    <Typography variant="h3" style={{marginTop: "-20px" }}>
+                        Supporting design initiatives with research
+                    </Typography>
+                    <Typography variant="body2" component="p" style={{marginTop: "-8px" }}>
+                        The in-depth research I conducted provided a set of
+                        guidelines and recomendations for a new pattern to be
+                        added to the design system.
+                    </Typography>
+                    <Typography variant="h3" >
+                        Maintaining design standards across products
+                    </Typography>
+                    <Typography variant="body2" component="p" style={{marginTop: "-8px" }}>
+                        My redesign efforts helped product teams align with
+                        Mastercard design standards and build confidence in UX
+                        collaboration.
+                    </Typography>
+                    <Typography variant="h3" >
+                        Saving $2M in annual licensing costs
+                    </Typography>
+                    <Typography variant="body2" component="p" style={{marginTop: "-8px" }}>
+                        My work transitioning a legacy desktop platform to a web
+                        application saves $2 million in annual licensing costs.
                     </Typography>
                 </Grid>
             </Grid>

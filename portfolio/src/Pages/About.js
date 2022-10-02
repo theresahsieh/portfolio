@@ -7,9 +7,6 @@ const useStyles = makeStyles({
         margin: "0 0 1.5rem 0",
         fontWeight: "700",
     },
-    intro: {
-        fontWeight: "700",
-    },
     text: {
         fontSize: "1rem",
         fontWeight: "normal",
@@ -67,7 +64,6 @@ const About = () => {
                     <Typography
                         variant="h4"
                         component="h2"
-                        className={classes.intro}
                     >
                         Hi again, I'm Theresa Hsieh!
                     </Typography>

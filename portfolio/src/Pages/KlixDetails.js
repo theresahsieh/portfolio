@@ -21,6 +21,7 @@ import KlixFeatureGraphic from "./resources/Klix/featureGraphic.png";
 import * as myStyles from "../MyStyles";
 import SectionHeader from "./SectionHeader";
 import KlixCover from "./resources/Klix/Klix-cover.png";
+import BasicInfo from "./BasicInfo";
 
 import { Grid, Typography } from "@material-ui/core";
 
@@ -38,16 +39,58 @@ const KlixDetails = () => {
                 alignItems="top"
                 style={myStyles.gridInformation}
             >
-                <Grid container item xs={12} md={8} style={{ marginBottom: "-3rem" }}>
+                <Grid
+                    container
+                    item
+                    xs={12}
+                    md={8}
+                    style={{ marginBottom: "-3rem" }}
+                >
                     <div>
-                        <Typography variant="h1">Klix</Typography>
+                        <Typography variant="h1">
+                            Klix — Bringing Gamers Together
+                        </Typography>
                         <div style={{ paddingBottom: "32px" }}>
                             <span style={myStyles.chipStyle}>Case Study</span>
                             <span style={myStyles.chipStyle}>
                                 UX Design / UX Research
                             </span>
+                            <span
+                                style={{
+                                    ...myStyles.chipStyle,
+                                    backgroundColor: myStyles.grey.four,
+                                }}
+                            >
+                                Duration: 10 weeks
+                            </span>
                         </div>
                     </div>
+                </Grid>
+                <Grid
+                    container
+                    item
+                    xs={12}
+                    md={8}
+                    style={{ marginBottom: "2rem" }}
+                >
+                    <BasicInfo
+                        tools={[
+                            "Figma",
+                            "Qualtrics",
+                        ]}
+                        team={[
+                            "Stephanie He",
+                            "Ivanna Gomez",
+                            "Angela Young",
+                            "Sarah Tsai",
+                        ]}
+                        design={
+                            "Brainstorming, concept designs, high-fidelity prototypes"
+                        }
+                        research={
+                            "Background research, interviews, survey, personas, user testing"
+                        }
+                    />
                 </Grid>
                 <Grid container item xs={12} md={8}>
                     <SectionHeader color={"#8576ed"} header={"Problem Space"} />
@@ -78,7 +121,7 @@ const KlixDetails = () => {
                     <img
                         src={KlixSol}
                         alt="Klix cover"
-                        style={myStyles.solutionImageStyle}
+                        style={{ width: "100%" }}
                     />
                 </Grid>
                 <Grid container item xs={12} md={8}>
@@ -133,7 +176,11 @@ const KlixDetails = () => {
                             community? Why or why not?
                         </li>
                     </Typography>
-                    <Typography variant="body2" component="p" style={{marginTop:"1rem"}}>
+                    <Typography
+                        variant="body2"
+                        component="p"
+                        style={{ marginTop: "1rem" }}
+                    >
                         We interviewed 18 people (11 male, 7 female) with an age
                         range of 18-50 years old. Most people expressed some
                         type of difficulty with finding people to play with.
@@ -443,12 +490,11 @@ const KlixDetails = () => {
                         comprehend what they are doing instead of guessing what
                         they are thinking.
                     </Typography>
-
+                    <Typography variant="h3" component="p">
+                        Number of Clicks
+                    </Typography>
                     <Grid container spacing={1} alignItems="top">
                         <Grid item xs={12} md={6} lg={7}>
-                            <Typography variant="body2" component="p">
-                                Number of Clicks
-                            </Typography>
                             <Typography variant="body2" component="p">
                                 We decided to count the number of clicks to
                                 complete the task so we could gather
@@ -467,12 +513,9 @@ const KlixDetails = () => {
                             ></img>
                         </Grid>
                     </Grid>
-
+                    <Typography variant="h3">NASA TLX Survey</Typography>
                     <Grid container spacing={1} alignItems="top">
                         <Grid item xs={12} md={6} lg={7}>
-                            <Typography variant="h3">
-                                NASA TLX Survey
-                            </Typography>
                             <Typography variant="body2" component="p">
                                 We included the NASA TLX Survey to get
                                 quantitative feedback about the usability of our

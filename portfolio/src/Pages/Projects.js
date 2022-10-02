@@ -12,6 +12,8 @@ import KlixCover from "./resources/Klix/Klix-cover.png";
 import PECSSCover from "./resources/PECSS/PECSS-cover.png";
 import FiservCover from "./resources/Fiserv/FiservCover.png";
 import MastercardCover from "./resources/Mastercard/MastercardCover.png";
+import InsomniacCover from "./resources/Insomniac/InsomniacCover.png";
+import ReclamCover from "./resources/Reclam/ReclamCover.png";
 import Splash from "./resources/Me.svg";
 import * as myStyles from "../MyStyles";
 import { Link } from "react-router-dom";
@@ -27,7 +29,7 @@ const useStyles = makeStyles({
     splashTitle: {
         margin: "3.5rem 1.5rem 1rem 3.5rem",
         textAlign: "left",
-        fontSize: "2.5rem",
+        //fontSize: "2.5rem",
     },
     splashText: {
         margin: "0 1.5rem 3rem 3.5rem",
@@ -55,7 +57,7 @@ const useStyles = makeStyles({
     },
     cardImage: {
         "@media (max-width: 960px)": {
-            height: "25vw",
+            height: "30vw",
         },
         height: "18vw",
     },
@@ -92,16 +94,10 @@ const Projects = () => {
     }, []);
     const projects = [
         {
-            name: "Mastercard Product Experience Design",
+            name: "Mastercard: Product Experience Design",
             image: MastercardCover,
             chips: ["Internship", "UX Design", "B2B + B2C"],
             path: "mastercard",
-        },
-        {
-            name: "PECSS",
-            image: PECSSCover,
-            chips: ["Healthcare", "HCI Research / UX Design"],
-            path: "pecss",
         },
         {
             name: "Fiserv: Crypto + Online Banking",
@@ -110,12 +106,34 @@ const Projects = () => {
             path: "fiserv",
         },
         {
-            name: "Klix",
+            name: "PECSS — PTSD Therapy Platform",
+            image: PECSSCover,
+            chips: ["Healthcare", "HCI Research / UX Design", "NSF"],
+            path: "pecss",
+        },
+        
+        {
+            name: "Klix — Bringing Gamers Together",
             image: KlixCover,
             chips: ["Case Study", "UX Design"],
             path: "klix",
         },
+
     ];
+    const inProgress = [
+        {
+            name: "Insomniac Games: Text Design Guidelines",
+            image: InsomniacCover,
+            chips: ["Accessibility", "UX Research / UX Writing"],
+            path: "insomniac",
+        },
+        {
+            name: "Reclam — Resusable Containers for Takeout",
+            image: ReclamCover,
+            chips: ["Case Study", "UX Design / UX Research"],
+            path: "reclam",
+        },
+    ]
 
     return (
         <div>
@@ -174,6 +192,55 @@ const Projects = () => {
                         </Typography>
                     </Grid>
                     {projects.map((value) => (
+                        <Grid
+                            item
+                            xs={12}
+                            md={6}
+                            style={{ justifyContent: "center" }}
+                        >
+                            <Link
+                                to={`/projects/${value.path}`}
+                                className={classes.cardLink}
+                                key={value.path}
+                            >
+                                <Card className={classes.mainCard}>
+                                    <CardMedia
+                                        className={classes.cardImage}
+                                        image={value.image}
+                                        title={value.name}
+                                    ></CardMedia>
+                                    <CardContent>
+                                        <Typography
+                                            gutterBottom
+                                            variant="h6"
+                                            component="h2"
+                                            className={classes.projectName}
+                                        >
+                                            {value.name}
+                                        </Typography>
+                                        <div style={{ marginTop: "16px" }}>
+                                            {value.chips.map((c) => (
+                                                <span
+                                                    style={myStyles.chipStyle}
+                                                >
+                                                    {c}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </CardContent>
+                                </Card>
+                            </Link>
+                        </Grid>
+                    ))}
+                    <Grid item xs={12}><Typography
+                            variant="h6"
+                            component="h2"
+                            className={classes.title}
+                        >
+                            Work in progress
+                        </Typography></Grid>
+                    
+                    {inProgress.map((value) => (
                         <Grid
                             item
                             xs={12}

@@ -23,6 +23,7 @@ const useStyles = makeStyles({
         left: "4rem",
         color: "black",
         textDecoration: "none",
+        marginTop: "4px",
     },
     navBar: {
         position:"fixed",

@@ -12,6 +12,9 @@ import MastercardDetails from "./Pages/MastercardDetails";
 import PECSSDetails from "./Pages/PECSSDetails";
 import FiservDetails from "./Pages/FiservDetails";
 import KlixDetails from "./Pages/KlixDetails";
+import ScrollToTop from "./ScrollToTop";
+import InsomniacDetails from "./Pages/InsomniacDetails";
+import ReclamDetails from "./Pages/ReclamDetails";
 
 const App = () => (
     <ThemeProvider theme={theme}>
@@ -19,6 +22,7 @@ const App = () => (
         <BrowserRouter basename={process.env.PUBLIC_URL}>
             <Header />
             <div style={{ height: "64px" }} />
+            <ScrollToTop/>
             <Switch>
                 <Route exact path="/projects" component={Projects} />
                 <Route exact path="/projects/pecss">
@@ -32,6 +36,12 @@ const App = () => (
                 </Route>
                 <Route exact path="/projects/klix">
                     <KlixDetails/>
+                </Route>
+                <Route exact path="/projects/insomniac">
+                    <InsomniacDetails/>
+                </Route>
+                <Route exact path="/projects/reclam">
+                    <ReclamDetails/>
                 </Route>
                 <Route exact path="/about" component={About} />
                 <Route

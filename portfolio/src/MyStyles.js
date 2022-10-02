@@ -21,7 +21,6 @@ export const imageStyle = {
     maxWidth: "1200px",
     height: "auto",
     borderRadius: "10px",
-    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
     display: "block",
 };
 
@@ -54,7 +53,6 @@ export const screenStyle = {
     width: "96%",
     height: "auto",
     borderRadius: "10px",
-    boxShadow: "-2px 2px 4px 2px rgba(0,0,0,0.08)",
     display: "block",
 };
 
@@ -72,7 +70,7 @@ export const sectionHeader= {
     display: "inline-flex",
     paddingLeft: ".5rem",
     verticalAlign: "middle",
-    margin:"2rem 0 2.5rem 0" 
+    margin:"2rem 0 1.5rem 0" 
 }
 
 export const storyBoardImage = {
@@ -140,7 +138,8 @@ export const purple={
  export const grey={
      one:"#1A1A1A",
      two:"#414141",
-     three:"#D9D9D9"
+     three:"#D9D9D9",
+     four:"#F5F5F5"
  }
  
  export const mastercard={
@@ -149,10 +148,15 @@ export const purple={
 
  export const fiserv={
      primary:"#4799CC",
+     secondary:"#054064"
+ }
+
+ export const insomniac={
+    primary:"#8178DE"
  }
 
 export const chipStyle = {
-    padding: "4px 16px ",
+    padding: "0px 16px ",
     marginRight: "8px",
     marginTop: "8px",
     borderRadius: "50px",
@@ -169,6 +173,7 @@ export const gridInformation = {
     padding: "1rem 1.5rem 1rem 1.5rem",
     justifyContent: "center",
     width: "100%",
+    margin: 0
 }
 
 

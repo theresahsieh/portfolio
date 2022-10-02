@@ -53,13 +53,14 @@ const PECSSDetails = () => {
                 >
                     <div>
                         <Typography variant="h1">
-                            PECSS: Prolonged Exposure Collective Sensing System
+                            PECSS — PTSD Therapy Platform
                         </Typography>
                         <div style={{ paddingBottom: "32px" }}>
                             <span style={myStyles.chipStyle}>Healthcare</span>
                             <span style={myStyles.chipStyle}>
                                 HCI Research + UX Design
                             </span>
+                            <span style={myStyles.chipStyle}>NSF</span>
                         </div>
                     </div>
                 </Grid>
@@ -457,21 +458,13 @@ const PECSSDetails = () => {
                     </span>
                     <Typography variant="body2" component="p">
                         As a part of this research lab, I have gained experience
-                        conducting HCI research and learned important
-                        user-centered design principles and tools. I have
-                        greatly improved my ability to understand the goals and
-                        needs of users and strengthened my evaluation skills.
-                        Furthermore, as a part of developing the visualization
-                        tools for the dashboard, I have learned the Angular JS
-                        framework.
-                    </Typography>
-                    <SectionHeader color={"#54D0E0"} header={"Future Work"} />
-                    <Typography variant="body2" component="p">
-                        I am currently working on this project as both a
-                        development team member and as an HCI researcher. We are
-                        planning to test our designs with patients and
-                        clinicians and continue to gather more insight on how we
-                        can improve PECSS to aid in PTSD treatment.
+                        conducting HCI research in the healthcare field and
+                        learned important user-centered design principles and
+                        tools. I have greatly improved my ability to understand
+                        the goals and needs of users and strengthened my
+                        evaluation skills. Furthermore, as a part of developing
+                        the visualization tools for the dashboard, I have
+                        learned the Angular JS framework.
                     </Typography>
                 </Grid>
             </Grid>
