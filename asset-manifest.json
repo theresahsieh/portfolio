@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a36c6ae2.chunk.css",
-    "main.js": "/static/js/main.98ac4f64.chunk.js",
-    "main.js.map": "/static/js/main.98ac4f64.chunk.js.map",
+    "main.js": "/static/js/main.f3138554.chunk.js",
+    "main.js.map": "/static/js/main.f3138554.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c8a395c7.js",
     "runtime-main.js.map": "/static/js/runtime-main.c8a395c7.js.map",
     "static/js/2.dcaf2c1f.chunk.js": "/static/js/2.dcaf2c1f.chunk.js",
@@ -63,6 +63,7 @@
     "static/media/investing.715bdbff.png": "/static/media/investing.715bdbff.png",
     "static/media/learning.b5811f83.png": "/static/media/learning.b5811f83.png",
     "static/media/litreview.37490086.png": "/static/media/litreview.37490086.png",
+    "static/media/mc.47fa140c.png": "/static/media/mc.47fa140c.png",
     "static/media/methods.975cc9a1.png": "/static/media/methods.975cc9a1.png",
     "static/media/newFeature.1abb15b9.png": "/static/media/newFeature.1abb15b9.png",
     "static/media/newFeatureComp.4fb639eb.png": "/static/media/newFeatureComp.4fb639eb.png",
@@ -82,6 +83,7 @@
     "static/media/sketches.27a432ea.png": "/static/media/sketches.27a432ea.png",
     "static/media/sketches.8f17316e.png": "/static/media/sketches.8f17316e.png",
     "static/media/sol.b3adde95.png": "/static/media/sol.b3adde95.png",
+    "static/media/stacked.f0d435c2.png": "/static/media/stacked.f0d435c2.png",
     "static/media/storyboard1.aacd0c1b.jpeg": "/static/media/storyboard1.aacd0c1b.jpeg",
     "static/media/storyboard2.eb4f18f0.jpeg": "/static/media/storyboard2.eb4f18f0.jpeg",
     "static/media/teams.99d0cd87.png": "/static/media/teams.99d0cd87.png",
@@ -94,6 +96,6 @@
     "static/js/runtime-main.c8a395c7.js",
     "static/js/2.dcaf2c1f.chunk.js",
     "static/css/main.a36c6ae2.chunk.css",
-    "static/js/main.98ac4f64.chunk.js"
+    "static/js/main.f3138554.chunk.js"
   ]
 }
