@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a36c6ae2.chunk.css",
-    "main.js": "/static/js/main.f3138554.chunk.js",
-    "main.js.map": "/static/js/main.f3138554.chunk.js.map",
+    "main.js": "/static/js/main.cf55de3e.chunk.js",
+    "main.js.map": "/static/js/main.cf55de3e.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.c8a395c7.js",
     "runtime-main.js.map": "/static/js/runtime-main.c8a395c7.js.map",
     "static/js/2.dcaf2c1f.chunk.js": "/static/js/2.dcaf2c1f.chunk.js",
@@ -18,6 +18,7 @@
     "static/media/CarrieClinician.687eec7b.png": "/static/media/CarrieClinician.687eec7b.png",
     "static/media/FiservCover.dcf9cbab.png": "/static/media/FiservCover.dcf9cbab.png",
     "static/media/Fiserv_logo.4bdd30fd.png": "/static/media/Fiserv_logo.4bdd30fd.png",
+    "static/media/Hi-Fi.3aa80c23.png": "/static/media/Hi-Fi.3aa80c23.png",
     "static/media/HiFi.0e441e2a.png": "/static/media/HiFi.0e441e2a.png",
     "static/media/Homework1.d5f03c60.png": "/static/media/Homework1.d5f03c60.png",
     "static/media/Homework2.3c9c3bfa.png": "/static/media/Homework2.3c9c3bfa.png",
@@ -35,7 +36,7 @@
     "static/media/PECSS_scenario2.76b191ea.png": "/static/media/PECSS_scenario2.76b191ea.png",
     "static/media/PECSS_scenario3.587437b6.png": "/static/media/PECSS_scenario3.587437b6.png",
     "static/media/PECSS_scenario4.0e440915.png": "/static/media/PECSS_scenario4.0e440915.png",
-    "static/media/ReclamCover.e1ec369b.png": "/static/media/ReclamCover.e1ec369b.png",
+    "static/media/ReclamCover.d01bd852.png": "/static/media/ReclamCover.d01bd852.png",
     "static/media/Theresa.bf066709.JPG": "/static/media/Theresa.bf066709.JPG",
     "static/media/annotated-sketch.436ead07.png": "/static/media/annotated-sketch.436ead07.png",
     "static/media/appRedesign1.c1e22ac2.png": "/static/media/appRedesign1.c1e22ac2.png",
@@ -74,6 +75,7 @@
     "static/media/process.0bf83671.png": "/static/media/process.0bf83671.png",
     "static/media/prototype.a3a8ce15.png": "/static/media/prototype.a3a8ce15.png",
     "static/media/prototype.f693717d.png": "/static/media/prototype.f693717d.png",
+    "static/media/reclam_process.b34ff978.png": "/static/media/reclam_process.b34ff978.png",
     "static/media/research.7eb4d5e3.png": "/static/media/research.7eb4d5e3.png",
     "static/media/screens.105d7475.png": "/static/media/screens.105d7475.png",
     "static/media/sell.1efb4a75.png": "/static/media/sell.1efb4a75.png",
@@ -96,6 +98,6 @@
     "static/js/runtime-main.c8a395c7.js",
     "static/js/2.dcaf2c1f.chunk.js",
     "static/css/main.a36c6ae2.chunk.css",
-    "static/js/main.f3138554.chunk.js"
+    "static/js/main.cf55de3e.chunk.js"
   ]
 }
