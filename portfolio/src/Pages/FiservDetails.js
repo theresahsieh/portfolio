@@ -36,11 +36,40 @@ import convert from "./resources/Fiserv/convert.png";
 import investing from "./resources/Fiserv/investing.png";
 import sell from "./resources/Fiserv/sell.png";
 import send from "./resources/Fiserv/send.png";
+import newLearn from "./resources/Fiserv/newLearn.png";
+
+import ProjectCards from "./ProjectCards";
+
+import KlixCover from "./resources/Klix/Klix-cover.png";
+import PECSSCover from "./resources/PECSS/PECSS-cover.png";
+import MastercardCover from "./resources/Mastercard/Mastercard-cover.png"
 
 const fiservIcon = {
     ...myStyles.icon,
     backgroundColor: myStyles.fiserv.primary,
 };
+
+const otherProjects = [
+    {
+        name: "Mastercard: Product Experience Design",
+        image: MastercardCover,
+        chips: ["Internship", "UX Design", "B2B + B2C"],
+        path: "mastercard",
+    },
+    {
+        name: "PECSS — PTSD Therapy Platform",
+        image: PECSSCover,
+        chips: ["Healthcare", "HCI Research / UX Design", "NSF"],
+        path: "pecss",
+    },
+
+    {
+        name: "Klix — Bringing Gamers Together",
+        image: KlixCover,
+        chips: ["Case Study", "UX Design"],
+        path: "klix",
+    },
+];
 
 const FiservDetails = () => {
     return (
@@ -161,14 +190,13 @@ const FiservDetails = () => {
                         header={"Problem Space"}
                     />
                     <Typography
-                        variant="h6"
+                        variant="body2"
                         component="p"
-                        style={myStyles.textBlock}
                     >
                         In the past decade, cryptocurrencies have gained
                         popularity as a potentially powerful digital currency.
-                        One way for it to take the next step away towards
-                        widespread acceptance is to integrate into everyday
+                        One way for it to take the next step towards
+                        widespread acceptance is to integrate it into everyday
                         banking services and experiences.
                     </Typography>
                     <Typography
@@ -232,7 +260,7 @@ const FiservDetails = () => {
                     <Typography variant="body2" component="p">
                         In order to better understand our problem space and
                         determine user needs, we employed a series of research
-                        methods to explore the attitudes, behaviors and beliefs
+                        methods to explore the attitudes, behaviors, and beliefs
                         of both crypto owners and non-crypto owners.
                     </Typography>
                     <Typography variant="h3">
@@ -240,7 +268,7 @@ const FiservDetails = () => {
                     </Typography>
                     <Typography variant="body2" component="p">
                         We began with researching the context for our problem
-                        space, including the history of the cryptocurrencies,
+                        space, including the history of cryptocurrencies,
                         existing issues, and concerns, along with future
                         projections for technology in the space. Knowing this
                         background is the foundation for understanding the
@@ -433,12 +461,14 @@ const FiservDetails = () => {
                     <Typography variant="h3">Stakeholder Analysis</Typography>
 
                     <Typography variant="body2" component="p">
-                        The following stakeholder analysis depicts the people
-                        and companies who may be affected by the integration of
-                        cryptocurrencies into online banking. Stakeholders
-                        closer to the bottom center are likely to be more
-                        directly impacted, with less involved parties on the
-                        outer edges.
+                        We created the following stakeholder analysis to depict
+                        the people and companies who may be affected by the
+                        integration of cryptocurrencies into online banking.
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        Stakeholders closer to the bottom center are likely to
+                        be more directly impacted, with fewer involved parties on
+                        the outer edges.
                     </Typography>
                     <img
                         src={Stakeholders}
@@ -453,11 +483,11 @@ const FiservDetails = () => {
                     </Typography>
                     <Typography variant="h3">Task Analysis</Typography>
                     <Typography variant="body2" component="p">
-                        We also thoroughly analyzed <strong>Coinbase</strong>,
-                        in a task analysis to understand the current
-                        capabilities of the leading cryptocurrency management
-                        platform. We hoped to dissect the steps users currently
-                        take to buy, sell, share, and monitor cryptocurrencies.
+                        We also thoroughly analyzed <strong>Coinbase</strong> in
+                        a task analysis to understand the current capabilities
+                        of the leading cryptocurrency management platform. We
+                        hoped to dissect the steps users currently take to buy,
+                        sell, share, and monitor cryptocurrencies.
                     </Typography>
                     <img
                         src={coinbase}
@@ -553,15 +583,17 @@ const FiservDetails = () => {
                     <Grid container item style={{ justifyContent: "center" }}>
                         <Grid item xs={12}>
                             <Typography variant="body2" component="p">
-                                We created and distributed a survey to{" "}
+                                We created and distributed a survey to
+                                understand{" "}
                                 <strong>
-                                    understand how users manage cryptocurrency
+                                    why non users don’t use cryptocurrencies{" "}
                                 </strong>{" "}
-                                and
+                                , how current users manage cryptocurrency, and
+                                investigate
                                 <strong>
                                     {" "}
-                                    investigate the potential for including
-                                    crypto tools in online banking services.
+                                    the potential for including crypto tools in
+                                    online banking services.
                                 </strong>
                             </Typography>
                         </Grid>
@@ -618,7 +650,7 @@ const FiservDetails = () => {
                             </Typography>
                         </Grid>
                     </Grid>
-                    <Typography variant="h3">Findings</Typography>
+                    <Typography variant="h3">Research Findings</Typography>
                     <Grid container spacing={3} alignItems="top">
                         <Grid
                             item
@@ -869,7 +901,7 @@ const FiservDetails = () => {
                         cryptocurrencies.
                     </Typography>
                     <Typography component="p" style={{ marginTop: "1rem" }}>
-                        <em>Bank could start with the big three cryptos"</em>
+                        <em>"Bank could start with the big three cryptos"</em>
                     </Typography>
                 </Grid>
                 <Grid
@@ -1048,13 +1080,15 @@ const FiservDetails = () => {
                         Initial Feedback Session
                     </Typography>
                     <Typography variant="body2" component="p">
-                        We hoped to test the{" "}
+                        We held <strong>think-aloud</strong> sessions with 4
+                        participants using
+                        <strong> mid-fidelity paper prototypes</strong> so they
+                        would focus on the ideas behind each concept and not the
+                        look and feel. We hoped to test the{" "}
                         <strong>
                             perceived benefits, feature awareness and intention
                             of use
                         </strong>
-                        . We held <strong> think-aloud</strong> sessions with 4
-                        participants.
                     </Typography>
                     <Grid
                         container
@@ -1101,12 +1135,13 @@ const FiservDetails = () => {
                         </Grid>
                         <Grid xs={12}>
                             <Typography variant="body2" component="p">
-                                Ultimately, we decided to move forward with
-                                aspects of the first and second concepts,
-                                choosing the preferred navigation method and
-                                including the functions users thought were
-                                necessary. We noted down areas of confusion and
-                                came up with some design recommendation.
+                                Participants preferred the amount of control
+                                they had over their crypto holdings in the first
+                                and second concepts. Moving forwards, we chose
+                                to combine the preferred navigation method and
+                                learning resources section of the second concept
+                                with the in-depth crypto transaction options of
+                                the first concept.
                             </Typography>
                         </Grid>
                         <Grid item xs={12}>
@@ -1199,13 +1234,14 @@ const FiservDetails = () => {
                 }}
             >
                 <Grid item xs={12} md={8}>
-                    <Typography variant="h3">Wireframes</Typography>
+                    <Typography variant="h3">
+                        Mid Fidelity Prototypes
+                    </Typography>
                     <Typography variant="body2" component="p">
-                        With our second iteration of designs, we created
-                        wireframes to flesh out the{" "}
-                        <strong>flows of important tasks.</strong>
-                        This allowed us to dive deeper and figure out more
-                        specifics for
+                        With our second iteration of designs, we created a
+                        prototype to flesh out the{" "}
+                        <strong>flows of important tasks.</strong> This allowed
+                        us to dive deeper and figure out more specifics for
                         <strong>
                             {" "}
                             navigation, layout, and points of interaction.
@@ -1226,7 +1262,7 @@ const FiservDetails = () => {
                 <Grid item xs={12} md={8}>
                     <Typography variant="h3">Wireframe User Testing</Typography>
                     <Typography variant="body2" component="p">
-                        For our wireframes, we conducted{" "}
+                        For our prototype, we conducted{" "}
                         <strong>
                             moderated, task-based usability testing{" "}
                         </strong>
@@ -1236,15 +1272,6 @@ const FiservDetails = () => {
                     </Typography>
                 </Grid>
 
-                <Grid item xs={12} md={8}>
-                    <Typography variant="body2" component="p">
-                        We also adminstered the{" "}
-                        <strong>System Usability Scale (SUS)</strong> survey to
-                        gauge the perceived usability of the system. On average,
-                        our design scored a <strong>90 </strong> (87.5, 85,
-                        97.5).
-                    </Typography>
-                </Grid>
                 <Grid container item xs={12} md={8}>
                     <Grid item xs={12} sm={6}>
                         <Quote
@@ -1263,9 +1290,10 @@ const FiservDetails = () => {
                 </Grid>
                 <Grid item xs={12} md={8}>
                     <Typography variant="body2" component="p">
-                        Despite this positive feedback, we also created a list
-                        of areas we needed to address in our next iteration —
-                        such as missing features and improved flows.
+                        We received a lot of positive feedback about the content
+                        and layout of our designs. We created a list of areas to
+                        address in our next iteration — such as missing features
+                        and improved flows.
                     </Typography>
                     <img
                         src={newFeature}
@@ -1300,10 +1328,17 @@ const FiservDetails = () => {
                     </Typography>
                     <Typography variant="h3">Visual Design System</Typography>
                     <Typography variant="body2" component="p">
-                        Taking inspiration for traditional online banking
+                        Taking inspiration from traditional online banking
                         styles, I created a shared visual design system to
                         ensure our prototype had consistent typography, colors,
-                        spacing, and components.
+                        spacing, and components. We felt it was important to
+                        curate a look and feel that matched users’ expectations
+                        for a trustworthy, corporate application and{" "}
+                        <strong>
+                            {" "}
+                            promote a sense of security when dealing with
+                            cryptocurrencies.
+                        </strong>
                     </Typography>
                     <img
                         src={designSystem}
@@ -1374,23 +1409,66 @@ const FiservDetails = () => {
                             </Typography>
                         </Grid>
                     </Grid>
+                    <Grid container item>
+                        <Grid item xs={12}>
+                            <Typography variant="h3">
+                                Leveraging a Shared Design Language
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} sm={7} md={8}>
+                            <Typography
+                                component="p"
+                                style={{
+                                    marginRight: "1rem",
+                                }}
+                            >
+                                By creating this design system in Figma, I was
+                                able to{" "}
+                                <strong> collaboratively design </strong> our
+                                prototype with my group members Xiaoyun and
+                                Vidushi and ensure that we were able to come up
+                                with a <strong> cohesive product.</strong>
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} sm={4}>
+                            <img
+                                src={newLearn}
+                                alt="transition from mid to high fidelity designs"
+                                style={{
+                                    width: "80%",
+                                    marginTop: "1rem",
+                                }}
+                            />
+                        </Grid>
+                    </Grid>
+
                     <Grid item xs={12}>
-                        <Typography variant="h3">Onboarding</Typography>
+                        <Typography variant="h3">Sample Workflows</Typography>
+                        <Typography component="p">
+                            The following is a selection of the most important
+                            user workflows that we designed for our
+                            high-fidelity prototype.
+                        </Typography>
+                        <Typography
+                            variant="h3"
+                            style={{
+                                color: myStyles.fiserv.secondary,
+                            }}
+                        >
+                            Onboarding Tutorial + Floating Action Button
+                        </Typography>
                     </Grid>
                     <Grid item xs={12} style={{ marginTop: "-2rem" }}>
                         <ul>
                             <Typography variant="list" component="li">
-                                Highlight the new features
+                                Onboarding callouts addressed suggestions from
+                                our wireframe feedback session to create a
+                                tutorial to help new users.{" "}
                             </Typography>
                             <Typography variant="list" component="li">
-                                Point out the new Crypto navigation item, the
-                                main pages (Invest, Learn), and the floating
-                                action button with the main actions (Buy, Sell,
-                                Send, Receive, Convert)
-                            </Typography>
-                            <Typography variant="list" component="li">
-                                Promote new features for users who are not
-                                familiar with cryptocurrency
+                                The floating action button was our team’s
+                                solution to providing quicker methods of
+                                navigating between key transaction functions.{" "}
                             </Typography>
                         </ul>
                     </Grid>
@@ -1418,17 +1496,19 @@ const FiservDetails = () => {
                     >
                         <ul>
                             <Typography variant="list" component="li">
-                                Shows the knowledge resources and an example
-                                video with its transcript to increase
-                                accessibility
+                                Our research pointed to a need for increased
+                                knowledge of cryptocurrencies, especially for
+                                new users.
                             </Typography>
                             <Typography variant="list" component="li">
-                                Educates the new user about cryptocurrencies and
-                                how-to-invest
+                                Learning modules are short (less than 10
+                                minutes), and digestible as to not overwhelm
+                                users
                             </Typography>
                             <Typography variant="list" component="li">
-                                Learning modules kept small (less than 10
-                                minutes), to not overwhelm users
+                                Transcripts are available for videos in order to
+                                be more accessible to all users and offer an
+                                alternative way to consume the video content.
                             </Typography>
                         </ul>
                     </Grid>
@@ -1445,20 +1525,19 @@ const FiservDetails = () => {
 
                     <Grid item xs={12}>
                         <Typography variant="h3">
-                            Investing in Crypto
+                        New User Buying Crypto
                         </Typography>
                     </Grid>
                     <Grid item xs={12} style={{ marginTop: "-2rem" }}>
                         <ul>
                             <Typography variant="list" component="li">
-                                Buying cryptocurrency directly from your bank
-                                account{" "}
+                            Following our initial research finding, all the top coins are available for purchase with past history to support decision making.
                             </Typography>
                             <Typography variant="list" component="li">
-                                Easy to explore the top cryptocurrency{" "}
+                            The Crypto landing page shows the empty account balance and encourages users to start buying.
                             </Typography>
                             <Typography variant="list" component="li">
-                                Fast and easy transaction{" "}
+                            We added a summary review page as a safeguard measure before purchase.
                             </Typography>
                         </ul>
                     </Grid>
@@ -1477,14 +1556,13 @@ const FiservDetails = () => {
                         <Typography variant="h3">Selling Crypto</Typography>
                     </Grid>
 
-                    <Grid item xs={12} sm={6} style={{ marginTop: "-2rem" }}>
+                    <Grid item xs={12} style={{ marginTop: "-2rem" }}>
                         <ul>
                             <Typography variant="list" component="li">
-                                Sell a cryptocurrency in your bank application
+                            Our research found that users saw immediate benefits of directly connecting their crypto wallets to their bank accounts for ease of management
                             </Typography>
                             <Typography variant="list" component="li">
-                                Directly deposits the sale back into your
-                                connected bank account
+                            This flow closely mirrors the buying workflow to maintain standards across the product
                             </Typography>
                         </ul>
                     </Grid>
@@ -1507,11 +1585,10 @@ const FiservDetails = () => {
                     <Grid item xs={12} style={{ marginTop: "-2rem" }}>
                         <ul>
                             <Typography variant="list" component="li">
-                                Easy conversion between cryptocurrencies{" "}
+                            Our first feedback session made it clear that users felt full control over their crypto accounts included having all possible transaction functionality, including conversion between coins.
                             </Typography>
                             <Typography variant="list" component="li">
-                                Input and switch value between USD and Crypto
-                                value{" "}
+                            In our wireframe session, there was some confusion over a conversion symbol to switch between the cryptocurrencies, so we eliminated it in the final design.
                             </Typography>
                         </ul>
                     </Grid>
@@ -1533,12 +1610,10 @@ const FiservDetails = () => {
                     <Grid item xs={12} style={{ marginTop: "-2rem" }}>
                         <ul>
                             <Typography variant="list" component="li">
-                                Send your cryptocurrency to your friends and
-                                save wallets{" "}
+                            QR code sharing was a feature that came up in our initial research that users expressed was a useful feature they wanted to see.
                             </Typography>
                             <Typography variant="list" component="li">
-                                Add a contact through their wallet address or
-                                scan QR code{" "}
+                            This flow also mirrors the buy/sell flows with similar input fields and feedback pages.
                             </Typography>
                         </ul>
                     </Grid>
@@ -1562,7 +1637,7 @@ const FiservDetails = () => {
                             We completed a final round of evaluations with users
                             and design experts to assess whether users could
                             easily complete key tasks within the application,
-                            the overal ease of use of the prototype, and user
+                            the overall ease of use of the prototype, and user
                             satisfaction with the interface's content and
                             aesthetics.
                         </Typography>
@@ -1596,8 +1671,9 @@ const FiservDetails = () => {
                             </Typography>
                             <Typography component="p">
                                 We had users complete a set of tasks and
-                                complete a System Usability Scale (SUS) survey
-                                to evaluate the usability of our system
+                                complete a{" "}
+                                <strong>System Usability Scale (SUS)</strong>{" "}
+                                survey to evaluate the usability of our system
                             </Typography>
                             <Typography
                                 component="p"
@@ -1708,6 +1784,14 @@ const FiservDetails = () => {
                         </Typography>
                     </ul>
                 </Grid>
+            </Grid>
+            <Grid
+                container
+                style={{
+                    backgroundColor: myStyles.grey.four,
+                }}
+            >
+                <ProjectCards projects={otherProjects} isFull={false} />
             </Grid>
         </div>
     );

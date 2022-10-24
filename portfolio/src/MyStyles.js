@@ -155,6 +155,10 @@ export const purple={
     primary:"#8178DE"
  }
 
+ export const reclam={
+    primary:"#63C7B2"
+ }
+
 export const chipStyle = {
     padding: "0px 16px ",
     marginRight: "8px",

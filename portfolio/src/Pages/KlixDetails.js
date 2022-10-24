@@ -24,6 +24,32 @@ import KlixCover from "./resources/Klix/Klix-cover.png";
 import BasicInfo from "./BasicInfo";
 
 import { Grid, Typography } from "@material-ui/core";
+import ProjectCards from "./ProjectCards";
+
+import MastercardCover from "./resources/Mastercard/Mastercard-cover.png";
+import FiservCover from "./resources/Fiserv/FiservCover.png";
+import PECSSCover from "./resources/PECSS/PECSS-cover.png";
+
+export const otherProjects = [
+    {
+        name: "Mastercard: Product Experience Design",
+        image: MastercardCover,
+        chips: ["Internship", "UX Design", "B2B + B2C"],
+        path: "mastercard",
+    },
+    {
+        name: "Fiserv: Crypto + Online Banking",
+        image: FiservCover,
+        chips: ["Case Study", "UX Design / UX Research"],
+        path: "fiserv",
+    },
+    {
+        name: "PECSS — PTSD Therapy Platform",
+        image: PECSSCover,
+        chips: ["Healthcare", "HCI Research / UX Design", "NSF"],
+        path: "pecss",
+    },
+];
 
 const KlixDetails = () => {
     return (
@@ -74,10 +100,7 @@ const KlixDetails = () => {
                     style={{ marginBottom: "2rem" }}
                 >
                     <BasicInfo
-                        tools={[
-                            "Figma",
-                            "Qualtrics",
-                        ]}
+                        tools={["Figma", "Qualtrics"]}
                         team={[
                             "Stephanie He",
                             "Ivanna Gomez",
@@ -93,19 +116,56 @@ const KlixDetails = () => {
                     />
                 </Grid>
                 <Grid container item xs={12} md={8}>
+                    <Typography
+                        variant="h3"
+                        style={{ margin: "0  0 1.3rem 0" }}
+                    >
+                        Overview
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        During the spring of 2020, I took my{" "}
+                        <strong>first UX design class</strong> and learned about
+                        the user-centered design process. This class is what
+                        convinced me to purse UX design because I found myself
+                        fueled by a curiosity and determination that far
+                        outshined how I felt about programming.
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        This work shows how I approached the UCD
+                        process for the first time.
+                        
+                        {/* , but now that I have matured as an HCI
+                        practitioner and am an instructor for this very same
+                        class,{" "}
+                        <strong>
+                            I have added reflections on how I would make changes
+                            using what I know now.
+                        </strong> */}
+                    </Typography>
                     <SectionHeader color={"#8576ed"} header={"Problem Space"} />
                     <Typography variant="body2" component="p">
-                        The video gaming community thrives online, connecting
-                        people across the globe through platforms such as
-                        Twitch, Discord, and Reddit. Due to its immense size,
-                        finding friends and scheduling gameplay with other
-                        gamers is often difficult. Befriending strangers online
-                        can already be a daunting task for some, but it is
-                        worsened by a culture of toxicity within the gaming
-                        community, with reports of harassment based on gender,
-                        race, ability, and sexual orientation. Minority groups,
-                        in particular, are targeted by this type of aggressive
-                        behavior.
+                        The <strong>video gaming community</strong> thrives
+                        online, connecting people across the globe through
+                        platforms such as Twitch, Discord, and Reddit. Due to
+                        its immense size, finding friends and scheduling
+                        gameplay with other gamers is often difficult.
+                        Befriending strangers online can already be a daunting
+                        task for some, but it is worsened by a{" "}
+                        <strong>culture of toxicity </strong>, with reports of
+                        harassment based on gender, race, ability, and sexual
+                        orientation. Minority groups, in particular, are
+                        targeted by this type of aggressive behavior.
+                    </Typography>
+                    <Typography
+                        variant="h5"
+                        component="p"
+                        style={{ ...myStyles.textBlock, marginLeft: "2.5rem" }}
+                    >
+                        <em>
+                            How might we help video gamers build safe
+                            communities and connect with each other to play
+                            online?
+                        </em>
                     </Typography>
                 </Grid>
                 <Grid container item xs={12} md={8}>
@@ -604,6 +664,14 @@ const KlixDetails = () => {
                         style={myStyles.screenStyle}
                     ></img>
                 </Grid>
+            </Grid>
+            <Grid
+                container
+                style={{
+                    backgroundColor: myStyles.grey.four,
+                }}
+            >
+                <ProjectCards projects={otherProjects} isFull={false} />
             </Grid>
         </div>
     );

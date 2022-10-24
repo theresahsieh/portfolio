@@ -12,8 +12,38 @@ import PECSSGoals from "./resources/PECSS/PECSS_Goals.png";
 import sketches from "./resources/PECSS/sketches.png";
 import hw1 from "./resources/PECSS/Homework1.png";
 import hw2 from "./resources/PECSS/Homework2.png";
+import patientApp from "./resources/PECSS/patient_app.png";
+import clinicianApp from "./resources/PECSS/clinician_app.png";
+import sharedInt from "./resources/PECSS/shared_int.png";
 import * as myStyles from "../MyStyles";
 import SectionHeader from "./SectionHeader";
+import BasicInfo from "./BasicInfo";
+import ProjectCards from "./ProjectCards";
+
+import KlixCover from "./resources/Klix/Klix-cover.png";
+import MastercardCover from "./resources/Mastercard/Mastercard-cover.png";
+import FiservCover from "./resources/Fiserv/FiservCover.png";
+
+export const otherProjects = [
+    {
+        name: "Mastercard: Product Experience Design",
+        image: MastercardCover,
+        chips: ["Internship", "UX Design", "B2B + B2C"],
+        path: "mastercard",
+    },
+    {
+        name: "Fiserv: Crypto + Online Banking",
+        image: FiservCover,
+        chips: ["Case Study", "UX Design / UX Research"],
+        path: "fiserv",
+    },
+    {
+        name: "Klix — Bringing Gamers Together",
+        image: KlixCover,
+        chips: ["Case Study", "UX Design"],
+        path: "klix",
+    },
+];
 
 const bookStyle = {
     margin: "1rem auto",
@@ -64,80 +94,111 @@ const PECSSDetails = () => {
                         </div>
                     </div>
                 </Grid>
+                <Grid
+                    container
+                    item
+                    xs={12}
+                    md={8}
+                    style={{ marginBottom: "2rem" }}
+                >
+                    <BasicInfo
+                        tools={["Figma", "Miro, AngularJS, Typescript"]}
+                        team={[
+                            "Dr. Rosa Arriaga",
+                            "Dr. Andrew Sherrill",
+                            "Dr. Hayley Evans",
+                            "Peter Presti",
+                            "Marcus Wilder",
+                            "Althea Luo",
+                            "Khushbu Patil",
+                        ]}
+                        design={
+                            "Brainstorming, concept designs, high-fidelity prototypes"
+                        }
+                        research={
+                            "Background research, interviews, survey, personas, user testing"
+                        }
+                        dev={"Full stack development"}
+                    />
+                </Grid>
                 <Grid container item xs={12} md={8}>
-                    <SectionHeader
-                        color={"#54D0E0"}
-                        header={"Problem Space"}
-                        style={{ marginTop: "1rem" }}
-                    />
-                    <Typography variant="body2" component="p">
-                        <strong>Post traumatic stress disorder (PTSD)</strong>{" "}
-                        is a mental health disorder affecting individuals
-                        dealing with traumatic experiences and is characterized
-                        by trauma re-experiencing, avoidance of trauma-related
-                        situations, emotions and thoughts, negative alterations
-                        in thought and mood, and hyperarousal. US veterans are
-                        disproportionally affected.
+                    <Typography
+                        variant="h3"
+                        style={{ margin: "0  0 1.3rem 0" }}
+                    >
+                        Overview
                     </Typography>
                     <Typography variant="body2" component="p">
-                        <strong>Prolonged Exposure (PE) Therapy</strong> is a
-                        widely accepted therapeutic approach to addressing PTSD
-                        which works to reduce PTSD symptoms by having patients
-                        process their traumatic experiences through clinical
-                        sessions and homework assignments.
+                        From January 2020-December 2021, I volunteered at an NSF
+                        funded HCI research lab: PECSS. When I started working
+                        for this lab, I was a developer helping to code the web
+                        application for the platform. As I developed interest in
+                        HCI, I took the initiative to pursue more research and
+                        design projects to learn more about HCI.
                     </Typography>
-                    <Typography
-                        variant="body2"
-                        component="p"
-                        style={{ marginRight: "1rem" }}
-                    >
-                        <em>
-                            The efficacy of PE therapy can be hindered by its
-                            reliance on self-reported data and clinician
-                            intuition. The information collected from patients
-                            can suffer from subjectivity or sparseness. Improved
-                            data collection and visualization tools would allow
-                            clinicians to better track and respond to patients'
-                            mental health needs.
-                        </em>
+                    <Typography variant="body2" component="p">
+                        In this lab, I have worked on building and designing the
+                        clinician-facing desktop application, researching and
+                        designing shared patient-clinician interfaces, and
+                        redesigning the patient-facing mobile application.
                     </Typography>
-                    <SectionHeader
-                        color={"#54D0E0"}
-                        header={"Proposed Solution"}
-                    />
-                    <Typography
-                        variant="h6"
-                        component="p"
-                        style={myStyles.textBlock}
-                    >
-                        We propose the{" "}
-                        <strong>
-                            Prolonged Exposure Collective Sensing System (PECSS)
-                        </strong>
-                        , a platform that uses a data-driven approach to provide
-                        clinicians with the information they need to help
-                        patients succeed in their treatment. Including a
-                        patient-facing mobile application and clinician-facing
-                        online dashboard, PECSS allows patients to contribute
-                        detailed records of their treatment progress and
-                        supplies clinicians the resources to optimize their
-                        therapeutic practices. The 3 major goals of the PECSS
-                        project are to:
-                    </Typography>
-                    <Typography
-                        variant="ul"
-                        component="ul"
-                        style={myStyles.bigListStyle}
-                    >
-                        <li>Improve continuity of care</li>
-                        <li>Facilitate point of care interactions</li>
-                        <li>Increase patient engagement</li>
-                    </Typography>
-                    <img
-                        src={PECSSGoals}
-                        alt="dashboard version 2"
-                        style={myStyles.imageStyleNoShadow}
-                    ></img>
+                    <Grid container spacing={2} alignItems="top">
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Typography variant="subtitle1" component="p">
+                                <strong>Clinician Dashboard</strong>
+                            </Typography>
+                            <img
+                                src={clinicianApp}
+                                alt="clinician desktop app"
+                                style={myStyles.storyBoardImage}
+                            ></img>
+
+                            <Typography
+                                variant="subtitle1"
+                                component="p"
+                                style={myStyles.storyBoardSubtitle}
+                            >
+                                UX Design & Full stack engineering
+                            </Typography>
+                        </Grid>
+
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Typography variant="subtitle1">
+                                <strong>Shared Interfaces</strong>
+                            </Typography>
+                            <img
+                                src={sharedInt}
+                                alt="storyboard 2"
+                                style={myStyles.storyBoardImage}
+                            ></img>
+
+                            <Typography
+                                variant="subtitle1"
+                                component="p"
+                                style={myStyles.storyBoardSubtitle}
+                            >
+                                Academic HCI research & UX Design
+                            </Typography>
+                        </Grid>
+                        <Grid item xs={12} sm={6} md={4}>
+                            <Typography variant="subtitle1">
+                                <strong>Patient Mobile Application</strong>
+                            </Typography>
+                            <img
+                                src={patientApp}
+                                alt="mobile application"
+                                style={myStyles.storyBoardImage}
+                            ></img>
+
+                            <Typography
+                                variant="subtitle1"
+                                component="p"
+                                style={myStyles.storyBoardSubtitle}
+                            >
+                                UX Research & Design
+                            </Typography>
+                        </Grid>
+                    </Grid>
                     <Typography
                         variant="h6"
                         component="p"
@@ -182,6 +243,82 @@ const PECSSDetails = () => {
                             </li>
                         </ul>
                     </Typography>
+                    <SectionHeader
+                        color={"#54D0E0"}
+                        header={"Problem Space"}
+                        style={{ marginTop: "1rem" }}
+                    />
+                    <Typography variant="body2" component="p">
+                        <strong>Post traumatic stress disorder (PTSD)</strong>{" "}
+                        is a mental health disorder affecting individuals
+                        dealing with traumatic experiences and is characterized
+                        by trauma re-experiencing, avoidance of trauma-related
+                        situations, emotions and thoughts, negative alterations
+                        in thought and mood, and hyperarousal. US veterans are
+                        disproportionally affected.
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        <strong>Prolonged Exposure (PE) Therapy</strong> is a
+                        widely accepted therapeutic approach to addressing PTSD
+                        which works to reduce PTSD symptoms by having patients
+                        process their traumatic experiences through clinical
+                        sessions and homework assignments.
+                    </Typography>
+                    <Typography
+                        variant="body2"
+                        component="p"
+                        style={{ ...myStyles.textBlock, marginLeft: "2.5rem" }}
+                    >
+                        <em>
+                            How might we collect, track, and visualize data to
+                            improve the efficacy of PE therapy?
+                        </em>
+                        {/* The efficacy of PE therapy can be hindered by its
+                            reliance on self-reported data and clinician
+                            intuition. The information collected from patients
+                            can suffer from subjectivity or sparseness. Improved
+                            data collection and visualization tools would allow
+                            clinicians to better track and respond to patients'
+                            mental health needs. */}
+                    </Typography>
+                    <SectionHeader
+                        color={"#54D0E0"}
+                        header={"Proposed Solution"}
+                    />
+                    <Typography
+                        variant="h6"
+                        component="p"
+                        style={myStyles.textBlock}
+                    >
+                        <strong>
+                            Prolonged Exposure Collective Sensing System (PECSS)
+                        </strong>{" "}
+                        is a platform that uses a data-driven approach to
+                        provide clinicians with the information they need to
+                        help patients succeed in their treatment. Including a
+                        patient-facing mobile application and clinician-facing
+                        online dashboard, PECSS allows patients to contribute
+                        detailed records of their treatment progress and
+                        supplies clinicians the resources to optimize their
+                        therapeutic practices.
+                    </Typography>
+
+                    <img
+                        src={PECSSGoals}
+                        alt="dashboard version 2"
+                        style={myStyles.imageStyleNoShadow}
+                    ></img>
+                    <Typography
+                        variant="body1"
+                        component="p"
+                        style={{ textAlign: "center" }}
+                    >
+                        <em>
+                            {" "}
+                            Improve continuity of care. Facilitate point of care
+                            interactions. Increase patient engagement.
+                        </em>
+                    </Typography>
                     <div>
                         <SectionHeader color={"#54D0E0"} header={"Research"} />
                         <Typography variant="h3" style={{ marginTop: "1rem" }}>
@@ -198,17 +335,10 @@ const PECSSDetails = () => {
                                 with experience from PE training workshops.
                             </Typography>
                             <Typography variant="body2" component="p">
-                                The manual covers the theory behind PE therapy,
-                                what is expected from clinicians during therapy
-                                sessions and the homework assignments patients
-                                are tasked with completing.
-                            </Typography>
-                            <Typography variant="body2" component="p">
-                                Understanding the underlying theory and
-                                procedures for PE therapy provides the
-                                foundational knowledge needed to understand the
-                                behaviors of both clinicians and patients during
-                                treatment.
+                                Knowing the underlying theory and procedures for
+                                PE therapy provides the foundational knowledge
+                                needed to understand the behaviors of both
+                                clinicians and patients during treatment.
                             </Typography>
                         </Grid>
                         <Grid item sm={12} md={4}>
@@ -326,45 +456,47 @@ const PECSSDetails = () => {
                         header={"Clinician-Facing Dashboard"}
                     />
                     <Grid container spacing={1} alignItems="top">
-                        <Grid item xs={12} md={6}>
-                            <Typography variant="body2" component="p">
-                                I have been working on improving the
-                                clinician-facing dashboard. When I first joined
-                                the project, the team working on the dashboard
-                                was focused on creating a minimum viable product
-                                (MVP), meaning their goal was to show that the
-                                data collected on the app could be retrieved and
-                                displayed on the dashboard. This resulted in a
-                                functional application that could benefit from
-                                additional design considerations. I have helped
-                                redesign the dashboard's layout and implemented
-                                several key components.
+                        <Typography variant="body2" component="p">
+                            The clinician-facing dashboard is a critical tool
+                            that can help clinicians monitor their patients'
+                            care and inform in-person sessions It provides
+                            clinicians access to treatment data collected by
+                            patients outside of therapy sessions
+                            including homework completion, questionnaire
+                            results, and additional device information relating
+                            to their homework assignments. 
                             </Typography>
-                        </Grid>
-                        <Grid item xs={12} md={6}>
+                            <Typography variant="body2" component="p">
+                            Avoidance behaviors
+                            in PTSD patients are very common, so having
+                            objective data that pinpoints areas for improvement
+                            aids the clinician in identifying how to support
+                            their patients.
+                        </Typography>
+                        <Grid item xs={12}>
                             <img
                                 src={Welcome}
                                 alt="Clinician-facing dashboard"
                                 style={myStyles.solutionImageStyle}
                             ></img>
                         </Grid>
+                        <Grid item xs={12}>
+                            <Typography variant="body2" component="p">
+                                I worked on improving the clinician-facing
+                                dashboard. When I first joined the project, the
+                                team working on the dashboard was focused on
+                                creating a minimum viable product (MVP), meaning
+                                their goal was to show that the data collected
+                                on the app could be retrieved and displayed on
+                                the dashboard. This resulted in a functional
+                                application that could benefit from additional
+                                design considerations. I helped redesign the
+                                dashboard's layout and implemented several key
+                                components.
+                            </Typography>
+                        </Grid>
                     </Grid>
-                    <Typography variant="body2" component="p">
-                        <strong>Goals</strong> The clinician-facing dashboard is
-                        a critical tool that can help clinicians monitor their
-                        patients' care. It provides clinicians access to
-                        treatment data collected by patients outside of sessions
-                        with the therapist, including homework completion,
-                        questionnaire results, and additional device information
-                        relating to their homework assignments. This data allows
-                        clinicians to better monitor patient adherence to
-                        treatment and tailor in-person sessions to address any
-                        issues they see in homework assignments. Avoidance
-                        behaviors in PTSD patients are very common, so having
-                        objective data that pinpoints areas for improvement aids
-                        the clinician in identifying how to support their
-                        patients.
-                    </Typography>
+
                     <Typography variant="h3">
                         Example Project: Assigning Homework
                     </Typography>
@@ -384,7 +516,12 @@ const PECSSDetails = () => {
                         process.
                     </Typography>
                     <Grid container spacing={1} alignItems="top">
-                        <Grid item xs={12} md={6}>
+                        <Grid item xs={12}>
+                        <img
+                                src={sketches}
+                                alt="sketches"
+                                style={myStyles.storyBoardImage}
+                            ></img>
                             <Typography variant="body2" component="p">
                                 <strong>Ideation </strong>
                                 Along with Althea and Khusbu, I brainstormed
@@ -410,27 +547,8 @@ const PECSSDetails = () => {
                                 assignments for the same day.
                             </Typography>
                         </Grid>
-                        <Grid item xs={12} md={6}>
-                            <img
-                                src={sketches}
-                                alt="sketches"
-                                style={myStyles.storyBoardImage}
-                            ></img>
-                        </Grid>
                     </Grid>
                     <Grid container spacing={1} alignItems="top">
-                        <Grid item xs={12}>
-                            <Typography variant="body2" component="p">
-                                <strong>Mockups </strong>
-                                Next, I took the idea that we decided on and
-                                created mockups in Figma that show the different
-                                ways a clinician might interact with the new
-                                modal. The design reuses several components from
-                                the original assignment modal so that it is easy
-                                to implement this design for a short development
-                                time frame.
-                            </Typography>
-                        </Grid>
                         <Grid item xs={12} md={6}>
                             <img
                                 src={hw1}
@@ -444,6 +562,18 @@ const PECSSDetails = () => {
                                 alt="design ideas for homework assignment"
                                 style={myStyles.storyBoardImage}
                             ></img>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <Typography variant="body2" component="p">
+                                <strong>Mockups </strong>
+                                Next, I took the idea that we decided on and
+                                created mockups in Figma that show the different
+                                ways a clinician might interact with the new
+                                modal. The design reuses several components from
+                                the original assignment modal so that it is easy
+                                to implement this design for a short development
+                                time frame.
+                            </Typography>
                         </Grid>
                     </Grid>
                     <span style={{ display: "inline-flex" }}>
@@ -467,6 +597,14 @@ const PECSSDetails = () => {
                         learned the Angular JS framework.
                     </Typography>
                 </Grid>
+            </Grid>
+            <Grid
+                container
+                style={{
+                    backgroundColor: myStyles.grey.four,
+                }}
+            >
+                <ProjectCards projects={otherProjects} isFull={false} />
             </Grid>
         </div>
     );

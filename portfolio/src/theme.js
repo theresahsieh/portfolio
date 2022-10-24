@@ -16,15 +16,15 @@ const theme = createMuiTheme({
       "sans-serif"
     ].join(","),
     h1: {
-      fontSize: "3rem",
-      lineHeight:"4rem",
+      fontSize: "2.8rem",
+      lineHeight:"3.5rem",
       fontWeight: 700,
       marginTop:"1rem",
       marginBottom: "1.5rem"
     },
     h2: {
-      fontSize: "2.25rem",
-      lineHeight:"3rem",
+      fontSize: "2rem",
+      lineHeight:"2.8rem",
       fontWeight: 700,
       marignBottom: "2.5"
     },
@@ -32,7 +32,7 @@ const theme = createMuiTheme({
       fontSize: "1.5rem",
       lineHeight:"2.5rem",
       fontWeight: 700,
-      margin: "3rem 0 1.3rem 0"
+      margin: "3rem 0 1rem 0"
     },
     h4: {
       fontSize: "3rem",
@@ -41,19 +41,20 @@ const theme = createMuiTheme({
     },
     h5: {
       fontSize: "1.5rem",
-      lineHeight:"2.5rem",
+      lineHeight:"2.2rem",
       letterSpacing:".001em",
     },
     body2: {
-      fontSize: "1.25rem",
+      fontSize: "1.15rem",
+      fontWeight: "400",
       lineHeight:"2rem",
       letterSpacing:".001em",
       marginTop: ".2rem",
       marginBottom: "1rem"
     },
-    subtitile1: {
-      fontSize: "1rem",
-      lineHeight:"1.5rem",
+    subtitle1: {
+      fontSize: ".9rem",
+      lineHeight:"1.4rem",
       letterSpacing:".001em",
       marginBottom:"1rem"
     }

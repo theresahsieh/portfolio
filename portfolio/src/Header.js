@@ -15,8 +15,8 @@ import { Menu as MenuIcon } from "@material-ui/icons";
 import { makeStyles } from "@material-ui/core/styles";
 import { Link, useLocation } from "react-router-dom";
 import * as myStyles from "./MyStyles.js";
-
 import t2 from "./Pages/resources/logo.png";
+
 const useStyles = makeStyles({
     name: {
         position: "absolute",

@@ -151,7 +151,7 @@ const InsomniacDetails = () => {
                     </Grid>
                     <SectionHeader
                         color={myStyles.insomniac.primary}
-                        header={"Future Work"}
+                        header={"Work in Progress"}
                     />
                     <Typography variant="body2" component="p">
                         Documentation of this work is still in progress. Please

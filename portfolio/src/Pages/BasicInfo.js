@@ -42,6 +42,13 @@ const BasicInfo = (props) => {
                 >
                     <strong>Research — </strong> {props.research}
                 </Typography>
+                <Typography
+                    variant="subtitle2"
+                    component="p"
+                    style={{ marginTop: "1rem" }}
+                >
+                    <strong>Programming — </strong> {props.dev}
+                </Typography>
             </Grid>
         </Grid>
     );
