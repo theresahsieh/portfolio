@@ -13,7 +13,7 @@ const ReclamDetails = () => {
                 src={ReclamCover}
                 alt="Cover"
                 style={myStyles.coverImageStyle}
-            ></img> 
+            ></img>
             <Grid
                 container
                 spacing={1}
@@ -33,12 +33,7 @@ const ReclamDetails = () => {
                         </div>
                     </div>
                 </Grid>
-                <Grid
-                    container
-                    item
-                    xs={12}
-                    md={8}
-                >
+                <Grid container item xs={12} md={8}>
                     <BasicInfo
                         tools={["Figma", "Miro", "Qualtrics", "AdobeXD"]}
                         team={[
@@ -68,10 +63,7 @@ const ReclamDetails = () => {
                             color={myStyles.reclam.primary}
                             header={"Problem Space"}
                         />
-                        <Typography
-                            variant="body2"
-                            component="p"
-                        >
+                        <Typography variant="body2" component="p">
                             During the pandemic, the percentage of people using
                             food delivery services increased, resulting in
                             higher levels of food delivery waste. The
@@ -80,18 +72,16 @@ const ReclamDetails = () => {
                             interest or time for cooking.
                         </Typography>
                         <Typography
-                            variant="h5"
-                            component="p"
+                            variant="h4"
+                            component="em"
                             style={{
                                 ...myStyles.textBlock,
                                 marginLeft: "2.5rem",
                             }}
                         >
-                            <em>
-                                How can we help busy students and young
-                                professionals improve their relationship with
-                                sustainable dining?
-                            </em>
+                            How can we help busy students and young
+                            professionals improve their relationship with
+                            sustainable dining?
                         </Typography>
                         <SectionHeader
                             color={myStyles.reclam.primary}
@@ -127,8 +117,7 @@ const ReclamDetails = () => {
                         </Typography>
                     </Grid>
                 </Grid>
-
-                </Grid>
+            </Grid>
             <div style={{ backgroundColor: myStyles.reclam.primary }}>
                 <img
                     src={HiFi}
@@ -146,7 +135,7 @@ const ReclamDetails = () => {
                 }}
             >
                 <Grid container item xs={12} md={8}>
-                <SectionHeader
+                    <SectionHeader
                         color={myStyles.reclam.primary}
                         header={"Work in Progress"}
                     />
@@ -156,7 +145,6 @@ const ReclamDetails = () => {
                         me about it!
                     </Typography>
                 </Grid>
-                
             </Grid>
         </div>
     );

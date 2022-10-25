@@ -4,7 +4,7 @@ const Quote = (props) => {
     
 
     return (
-        <div style={{ display: "block", width: "100%", margin:"2rem 0", padding:".5rem" }}>
+        <div style={{ display: "block", width: "100%", margin:"2rem 0", padding:".7rem" }}>
         <span
             style={{
                 display: "inline-flex",
@@ -19,7 +19,7 @@ const Quote = (props) => {
                     
                 }}
             ></img>
-            <em style={{marginLeft:".5rem"}}> 
+            <em style={{marginLeft:".7rem"}}> 
                 {props.quote}
             </em>
         </span>

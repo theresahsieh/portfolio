@@ -177,7 +177,6 @@ export const gridInformation = {
     padding: "1rem 1.5rem 1rem 1.5rem",
     justifyContent: "center",
     width: "100%",
-    margin: 0
 }
 
 

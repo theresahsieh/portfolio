@@ -1,22 +1,19 @@
 import { Grid, Typography } from "@material-ui/core";
 import Stakeholders from "./resources/Fiserv/fiservStakeholders.jpeg";
 import * as myStyles from "../MyStyles";
-import TrendingDownIcon from "@material-ui/icons/TrendingDown";
-import DoNotTouchIcon from "@mui/icons-material/DoNotTouch";
-import VpnKeyIcon from "@mui/icons-material/VpnKey";
-import PublicIcon from "@mui/icons-material/Public";
-import AccountBalanceIcon from "@mui/icons-material/AccountBalance";
-import FaceRetouchingOffIcon from "@mui/icons-material/FaceRetouchingOff";
 import SectionHeader from "./SectionHeader";
 import Quote from "./Quote";
 import FiservCover from "./resources/Fiserv/FiservCover.png";
 import FiservLogo from "./resources/Fiserv/Fiserv_logo.png";
 import BasicInfo from "./BasicInfo";
 import HiFi from "./resources/Fiserv/HiFi.png";
+import litReview from "./resources/Fiserv/litReview.png";
 import interview1 from "./resources/Fiserv/interview1.jpeg";
 import process from "./resources/Fiserv/process.png";
-import affintiy from "./resources/Fiserv/fiserv-affinity.jpeg";
-import survey from "./resources/Fiserv/fiserv-survey.png";
+import affintiy from "./resources/Fiserv/affinity.jpg";
+import comp from "./resources/Fiserv/comp.png";
+import researchTimeline from "./resources/Fiserv/researchTimeline.png";
+import designTimeline from "./resources/Fiserv/designTimeline.png";
 import coinbase from "./resources/Fiserv/coinbase-task.jpg";
 import persona1 from "./resources/Fiserv/persona1.png";
 import persona2 from "./resources/Fiserv/persona2.png";
@@ -37,17 +34,14 @@ import investing from "./resources/Fiserv/investing.png";
 import sell from "./resources/Fiserv/sell.png";
 import send from "./resources/Fiserv/send.png";
 import newLearn from "./resources/Fiserv/newLearn.png";
+import bigNumbers from "./resources/Fiserv/bigNumbers.png";
+import ints from "./resources/Fiserv/ints.png";
 
 import ProjectCards from "./ProjectCards";
 
 import KlixCover from "./resources/Klix/Klix-cover.png";
 import PECSSCover from "./resources/PECSS/PECSS-cover.png";
-import MastercardCover from "./resources/Mastercard/Mastercard-cover.png"
-
-const fiservIcon = {
-    ...myStyles.icon,
-    backgroundColor: myStyles.fiserv.primary,
-};
+import MastercardCover from "./resources/Mastercard/Mastercard-cover.png";
 
 const otherProjects = [
     {
@@ -148,40 +142,7 @@ const FiservDetails = () => {
                 alignItems="top"
                 style={{
                     ...myStyles.gridInformation,
-                    backgroundColor: myStyles.grey.four,
-                }}
-            >
-                <Grid container item xs={12} md={2}>
-                    <img
-                        src={FiservLogo}
-                        alt="Client (Fiserv) logo"
-                        style={{
-                            width: "12vw",
-                            height: "6vw",
-                        }}
-                    />
-                </Grid>
-                <Grid container item xs={12} md={6}>
-                    <Typography
-                        variant="body2"
-                        component="p"
-                        style={myStyles.textBlock}
-                    >
-                        <strong>Client — </strong>Fiserv is a FORTUNE 500
-                        company and global leader in financial technology
-                        services. They asked us to investigate whether there is
-                        an appetite for existing banking customers to interact
-                        with cryptocurrency through their conventional online
-                        banking services.
-                    </Typography>
-                </Grid>
-            </Grid>
-            <Grid
-                container
-                spacing={1}
-                alignItems="top"
-                style={{
-                    ...myStyles.gridInformation,
+                    marginTop:"-2rem"
                 }}
             >
                 <Grid container item xs={12} md={8}>
@@ -189,25 +150,20 @@ const FiservDetails = () => {
                         color={myStyles.fiserv.primary}
                         header={"Problem Space"}
                     />
-                    <Typography
-                        variant="body2"
-                        component="p"
-                    >
+                    <Typography variant="body2" component="p">
                         In the past decade, cryptocurrencies have gained
                         popularity as a potentially powerful digital currency.
-                        One way for it to take the next step towards
-                        widespread acceptance is to integrate it into everyday
-                        banking services and experiences.
+                        One way for it to take the next step towards widespread
+                        acceptance is to integrate it into everyday banking
+                        services and experiences.
                     </Typography>
                     <Typography
-                        variant="h5"
-                        component="p"
+                        variant="h4"
+                        component="em"
                         style={{ ...myStyles.textBlock, marginLeft: "2.5rem" }}
                     >
-                        <em>
-                            How might we support users' cryptocurrency
-                            management within familiar banking services?
-                        </em>
+                        How might we support users' cryptocurrency management
+                        within familiar banking services?
                     </Typography>
                     <SectionHeader
                         color={myStyles.fiserv.primary}
@@ -224,14 +180,18 @@ const FiservDetails = () => {
                         header={"Proposed Solution"}
                     />
                     <Typography variant="body2" component="p">
-                        A mobile app integration of crypto management tools for{" "}
+                        We designed a mobile app integration of crypto
+                        management tools for{" "}
                         <strong>
                             buying, selling, monitoring, and sending
                             cryptocurrencies
                         </strong>{" "}
                         that match the visual styling of traditional online
-                        banking services. We also emphasized{" "}
-                        <strong>onboarding activities</strong> and{" "}
+                        banking services.
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        In order to appeal to first time crypto-users, we
+                        emphasized <strong>onboarding activities</strong> and{" "}
                         <strong>learning opportunities for novices.</strong>
                     </Typography>
                 </Grid>
@@ -243,19 +203,19 @@ const FiservDetails = () => {
                     style={{ width: "80%", marginLeft: "10%" }}
                 ></img>
             </div>
-
             <Grid
                 container
                 spacing={1}
                 alignItems="top"
                 style={{
                     ...myStyles.gridInformation,
+                    paddingBottom: "10vh",
                 }}
             >
-                <Grid container item xs={12} md={8}>
+                <Grid item xs={12} md={8}>
                     <SectionHeader
                         color={myStyles.fiserv.primary}
-                        header={"User Experience Research"}
+                        header={"Research Methods"}
                     />
                     <Typography variant="body2" component="p">
                         In order to better understand our problem space and
@@ -263,395 +223,364 @@ const FiservDetails = () => {
                         methods to explore the attitudes, behaviors, and beliefs
                         of both crypto owners and non-crypto owners.
                     </Typography>
-                    <Typography variant="h3">
-                        Literature Review and Background Research
-                    </Typography>
-                    <Typography variant="body2" component="p">
-                        We began with researching the context for our problem
-                        space, including the history of cryptocurrencies,
-                        existing issues, and concerns, along with future
-                        projections for technology in the space. Knowing this
-                        background is the foundation for understanding the
-                        goals, needs, and frustrations of our target users in
-                        this space.
-                    </Typography>
-                    <Typography variant="h3">
-                        Concerns and Uncertainties{" "}
-                    </Typography>
-                    <Typography variant="body2" component="p">
-                        The following categories are known areas of concern in
-                        the cryptocurrency space. I compiled this list as a
-                        synthesis of relevant pain points to be aware of when
-                        interviewing crypto users.
-                    </Typography>
-                    <Grid container spacing={3} alignItems="top">
-                        <Grid
-                            item
-                            xs={12}
-                            sm={6}
-                            md={4}
-                            style={{ verticalAlign: "middle" }}
-                        >
-                            <Typography
-                                variant="h6"
-                                component="p"
-                                style={myStyles.textBlock}
-                            >
-                                <TrendingDownIcon style={fiservIcon} />
-                                <strong>Volatility</strong>
-                                <Typography
-                                    variant="h6"
-                                    component="p"
-                                    style={{
-                                        ...myStyles.listStyle,
-                                        fontWeight: "300",
-                                    }}
-                                >
-                                    The prices of cryptocurrencies have been
-                                    known to fluctuate widely.
-                                </Typography>
-                            </Typography>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={12}
-                            sm={6}
-                            md={4}
-                            style={{ verticalAlign: "middle" }}
-                        >
-                            <Typography
-                                variant="h6"
-                                component="p"
-                                style={myStyles.textBlock}
-                            >
-                                <DoNotTouchIcon style={fiservIcon} />
-                                <strong>Theft</strong>
-                                <Typography
-                                    variant="h6"
-                                    component="p"
-                                    style={{
-                                        ...myStyles.listStyle,
-                                        fontWeight: "300",
-                                    }}
-                                >
-                                    Cryptocurrency is vulnerable to theft
-                                    operations — personally held private keys
-                                    can be stolen due to digital hacking or
-                                    physical theft.
-                                </Typography>
-                            </Typography>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={12}
-                            sm={6}
-                            md={4}
-                            style={{ verticalAlign: "middle" }}
-                        >
-                            <Typography
-                                variant="h6"
-                                component="p"
-                                style={myStyles.textBlock}
-                            >
-                                <VpnKeyIcon style={fiservIcon} />
-                                <strong>Loss of Keys</strong>
-                                <Typography
-                                    variant="h6"
-                                    component="p"
-                                    style={{
-                                        ...myStyles.listStyle,
-                                        fontWeight: "300",
-                                    }}
-                                >
-                                    Individuals that store their own
-                                    cryptocurrencies face the possibility of
-                                    losing or forgetting their private keys.
-                                </Typography>
-                            </Typography>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={12}
-                            sm={6}
-                            md={4}
-                            style={{ verticalAlign: "middle" }}
-                        >
-                            <Typography
-                                variant="h6"
-                                component="p"
-                                style={myStyles.textBlock}
-                            >
-                                <PublicIcon style={fiservIcon} />
-                                <strong>Sustainability</strong>
-                                <Typography
-                                    variant="h6"
-                                    component="p"
-                                    style={{
-                                        ...myStyles.listStyle,
-                                        fontWeight: "300",
-                                    }}
-                                >
-                                    Mining cryptocurrencies is an
-                                    energy-intensive process. Bitcoin currently
-                                    consumes 0.55% of global electricity
-                                    production.
-                                </Typography>
-                            </Typography>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={12}
-                            sm={6}
-                            md={4}
-                            style={{ verticalAlign: "middle" }}
-                        >
-                            <Typography
-                                variant="h6"
-                                component="p"
-                                style={myStyles.textBlock}
-                            >
-                                <AccountBalanceIcon style={fiservIcon} />
-                                <strong>Government Regulation</strong>
-
-                                <Typography
-                                    variant="h6"
-                                    component="p"
-                                    style={{
-                                        ...myStyles.listStyle,
-                                        fontWeight: "300",
-                                    }}
-                                >
-                                    The decentralized nature of cryptocurrencies
-                                    means governments do not have centralized
-                                    control, so there are limited regulatory
-                                    safeguards.
-                                </Typography>
-                            </Typography>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={12}
-                            sm={6}
-                            md={4}
-                            style={{ verticalAlign: "middle" }}
-                        >
-                            <Typography
-                                variant="h6"
-                                component="p"
-                                style={myStyles.textBlock}
-                            >
-                                <FaceRetouchingOffIcon style={fiservIcon} />
-                                <strong>Anonymity</strong>
-                                <Typography
-                                    variant="h6"
-                                    component="p"
-                                    style={{
-                                        ...myStyles.listStyle,
-                                        fontWeight: "300",
-                                    }}
-                                >
-                                    The concept of anonymity in the
-                                    cryptocurrency space is tied to its history
-                                    and many crypto users prefer to stay
-                                    anonymous
-                                </Typography>
-                            </Typography>
-                        </Grid>
-                    </Grid>
-                    <Typography variant="h3">Stakeholder Analysis</Typography>
-
-                    <Typography variant="body2" component="p">
-                        We created the following stakeholder analysis to depict
-                        the people and companies who may be affected by the
-                        integration of cryptocurrencies into online banking.
-                    </Typography>
-                    <Typography variant="body2" component="p">
-                        Stakeholders closer to the bottom center are likely to
-                        be more directly impacted, with fewer involved parties on
-                        the outer edges.
-                    </Typography>
+                </Grid>
+                <Grid item xs={12} md={8}>
                     <img
-                        src={Stakeholders}
-                        alt="Stakeholder Anaylsis"
-                        style={{ width: "70%", marginLeft: "15%" }}
-                    />
-                    <Typography
-                        variant="subtitle1"
-                        style={{ width: "100%", textAlign: "center" }}
-                    >
-                        Stakeholder analysis diagram that I created in Miro
-                    </Typography>
-                    <Typography variant="h3">Task Analysis</Typography>
-                    <Typography variant="body2" component="p">
-                        We also thoroughly analyzed <strong>Coinbase</strong> in
-                        a task analysis to understand the current capabilities
-                        of the leading cryptocurrency management platform. We
-                        hoped to dissect the steps users currently take to buy,
-                        sell, share, and monitor cryptocurrencies.
-                    </Typography>
-                    <img
-                        src={coinbase}
-                        alt="task analysis diagram"
+                        src={researchTimeline}
+                        alt="research timeline "
                         style={{
                             width: "100%",
-                            padding: "1rem",
                         }}
-                    ></img>
-                    <Typography
-                        variant="subtitle1"
-                        style={{ width: "100%", textAlign: "center" }}
-                    >
-                        Hierarchical task analysis of Coinbase created by Kyle
-                        Leinart
-                    </Typography>
-                    <Typography variant="h3">
-                        Semi-Structured Interviews
-                    </Typography>
-                    <Grid container item>
-                        <Grid item xs={12}>
-                            <Typography variant="body2" component="p">
-                                We conducted semi-structured interviews with{" "}
-                                <strong>
-                                    crypto users and financial experts{" "}
-                                </strong>{" "}
-                                to better understand current management
-                                practices and attitudes regarding the future of
-                                cryptocurrencies.
+                    />
+                </Grid>
+
+                <Grid
+                    container
+                    item
+                    spacing={3}
+                    alignItems="top"
+                    style={{ padding: "2rem 0" }}
+                    xs={12}
+                    md={8}
+                >
+                    <Grid item>
+                        <Typography variant="h3">
+                            What is the broader context of the cryptocurrency
+                            space?
+                        </Typography>
+                        <Typography variant="body2" component="p">
+                            We began with researching the context for our
+                            problem space, including the history of
+                            cryptocurrencies, existing issues, and important
+                            concepts like blockchain and private keys. Knowing
+                            this background was the foundation for understanding
+                            our target users' goals, needs, and frustrations in
+                            the space.
+                        </Typography>
+                    </Grid>
+                    <Grid container item xs={12} sm={6}>
+                        <Grid item>
+                            <Typography variant="subtitle1" component="em">
+                                History of concerns
+                            </Typography>
+                            <Typography
+                                variant="h4"
+                                component="p"
+                                style={{
+                                    color: myStyles.fiserv.secondary,
+                                    margin: "-.4rem 0 .5rem 0",
+                                }}
+                            >
+                                Literature review
+                            </Typography>
+                            <Typography variant="subtitle2" component="p">
+                                We gathered information from online articles,
+                                research journals, and websites to learn the
+                                basics of cryptocurrencies and identify known
+                                areas of concern.
                             </Typography>
                         </Grid>
                         <Grid
+                            style={{
+                                alignContent: "center",
+                            }}
+                        >
+                            <img
+                                src={litReview}
+                                alt="common crypto concerns "
+                                style={{
+                                    width: "85%",
+                                    maxWidth: "500px",
+                                    display: "flex",
+                                    margin: "1rem auto",
+                                }}
+                            />
+                        </Grid>
+                    </Grid>
+
+                    <Grid container item xs={12} sm={6}>
+                        <Grid item>
+                            <Typography variant="subtitle1" component="em">
+                                Business impact
+                            </Typography>
+                            <Typography
+                                variant="h4"
+                                component="p"
+                                style={{
+                                    color: myStyles.fiserv.secondary,
+                                    margin: "-.4rem 0 .5rem 0",
+                                }}
+                            >
+                                Stakeholder Map
+                            </Typography>
+                            <Typography variant="subtitle2" component="p">
+                                We created a stakeholder analysis to depict the
+                                people and companies who may be affected by the
+                                integration of cryptocurrency technologies.
+                            </Typography>
+                        </Grid>
+                        <Grid
+                            style={{
+                                margin: "auto",
+                            }}
+                        >
+                            <img
+                                src={Stakeholders}
+                                alt="Stakeholder Anaylsis"
+                                style={{
+                                    width: "90%",
+                                    maxWidth: "350px",
+                                    display: "flex",
+                                    justifyContent: "center",
+                                    margin: "auto",
+                                }}
+                            />
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid
+                container
+                alignItems="top"
+                style={{
+                    ...myStyles.gridInformation,
+                    backgroundColor: myStyles.grey.four,
+                }}
+            >
+                <Grid container item xs={12} md={8}>
+                    <Grid>
+                        <Typography variant="h3">
+                            What are the existing technologies for
+                            cryptocurrency management?
+                        </Typography>
+                        <Typography variant="body2" component="p">
+                            We reviewed some of the top cryptocurrency tools to
+                            understand their functionalities. Exploring current
+                            offerings allowed us to investigate users' mental
+                            models and find opportunities for improvement.
+                        </Typography>
+                    </Grid>
+
+                    <Grid
+                        container
+                        item
+                        alignItems="top"
+                        style={{ padding: "2rem 0" }}
+                    >
+                        <Grid
+                            container
                             item
                             xs={12}
                             sm={6}
-                            style={{ paddingRight: "1rem" }}
+                            style={{ padding: "1rem" }}
                         >
-                            <ul>
-                                <Typography variant="list" component="li">
-                                    How do people use cryptocurrency?
+                            <Grid item>
+                                <Typography variant="subtitle1" component="em">
+                                    Current capabilities
                                 </Typography>
-                                <Typography variant="list" component="li">
-                                    What’re people’s thoughts/feelings about
-                                    cryptocurrency as a financial tool?
+                                <Typography
+                                    variant="h4"
+                                    component="p"
+                                    style={{
+                                        color: myStyles.fiserv.secondary,
+                                        margin: "-.4rem 0 .5rem 0",
+                                    }}
+                                >
+                                    Competitive Analysis
                                 </Typography>
-                                <Typography variant="list" component="li">
-                                    How safe is managing cryptocurrency and what
-                                    risks are involved?
+                                <Typography variant="subtitle2" component="p">
+                                    We compared and analyzed capabilities of the
+                                    most popular cryptocurrency management
+                                    platforms to gain insight on their features.
                                 </Typography>
-                            </ul>
+                            </Grid>
+                            <Grid
+                                item
+                                style={{
+                                    margin: "auto",
+                                    alignContent:"top",
+                                    padding:".5rem",
+                                    backgroundColor:"white"
+                                }}
+                            >
+                                <img
+                                    src={comp}
+                                    alt="competitive analysis diagram"
+                                    style={{
+                                        width: "90%",
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        margin: "0 auto",
+                                        
+                                    }}
+                                ></img>
+                            </Grid>
+                        </Grid>
+                        <Grid
+                            container
+                            item
+                            xs={12}
+                            sm={6}
+                            style={{ padding: "1rem" }}
+                        >
+                            <Grid item>
+                                <Typography variant="subtitle1" component="em">
+                                    Current user flows
+                                </Typography>
+                                <Typography
+                                    variant="h4"
+                                    component="p"
+                                    style={{
+                                        color: myStyles.fiserv.secondary,
+                                        margin: "-.4rem 0 .5rem 0",
+                                    }}
+                                >
+                                    Task Analysis
+                                </Typography>
+                                <Typography variant="subtitle2" component="p">
+                                    We analyzed <strong>Coinbase</strong> to
+                                    understand the current capabilities of the
+                                    leading cryptocurrency platform and see the
+                                    interactions it offers.
+                                </Typography>
+                            </Grid>
+                            <Grid
+                                item
+                                style={{
+                                    alignContent: "top",
+                                    padding:".5rem",
+                                    backgroundColor:"white"
+                                }}
+                            >
+                                <img
+                                    src={coinbase}
+                                    alt="task analysis diagram"
+                                    style={{
+                                        width: "100%",
+                                        display: "flex",
+                                        justifyContent: "center",
+                                        margin: "0 auto",
+                                    }}
+                                ></img>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid
+                container
+                alignItems="top"
+                style={{
+                    ...myStyles.gridInformation,
+                }}
+            >
+                <Grid container item xs={12} md={8}>
+                    <Typography variant="h3" >
+                        How do people feel about cryptocurrencies and online
+                        banking?
+                    </Typography>
+                    <Typography variant="body2" component="p">
+                        We reached out to crypto users of various skill level,
+                        financial experts, and online banking consumers to
+                        understand current financial management practices and
+                        attitudes toward the future of cryptocurrencies.
+                    </Typography>
+                    <Grid container item>
+                        <Grid
+                            container
+                            xs={11}
+                            style={{ padding: ".5rem 0", margin: "auto" }}
+                        >
+                            <Grid
+                                item
+                                xs={12}
+                                sm={6}
+                                style={{
+                                    display: "grid",
+                                    justifyContent: "flex-end",
+                                }}
+                            >
+                                <img
+                                    src={ints}
+                                    alt="Interview numbers"
+                                    style={{ width: "100%", maxWidth: "600px" }}
+                                />
+                            </Grid>
+                            <Grid item xs={12} sm={6}>
+                                <img
+                                    src={bigNumbers}
+                                    alt="Survey and interview numbers"
+                                    style={{ width: "100%", maxWidth: "600px" }}
+                                />
+                            </Grid>
                         </Grid>
 
-                        <Grid item xs={12} sm={6}>
-                            <img
-                                src={interview1}
-                                alt="Interview with professor"
-                                style={{ width: "90%", marginLeft: "5%" }}
-                            />
-                            <Typography
-                                variant="subtitle1"
-                                style={{
-                                    width: "100%",
-                                    textAlign: "center",
-                                    marginBottom: "2rem",
-                                }}
-                            >
-                                Interview with Georgia Tech finance professor
-                            </Typography>
+                        <Grid
+                            container
+                            item
+                            style={{
+                                display: "flex",
+                                justifyContent: "center",
+                                alignItems: "center",
+                                padding: "2rem 0",
+                            }}
+                        >
+                            <Grid item xs={12}>
+                                <img
+                                    src={interview1}
+                                    alt="Interview with professor"
+                                    style={{ width: "80%", marginLeft: "10%" }}
+                                />
+                                <Typography
+                                    variant="subtitle1"
+                                    style={{
+                                        width: "100%",
+                                        textAlign: "center",
+                                        marginBottom: "2rem",
+                                    }}
+                                >
+                                    Interview with Georgia Tech finance
+                                    professor
+                                </Typography>
+                            </Grid>
                         </Grid>
                         <Grid item xs={12}>
                             <Typography variant="body2" component="p">
-                                We conducted 30-60 minute interviews with{" "}
-                                <strong>10 participants</strong> — 8
-                                cryptocurrency users and 2 financial experts.
-                                From these interviews, we compiled over{" "}
-                                <strong>250+ notes</strong> and synthesized our
-                                findings through affinity mapping.
-                            </Typography>
-                            <img
-                                src={affintiy}
-                                alt="map of sticky notes"
-                                style={{ width: "90%", marginLeft: "5%" }}
-                            />
-                            <Typography
-                                variant="subtitle1"
-                                style={{ width: "100%", textAlign: "center" }}
-                            >
-                                Affinity map of interview notes
+                                We synthesized all the data from our interviews
+                                and surveys and organized them through affinity
+                                mapping. We used the themes from our affinity
+                                map findings to come up with design
+                                implications.
                             </Typography>
                         </Grid>
                     </Grid>
-                    <Typography variant="h3">Survey</Typography>
-                    <Grid container item style={{ justifyContent: "center" }}>
-                        <Grid item xs={12}>
-                            <Typography variant="body2" component="p">
-                                We created and distributed a survey to
-                                understand{" "}
-                                <strong>
-                                    why non users don’t use cryptocurrencies{" "}
-                                </strong>{" "}
-                                , how current users manage cryptocurrency, and
-                                investigate
-                                <strong>
-                                    {" "}
-                                    the potential for including crypto tools in
-                                    online banking services.
-                                </strong>
-                            </Typography>
-                        </Grid>
-                        <Grid item xs={12} sm={6}>
-                            <ul>
-                                <Typography variant="list" component="li">
-                                    <strong>72 responses</strong> were received
-                                    through <strong>Qualtrics</strong> surveys
-                                    distributed over social media and online
-                                    groups
-                                </Typography>
-                            </ul>
-                        </Grid>
-                        <Grid item xs={12} sm={6}>
-                            <ul>
-                                <Typography variant="list" component="li">
-                                    <strong>52 responses</strong> were received
-                                    through <strong>User Zoom</strong> surveys
-                                    distributed Fiserv
-                                </Typography>
-                            </ul>
-                        </Grid>
-                        <Grid item xs={12} sm={8} lg={7}>
-                            <img
-                                src={survey}
-                                alt="survey graph"
-                                style={{
-                                    width: "100%",
-                                    padding: "1rem",
-                                }}
-                            ></img>
-                            <Typography
-                                variant="subtitle1"
-                                style={{
-                                    width: "100%",
-                                    textAlign: "center",
-                                    marginBottom: "2rem",
-                                }}
-                            >
-                                Example survey result for ‘It would be easier to
-                                manage cryptocurrency if it was available
-                                through your online banking'
-                            </Typography>
-                        </Grid>
-                        <Grid>
-                            <Typography variant="body2" component="p">
-                                We also conducted{" "}
-                                <strong>qualitative coding</strong> on the short
-                                answer responses of non-crypto users to better
-                                understand their attitudes. The main finding was
-                                that a <strong>lack of knowledge</strong> was
-                                the primary reason they did not own any
-                                cryptocurrencies.
-                            </Typography>
-                        </Grid>
+                </Grid>
+
+                <img
+                    src={affintiy}
+                    alt="map of sticky notes"
+                    style={{ width: "90%", marginLeft: "5%" }}
+                />
+                <Grid
+                    container
+                    spacing={1}
+                    alignItems="top"
+                    style={{
+                        ...myStyles.gridInformation,
+                    }}
+                >
+                    <Grid item xs={12} md={8}>
+                        <Typography variant="h3">Research Findings</Typography>{" "}
                     </Grid>
-                    <Typography variant="h3">Research Findings</Typography>
-                    <Grid container spacing={3} alignItems="top">
+
+                    <Grid
+                        container
+                        item
+                        spacing={3}
+                        alignItems="top"
+                        xs={12}
+                        md={8}
+                    >
                         <Grid
                             item
                             xs={12}
@@ -659,7 +588,7 @@ const FiservDetails = () => {
                             md={4}
                             style={{ verticalAlign: "middle" }}
                         >
-                            <Typography variant="h4" component="p">
+                            <Typography variant="h5" component="p">
                                 <strong
                                     style={{ color: myStyles.fiserv.primary }}
                                 >
@@ -677,7 +606,7 @@ const FiservDetails = () => {
                             md={4}
                             style={{ verticalAlign: "middle" }}
                         >
-                            <Typography variant="h4" component="p">
+                            <Typography variant="h5" component="p">
                                 <strong
                                     style={{ color: myStyles.fiserv.primary }}
                                 >
@@ -695,7 +624,7 @@ const FiservDetails = () => {
                             md={4}
                             style={{ verticalAlign: "middle" }}
                         >
-                            <Typography variant="h4" component="p">
+                            <Typography variant="h5" component="p">
                                 <strong
                                     style={{ color: myStyles.fiserv.primary }}
                                 >
@@ -713,7 +642,7 @@ const FiservDetails = () => {
                             md={4}
                             style={{ verticalAlign: "middle" }}
                         >
-                            <Typography variant="h4" component="p">
+                            <Typography variant="h5" component="p">
                                 <strong
                                     style={{ color: myStyles.fiserv.primary }}
                                 >
@@ -732,7 +661,7 @@ const FiservDetails = () => {
                             md={4}
                             style={{ verticalAlign: "middle" }}
                         >
-                            <Typography variant="h4" component="p">
+                            <Typography variant="h5" component="p">
                                 <strong
                                     style={{ color: myStyles.fiserv.primary }}
                                 >
@@ -740,8 +669,8 @@ const FiservDetails = () => {
                                 </strong>
                             </Typography>
                             <Typography variant="body2" component="p">
-                                Blockchain is seen as the future for
-                                transactions
+                                Crypto owners and non-owners see value in
+                                managing crypto within their online banking
                             </Typography>
                         </Grid>
                         <Grid
@@ -751,48 +680,11 @@ const FiservDetails = () => {
                             md={4}
                             style={{ verticalAlign: "middle" }}
                         >
-                            <Typography variant="h4" component="p">
+                            <Typography variant="h5" component="p">
                                 <strong
                                     style={{ color: myStyles.fiserv.primary }}
                                 >
                                     06.
-                                </strong>
-                            </Typography>
-                            <Typography variant="body2" component="p">
-                                The future of cryptocurrency is unclear
-                            </Typography>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={12}
-                            sm={6}
-                            md={4}
-                            style={{ verticalAlign: "middle" }}
-                        >
-                            <Typography variant="h4" component="p">
-                                <strong
-                                    style={{ color: myStyles.fiserv.primary }}
-                                >
-                                    07.
-                                </strong>
-                            </Typography>
-                            <Typography variant="body2" component="p">
-                                Cryptocurrency owners are open to managing
-                                cryptocurrency within their online banking
-                            </Typography>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={12}
-                            sm={6}
-                            md={4}
-                            style={{ verticalAlign: "middle" }}
-                        >
-                            <Typography variant="h4" component="p">
-                                <strong
-                                    style={{ color: myStyles.fiserv.primary }}
-                                >
-                                    08.
                                 </strong>
                             </Typography>
                             <Typography variant="body2" component="p">
@@ -801,17 +693,19 @@ const FiservDetails = () => {
                             </Typography>
                         </Grid>
                     </Grid>
+                    <Grid container item xs={12} md={8}>
+                        <SectionHeader
+                            color={myStyles.fiserv.primary}
+                            qual
+                            header={"Defining User Needs"}
+                        />
 
-                    <SectionHeader
-                        color={myStyles.fiserv.primary}
-                        qual
-                        header={"Defining User Needs"}
-                    />
-
-                    <Typography variant="body2" component="p">
-                        From our user research, we were able to define user
-                        needs and design implications for our future concepts.
-                    </Typography>
+                        <Typography variant="body2" component="p">
+                            From our primary and secondary research, we were
+                            able to define user needs and design implications
+                            for our future concepts.
+                        </Typography>
+                    </Grid>
                 </Grid>
             </Grid>
             <Grid
@@ -824,144 +718,174 @@ const FiservDetails = () => {
                 }}
             >
                 <Grid
+                    container
                     item
                     xs={12}
-                    sm={5}
-                    md={3}
+                    md={8}
                     style={{
                         verticalAlign: "middle",
                         backgroundColor: "white",
                         margin: ".5rem",
-                        padding: "1rem 2rem",
+                        padding: "0 2rem",
                         borderRadius: "6px",
                     }}
                 >
-                    <Typography variant="h5" component="p">
-                        <strong style={{ color: myStyles.fiserv.secondary }}>
+                    <Grid item xs={6}>
+                        <Typography
+                            variant="h4"
+                            component="p"
+                            style={{ color: myStyles.fiserv.secondary }}
+                        >
                             Volatility Awareness
-                        </strong>
-                    </Typography>
-                    <Typography component="p">
-                        Make very clear the risks associated with such purchases
-                    </Typography>
-                    <Typography component="p" style={{ marginTop: "1rem" }}>
-                        <em>“In the short term, volatility is a major risk”</em>
-                    </Typography>
+                        </Typography>
+                        <Typography component="p">
+                            Provide relevant purchasing information to help
+                            manage risk
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Quote
+                            quote={
+                                "In the short term, volatility is a major risk"
+                            }
+                        />
+                    </Grid>
                 </Grid>
-
                 <Grid
+                    container
                     item
                     xs={12}
-                    sm={5}
-                    md={3}
+                    md={8}
                     style={{
                         verticalAlign: "middle",
                         backgroundColor: "white",
                         margin: ".5rem",
+                        padding: "0 2rem",
                         borderRadius: "6px",
-                        padding: "1rem 2rem",
                     }}
                 >
-                    <Typography variant="h5" component="p">
-                        <strong style={{ color: myStyles.fiserv.secondary }}>
+                    <Grid item xs={6}>
+                        <Typography
+                            variant="h4"
+                            component="p"
+                            style={{ color: myStyles.fiserv.secondary }}
+                        >
                             Easy Management
-                        </strong>
-                    </Typography>
-                    <Typography component="p">
-                        Useful, intuitive management tools they can navigate
-                        with ease
-                    </Typography>
-                    <Typography component="p" style={{ marginTop: "1rem" }}>
-                        <em>
-                            “The bad UI on their online banking makes it really
-                            annoying to use their service”{" "}
-                        </em>
-                    </Typography>
+                        </Typography>
+                        <Typography component="p">
+                            Must have useful, intuitive management tools users
+                            can navigate with ease
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Quote
+                            quote={
+                                "The bad UI on their online banking makes it really annoying to use their service"
+                            }
+                        />
+                    </Grid>
                 </Grid>
                 <Grid
+                    container
                     item
                     xs={12}
-                    sm={5}
-                    md={3}
+                    md={8}
                     style={{
                         verticalAlign: "middle",
                         backgroundColor: "white",
                         margin: ".5rem",
+                        padding: "0 2rem",
                         borderRadius: "6px",
-                        padding: "1rem 2rem",
                     }}
                 >
-                    <Typography variant="h5" component="p">
-                        <strong style={{ color: myStyles.fiserv.secondary }}>
-                            Access to Top Coins{" "}
-                        </strong>
-                    </Typography>
-                    <Typography component="p">
-                        Should offer a selection of the most popular
-                        cryptocurrencies.
-                    </Typography>
-                    <Typography component="p" style={{ marginTop: "1rem" }}>
-                        <em>"Bank could start with the big three cryptos"</em>
-                    </Typography>
+                    <Grid item xs={6}>
+                        <Typography
+                            variant="h4"
+                            component="p"
+                            style={{ color: myStyles.fiserv.secondary }}
+                        >
+                            Access to Top Coins
+                        </Typography>
+                        <Typography component="p">
+                            Should offer a selection of the most popular
+                            cryptocurrencies
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Quote
+                            quote={
+                                "Bank could start with the big three cryptos"
+                            }
+                        />
+                    </Grid>
                 </Grid>
                 <Grid
+                    container
                     item
                     xs={12}
-                    sm={5}
-                    md={4}
+                    md={8}
                     style={{
                         verticalAlign: "middle",
                         backgroundColor: "white",
                         margin: ".5rem",
+                        padding: "0 2rem",
                         borderRadius: "6px",
-                        padding: "1rem 2rem",
                     }}
                 >
-                    <Typography variant="h5" component="p">
-                        <strong style={{ color: myStyles.fiserv.secondary }}>
-                            Knowledge and Understanding{" "}
-                        </strong>
-                    </Typography>
-                    <Typography component="p">
-                        Should support educational resources for users to make
-                        informed decisions.
-                    </Typography>
-                    <Typography component="p" style={{ marginTop: "1rem" }}>
-                        <em>
-                            “There should be an educational class option for
-                            crypto like the first time homeowner class I had to
-                            attend”{" "}
-                        </em>
-                    </Typography>
+                    <Grid item xs={6}>
+                        <Typography
+                            variant="h4"
+                            component="p"
+                            style={{ color: myStyles.fiserv.secondary }}
+                        >
+                            Trust and Safety
+                        </Typography>
+                        <Typography component="p">
+                            The system must have clear documentation, error
+                            prevention text, and security features
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Quote
+                            quote={
+                                "When transferring from one wallet to another, if you miss the letters you could lose all your coins"
+                            }
+                        />
+                    </Grid>
                 </Grid>
                 <Grid
+                    container
                     item
                     xs={12}
-                    sm={5}
-                    md={4}
+                    md={8}
                     style={{
                         verticalAlign: "middle",
                         backgroundColor: "white",
                         margin: ".5rem",
+                        padding: "0 2rem",
                         borderRadius: "6px",
-                        padding: "1rem 2rem",
                     }}
                 >
-                    <Typography variant="h5" component="p">
-                        <strong style={{ color: myStyles.fiserv.secondary }}>
-                            Safety
-                        </strong>
-                    </Typography>
-                    <Typography component="p">
-                        The system must have clear documentation, error
-                        prevention text, and security features.{" "}
-                    </Typography>
-                    <Typography component="p" style={{ marginTop: "1rem" }}>
-                        <em>
-                            “When transferring from one wallet to another, if
-                            you miss the letters you could lose all your coins”{" "}
-                        </em>
-                    </Typography>
+                    <Grid item xs={6}>
+                        <Typography
+                            variant="h4"
+                            component="p"
+                            style={{ color: myStyles.fiserv.secondary }}
+                        >
+                            Knowledge and Understanding
+                        </Typography>
+                        <Typography component="p">
+                            Should support educational resources for users to
+                            make informed decisions
+                        </Typography>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Quote
+                            quote={
+                                "There should be an educational class option for crypto like the first time homeowner class I had to attend"
+                            }
+                        />
+                    </Grid>
                 </Grid>
             </Grid>
             <Grid
@@ -978,8 +902,11 @@ const FiservDetails = () => {
                         <Typography variant="body2" component="p">
                             We created a set of personas for potential users of
                             varying levels of expertise with cryptocurrencies to
-                            contextualize our interview data and promote
-                            empathy.
+                            contextualize our user research data. This helped in{" "}
+                            <strong>promoting empathy</strong> with the end user
+                            defining the{" "}
+                            <strong> goals and frustrations</strong> so we could
+                            identify core areas to address.
                         </Typography>
                     </Grid>
 
@@ -987,17 +914,17 @@ const FiservDetails = () => {
                         <img
                             src={persona1}
                             alt="Persona of amateur crypto user"
-                            style={{ width: "100%", padding: "0 1rem" }}
+                            style={{ width: "100%", padding: "0 .25rem" }}
                         ></img>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                         <img
                             src={persona2}
                             alt="Persona of amateur crypto user"
-                            style={{ width: "100%", padding: "0 1rem" }}
+                            style={{ width: "100%", padding: "0 .25rem" }}
                         ></img>
                     </Grid>
-                    <Grid xs={12}>
+                    <Grid xs={12} style={{margin: "10vh 0"}}>
                         <Typography variant="h3">Storyboards</Typography>
                         <Typography variant="body2" component="p">
                             We designed a couple of storyboards to illustrate
@@ -1006,85 +933,129 @@ const FiservDetails = () => {
                             come up with the narrative while Vidushi illustrated
                             each panel.
                         </Typography>
-                        <img
-                            src={storyboard1}
-                            alt="storyboard"
-                            style={{ width: "80%", marginLeft: "10%" }}
-                        ></img>
                         <Typography
-                            variant="subtitle1"
-                            style={{ width: "100%", textAlign: "center" }}
+                            variant="h4"
+                            component="p"
+                            style={{ color: myStyles.fiserv.secondary }}
+                        >
+                            Storyboard 1: Instant global transfers
+                        </Typography>
+                        <Typography
+                            variant="subtitle2"
+                            style={{ width: "100%" }}
                         >
                             Storyboard for user leveraging cryptocurrency to
                             send and receive transactions across the globe
                             quickly
                         </Typography>
                         <img
-                            src={storyboard2}
+                            src={storyboard1}
                             alt="storyboard"
-                            style={{
-                                width: "80%",
-                                marginLeft: "10%",
-                                marginTop: "3rem",
-                            }}
+                            style={{ width: "100%", maxWidth: "700px" }}
                         ></img>
+
                         <Typography
-                            variant="subtitle1"
-                            style={{ width: "100%", textAlign: "center" }}
+                            variant="h4"
+                            component="p"
+                            style={{ color: myStyles.fiserv.secondary }}
+                        >
+                            Storyboard 2: Built in knowledge building
+                        </Typography>
+                        <Typography
+                            variant="subtitle2"
+                            style={{ width: "100%" }}
                         >
                             Storyboard for new user learning about
                             cryptocurrency through their online banking
                         </Typography>
+                        <img
+                            src={storyboard2}
+                            alt="storyboard"
+                            style={{
+                                width: "100%",
+                                maxWidth: "700px"
+                            }}
+                        ></img>
                     </Grid>
+                </Grid>
+            </Grid>
+            <Grid
+                container
+                alignItems="top"
+                style={{
+                    ...myStyles.gridInformation,
+                    backgroundColor: myStyles.grey.four,
+                }}
+            >
+                <Grid container item xs={12} md={8}>
                     <SectionHeader
                         color={myStyles.fiserv.primary}
                         qual
                         header={"Design and Iteration"}
                     />
-                    <Typography variant="h3">Sketched Concepts</Typography>
-                    <Grid container spacing={1}>
-                        <Grid item xs={12} sm={8}>
-                            <Typography variant="body2" component="p">
-                                Given our research findings, we came up with
-                                three preliminary sketched concepts that tackled
-                                our problem space. Our goal with these sketches
-                                was to find out the degree of control users
-                                would want over their cryptocurrencies in their
-                                online banking.
-                            </Typography>
-                            <ol>
-                                <Typography variant="list" component="li">
-                                    Crypto on the homepage with management tools
-                                </Typography>
-                                <Typography variant="list" component="li">
-                                    Integrated navigation with educational
-                                    component
-                                </Typography>
-                                <Typography variant="list" component="li">
-                                    Externally linked crypto accounts
-                                </Typography>
-                            </ol>
-                        </Grid>
-                        <Grid item xs={12} sm={4}>
-                            <img
-                                src={sketches}
-                                alt="sketches"
-                                style={{
-                                    width: "80%",
-                                    marginLeft: "10%",
-                                }}
-                            ></img>
-                        </Grid>
+                    <Grid item>
+                        <img
+                            src={designTimeline}
+                            alt="design timeline "
+                            style={{
+                                width: "100%",
+                                margin:"2rem 0"
+                            }}
+                        />
                     </Grid>
+                </Grid>
+                <Grid item xs={12} md={8}>
+                    <Typography variant="h3">Sketched Concepts</Typography>
+                </Grid>
+                <Grid container spacing={1} xs={12} md={8}>
+                    <Grid item sm={8}>
+                        <Typography variant="body2" component="p">
+                            Given our research findings, we came up with three
+                            preliminary sketched concepts that tackled our
+                            problem space. Our goal with these sketches was to
+                            find out the degree of control users would want over
+                            their cryptocurrencies in their online banking.
+                        </Typography>
+                        <ol>
+                            <Typography variant="list" component="li">
+                                Crypto on the homepage with management tools
+                            </Typography>
+                            <Typography variant="list" component="li">
+                                Integrated navigation with educational component
+                            </Typography>
+                            <Typography variant="list" component="li">
+                                Externally linked crypto accounts
+                            </Typography>
+                        </ol>
+                    </Grid>
+                    <Grid item xs={12} sm={4}>
+                        <img
+                            src={sketches}
+                            alt="sketches"
+                            style={{
+                                width: "80%",
+                                marginLeft: "10%",
+                            }}
+                        ></img>
+                    </Grid>
+                </Grid>
+            </Grid>
+            <Grid
+                container
+                alignItems="top"
+                style={{
+                    ...myStyles.gridInformation,
+                }}
+            >
+                <Grid xs={12} md={8}>
                     <Typography variant="h3">
-                        Initial Feedback Session
+                        Feedback Session #1
                     </Typography>
                     <Typography variant="body2" component="p">
                         We held <strong>think-aloud</strong> sessions with 4
-                        participants using
-                        <strong> mid-fidelity paper prototypes</strong> so they
-                        would focus on the ideas behind each concept and not the
-                        look and feel. We hoped to test the{" "}
+                        participants using <strong>paper prototypes</strong> so
+                        they would focus on the ideas behind each concept and
+                        not the look and feel. We hoped to test the{" "}
                         <strong>
                             perceived benefits, feature awareness and intention
                             of use
@@ -1226,7 +1197,6 @@ const FiservDetails = () => {
             </Grid>
             <Grid
                 container
-                spacing={1}
                 alignItems="top"
                 style={{
                     ...myStyles.gridInformation,
@@ -1252,15 +1222,9 @@ const FiservDetails = () => {
                         alt="wireframes"
                         style={{ width: "100%" }}
                     ></img>
-                    <Typography
-                        variant="subtitle1"
-                        style={{ width: "100%", textAlign: "center" }}
-                    >
-                        Example wireframes of user flows
-                    </Typography>
                 </Grid>
                 <Grid item xs={12} md={8}>
-                    <Typography variant="h3">Wireframe User Testing</Typography>
+                    <Typography variant="h3">Feedback Session #2</Typography>
                     <Typography variant="body2" component="p">
                         For our prototype, we conducted{" "}
                         <strong>
@@ -1310,7 +1274,6 @@ const FiservDetails = () => {
             </Grid>
             <Grid
                 container
-                spacing={1}
                 alignItems="top"
                 style={{
                     ...myStyles.gridInformation,
@@ -1345,18 +1308,11 @@ const FiservDetails = () => {
                         alt="Visual design system"
                         style={{ width: "100%", margin: "1rem 0" }}
                     ></img>
-                    <Typography
-                        variant="subtitle1"
-                        style={{ width: "100%", textAlign: "center" }}
-                    >
-                        Visual design system I created
-                    </Typography>
                     <Grid
                         container
                         item
                         alignItems="top"
                         style={{
-                            padding: "1rem",
                             justifyContent: "center",
                         }}
                     >
@@ -1369,7 +1325,7 @@ const FiservDetails = () => {
                                 borderRadius: "6px",
                             }}
                         >
-                            <Typography variant="h5" component="p">
+                            <Typography variant="h4" component="p">
                                 <strong
                                     style={{ color: myStyles.fiserv.secondary }}
                                 >
@@ -1393,7 +1349,7 @@ const FiservDetails = () => {
                                 borderRadius: "6px",
                             }}
                         >
-                            <Typography variant="h5" component="p">
+                            <Typography variant="h4" component="p">
                                 <strong
                                     style={{ color: myStyles.fiserv.secondary }}
                                 >
@@ -1450,7 +1406,7 @@ const FiservDetails = () => {
                             high-fidelity prototype.
                         </Typography>
                         <Typography
-                            variant="h3"
+                            variant="h4"
                             style={{
                                 color: myStyles.fiserv.secondary,
                             }}
@@ -1458,7 +1414,7 @@ const FiservDetails = () => {
                             Onboarding Tutorial + Floating Action Button
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} style={{ marginTop: "-2rem" }}>
+                    <Grid item xs={12} style={{ marginTop: "-1rem" }}>
                         <ul>
                             <Typography variant="list" component="li">
                                 Onboarding callouts addressed suggestions from
@@ -1483,7 +1439,10 @@ const FiservDetails = () => {
                         />
                     </Grid>
                     <Grid item xs={12}>
-                        <Typography variant="h3">
+                        <Typography variant="h3"
+                        style={{
+                            color: myStyles.fiserv.secondary,
+                        }}>
                             Educational Resources
                         </Typography>
                     </Grid>
@@ -1492,7 +1451,7 @@ const FiservDetails = () => {
                         item
                         xs={12}
                         sm={6}
-                        style={{ paddingRight: "1rem", marginTop: "-2rem" }}
+                        style={{ paddingRight: "1rem", marginTop: "-1rem" }}
                     >
                         <ul>
                             <Typography variant="list" component="li">
@@ -1524,20 +1483,27 @@ const FiservDetails = () => {
                     </Grid>
 
                     <Grid item xs={12}>
-                        <Typography variant="h3">
-                        New User Buying Crypto
+                        <Typography variant="h4" style={{
+                                color: myStyles.fiserv.secondary,
+                            }}
+                            >
+                            New User Buying Crypto
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} style={{ marginTop: "-2rem" }}>
+                    <Grid item xs={12} style={{ marginTop: "-1rem" }}>
                         <ul>
                             <Typography variant="list" component="li">
-                            Following our initial research finding, all the top coins are available for purchase with past history to support decision making.
+                                Following our initial research finding, all the
+                                top coins are available for purchase with past
+                                history to support decision making.
                             </Typography>
                             <Typography variant="list" component="li">
-                            The Crypto landing page shows the empty account balance and encourages users to start buying.
+                                The Crypto landing page shows the empty account
+                                balance and encourages users to start buying.
                             </Typography>
                             <Typography variant="list" component="li">
-                            We added a summary review page as a safeguard measure before purchase.
+                                We added a summary review page as a safeguard
+                                measure before purchase.
                             </Typography>
                         </ul>
                     </Grid>
@@ -1553,16 +1519,22 @@ const FiservDetails = () => {
                     </Grid>
 
                     <Grid item xs={12}>
-                        <Typography variant="h3">Selling Crypto</Typography>
+                        <Typography variant="h3" style={{
+                                color: myStyles.fiserv.secondary,
+                            }}>Selling Crypto</Typography>
                     </Grid>
 
-                    <Grid item xs={12} style={{ marginTop: "-2rem" }}>
+                    <Grid item xs={12} style={{ marginTop: "-1rem" }}>
                         <ul>
                             <Typography variant="list" component="li">
-                            Our research found that users saw immediate benefits of directly connecting their crypto wallets to their bank accounts for ease of management
+                                Our research found that users saw immediate
+                                benefits of directly connecting their crypto
+                                wallets to their bank accounts for ease of
+                                management
                             </Typography>
                             <Typography variant="list" component="li">
-                            This flow closely mirrors the buying workflow to maintain standards across the product
+                                This flow closely mirrors the buying workflow to
+                                maintain standards across the product
                             </Typography>
                         </ul>
                     </Grid>
@@ -1577,18 +1549,27 @@ const FiservDetails = () => {
                         />
                     </Grid>
                     <Grid item xs={12}>
-                        <Typography variant="h3">
+                        <Typography variant="h4" style={{
+                                color: myStyles.fiserv.secondary,
+                            }}>
                             Converting One Crypto to Another
                         </Typography>
                     </Grid>
 
-                    <Grid item xs={12} style={{ marginTop: "-2rem" }}>
+                    <Grid item xs={12} style={{ marginTop: "-1rem" }}>
                         <ul>
                             <Typography variant="list" component="li">
-                            Our first feedback session made it clear that users felt full control over their crypto accounts included having all possible transaction functionality, including conversion between coins.
+                                Our first feedback session made it clear that
+                                users felt full control over their crypto
+                                accounts included having all possible
+                                transaction functionality, including conversion
+                                between coins.
                             </Typography>
                             <Typography variant="list" component="li">
-                            In our wireframe session, there was some confusion over a conversion symbol to switch between the cryptocurrencies, so we eliminated it in the final design.
+                                In our wireframe session, there was some
+                                confusion over a conversion symbol to switch
+                                between the cryptocurrencies, so we eliminated
+                                it in the final design.
                             </Typography>
                         </ul>
                     </Grid>
@@ -1603,17 +1584,22 @@ const FiservDetails = () => {
                         />
                     </Grid>
                     <Grid item xs={12}>
-                        <Typography variant="h3">
+                        <Typography variant="h4" style={{
+                                color: myStyles.fiserv.secondary,
+                            }}>
                             Sending Crypto to Contacts
                         </Typography>
                     </Grid>
-                    <Grid item xs={12} style={{ marginTop: "-2rem" }}>
+                    <Grid item xs={12} style={{ marginTop: "-1rem" }}>
                         <ul>
                             <Typography variant="list" component="li">
-                            QR code sharing was a feature that came up in our initial research that users expressed was a useful feature they wanted to see.
+                                QR code sharing was a feature that came up in
+                                our initial research that users expressed was a
+                                useful feature they wanted to see.
                             </Typography>
                             <Typography variant="list" component="li">
-                            This flow also mirrors the buy/sell flows with similar input fields and feedback pages.
+                                This flow also mirrors the buy/sell flows with
+                                similar input fields and feedback pages.
                             </Typography>
                         </ul>
                     </Grid>
@@ -1646,27 +1632,22 @@ const FiservDetails = () => {
                         container
                         item
                         xs={12}
-                        style={{ justifyContent: "center", padding: ".5rem" }}
+                        style={{ justifyContent: "center" }}
                     >
                         <Grid
                             item
                             xs={12}
-                            sm={5}
+                            sm={6}
                             style={{
                                 verticalAlign: "middle",
-                                borderColor: myStyles.grey.three,
-                                borderStyle: "solid",
-                                borderWidth: "thin",
-                                borderRadius: "6px",
-                                padding: "1rem 2rem",
-                                margin: "1rem",
+                                padding: "1rem",
                             }}
                         >
-                            <Typography variant="h5" component="p">
+                            <Typography variant="h4" component="p">
                                 <strong
                                     style={{ color: myStyles.fiserv.secondary }}
                                 >
-                                    Task-Based User Evaluation
+                                    Usability Test
                                 </strong>
                             </Typography>
                             <Typography component="p">
@@ -1697,18 +1678,13 @@ const FiservDetails = () => {
                         <Grid
                             item
                             xs={12}
-                            sm={5}
+                            sm={6}
                             style={{
                                 verticalAlign: "middle",
-                                borderColor: myStyles.grey.three,
-                                borderStyle: "solid",
-                                borderWidth: "thin",
-                                borderRadius: "6px",
-                                padding: "1rem 2rem",
-                                margin: "1rem",
+                                padding: "1rem",
                             }}
                         >
-                            <Typography variant="h5" component="p">
+                            <Typography variant="h4" component="p">
                                 <strong
                                     style={{ color: myStyles.fiserv.secondary }}
                                 >
@@ -1743,10 +1719,8 @@ const FiservDetails = () => {
                     </Grid>
                 </Grid>
             </Grid>
-
             <Grid
                 container
-                spacing={1}
                 alignItems="top"
                 style={{
                     ...myStyles.gridInformation,
@@ -1785,6 +1759,7 @@ const FiservDetails = () => {
                     </ul>
                 </Grid>
             </Grid>
+
             <Grid
                 container
                 style={{

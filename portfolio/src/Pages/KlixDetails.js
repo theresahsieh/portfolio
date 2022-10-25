@@ -131,9 +131,8 @@ const KlixDetails = () => {
                         outshined how I felt about programming.
                     </Typography>
                     <Typography variant="body2" component="p">
-                        This work shows how I approached the UCD
-                        process for the first time.
-                        
+                        This work shows how I approached the UCD process for the
+                        first time.
                         {/* , but now that I have matured as an HCI
                         practitioner and am an instructor for this very same
                         class,{" "}
@@ -157,15 +156,12 @@ const KlixDetails = () => {
                         targeted by this type of aggressive behavior.
                     </Typography>
                     <Typography
-                        variant="h5"
-                        component="p"
+                        variant="h4"
+                        component="em"
                         style={{ ...myStyles.textBlock, marginLeft: "2.5rem" }}
                     >
-                        <em>
-                            How might we help video gamers build safe
-                            communities and connect with each other to play
-                            online?
-                        </em>
+                        How might we help video gamers build safe communities
+                        and connect with each other to play online?
                     </Typography>
                 </Grid>
                 <Grid container item xs={12} md={8}>

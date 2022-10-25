@@ -6,7 +6,7 @@ const BasicInfo = (props) => {
     return (
         <Grid container style={{padding:"4px"}}>
             <Grid item xs={6} sm={3} style={{ marginTop: "2rem" }}>
-                <Typography variant="h5" component="h3" style={headingStyle}>
+                <Typography variant="h4" component="h3" style={headingStyle}>
                     Tools
                 </Typography>
                 {props.tools.map((value) => (
@@ -16,7 +16,7 @@ const BasicInfo = (props) => {
                 ))}
             </Grid>
             <Grid item xs={6} sm={3} style={{ marginTop: "2rem" }}>
-                <Typography variant="h5" component="h3" style={headingStyle}>
+                <Typography variant="h4" component="h3" style={headingStyle}>
                     Team
                 </Typography>
                 <Typography variant="subtitle2" component="p">
@@ -29,7 +29,7 @@ const BasicInfo = (props) => {
                 ))}
             </Grid>
             <Grid item xs={12} sm={6} style={{ marginTop: "2rem" }}>
-                <Typography variant="h5" component="h3" style={headingStyle}>
+                <Typography variant="h4" component="h3" style={headingStyle}>
                     My Role
                 </Typography>
                 <Typography variant="subtitle2" component="p">
@@ -42,13 +42,13 @@ const BasicInfo = (props) => {
                 >
                     <strong>Research — </strong> {props.research}
                 </Typography>
-                <Typography
+                {props.dev && <Typography
                     variant="subtitle2"
                     component="p"
                     style={{ marginTop: "1rem" }}
                 >
                     <strong>Programming — </strong> {props.dev}
-                </Typography>
+                </Typography>}
             </Grid>
         </Grid>
     );

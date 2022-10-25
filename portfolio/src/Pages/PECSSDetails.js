@@ -265,14 +265,12 @@ const PECSSDetails = () => {
                         sessions and homework assignments.
                     </Typography>
                     <Typography
-                        variant="body2"
-                        component="p"
+                        variant="h4"
+                        component="em"
                         style={{ ...myStyles.textBlock, marginLeft: "2.5rem" }}
                     >
-                        <em>
-                            How might we collect, track, and visualize data to
-                            improve the efficacy of PE therapy?
-                        </em>
+                        How might we collect, track, and visualize data to
+                        improve the efficacy of PE therapy?
                         {/* The efficacy of PE therapy can be hindered by its
                             reliance on self-reported data and clinician
                             intuition. The information collected from patients
@@ -461,17 +459,16 @@ const PECSSDetails = () => {
                             that can help clinicians monitor their patients'
                             care and inform in-person sessions It provides
                             clinicians access to treatment data collected by
-                            patients outside of therapy sessions
-                            including homework completion, questionnaire
-                            results, and additional device information relating
-                            to their homework assignments. 
-                            </Typography>
-                            <Typography variant="body2" component="p">
-                            Avoidance behaviors
-                            in PTSD patients are very common, so having
-                            objective data that pinpoints areas for improvement
-                            aids the clinician in identifying how to support
-                            their patients.
+                            patients outside of therapy sessions including
+                            homework completion, questionnaire results, and
+                            additional device information relating to their
+                            homework assignments.
+                        </Typography>
+                        <Typography variant="body2" component="p">
+                            Avoidance behaviors in PTSD patients are very
+                            common, so having objective data that pinpoints
+                            areas for improvement aids the clinician in
+                            identifying how to support their patients.
                         </Typography>
                         <Grid item xs={12}>
                             <img
@@ -517,7 +514,7 @@ const PECSSDetails = () => {
                     </Typography>
                     <Grid container spacing={1} alignItems="top">
                         <Grid item xs={12}>
-                        <img
+                            <img
                                 src={sketches}
                                 alt="sketches"
                                 style={myStyles.storyBoardImage}

@@ -105,7 +105,7 @@ const Projects = () => {
             >
                 <Grid item xs={12} sm={6} md={4}>
                     <Typography
-                        variant="h4"
+                        variant="h5"
                         component="h1"
                         className={classes.splashTitle}
                     >
