@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a36c6ae2.chunk.css",
-    "main.js": "/static/js/main.40b737b4.chunk.js",
-    "main.js.map": "/static/js/main.40b737b4.chunk.js.map",
+    "main.js": "/static/js/main.43d2bdc3.chunk.js",
+    "main.js.map": "/static/js/main.43d2bdc3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.ce13d569.js",
     "runtime-main.js.map": "/static/js/runtime-main.ce13d569.js.map",
     "static/js/2.2c6d8abb.chunk.js": "/static/js/2.2c6d8abb.chunk.js",
@@ -19,7 +19,7 @@
     "static/media/Concept1.4d6c01f0.png": "/static/media/Concept1.4d6c01f0.png",
     "static/media/Concept2.911e9aff.png": "/static/media/Concept2.911e9aff.png",
     "static/media/Concept3.56189832.png": "/static/media/Concept3.56189832.png",
-    "static/media/FiservCover.dcf9cbab.png": "/static/media/FiservCover.dcf9cbab.png",
+    "static/media/Fiserv-Cover.96c05d02.png": "/static/media/Fiserv-Cover.96c05d02.png",
     "static/media/Fiserv_logo.4bdd30fd.png": "/static/media/Fiserv_logo.4bdd30fd.png",
     "static/media/Hi-Fi.3aa80c23.png": "/static/media/Hi-Fi.3aa80c23.png",
     "static/media/HiFi.0e441e2a.png": "/static/media/HiFi.0e441e2a.png",
@@ -63,6 +63,9 @@
     "static/media/discover1.0ffa0b10.png": "/static/media/discover1.0ffa0b10.png",
     "static/media/discover2.cabb0965.png": "/static/media/discover2.cabb0965.png",
     "static/media/featureGraphic.f27fa1b2.png": "/static/media/featureGraphic.f27fa1b2.png",
+    "static/media/feedbackC1.0dcb1e58.png": "/static/media/feedbackC1.0dcb1e58.png",
+    "static/media/feedbackC2.66515587.png": "/static/media/feedbackC2.66515587.png",
+    "static/media/feedbackC3.f642a445.png": "/static/media/feedbackC3.f642a445.png",
     "static/media/fiserv-sitemap.245015d2.png": "/static/media/fiserv-sitemap.245015d2.png",
     "static/media/fiserv-userflow.61f147ff.png": "/static/media/fiserv-userflow.61f147ff.png",
     "static/media/fiservStakeholders.0d27b40b.jpeg": "/static/media/fiservStakeholders.0d27b40b.jpeg",
@@ -71,14 +74,15 @@
     "static/media/interview1.ee1e6c49.jpeg": "/static/media/interview1.ee1e6c49.jpeg",
     "static/media/ints.28cd0ad4.png": "/static/media/ints.28cd0ad4.png",
     "static/media/investing.715bdbff.png": "/static/media/investing.715bdbff.png",
-    "static/media/learning.b5811f83.png": "/static/media/learning.b5811f83.png",
+    "static/media/learning.cab9d228.png": "/static/media/learning.cab9d228.png",
     "static/media/litReview.08bb85cd.png": "/static/media/litReview.08bb85cd.png",
     "static/media/litreview.37490086.png": "/static/media/litreview.37490086.png",
     "static/media/mc.47fa140c.png": "/static/media/mc.47fa140c.png",
     "static/media/methods.975cc9a1.png": "/static/media/methods.975cc9a1.png",
-    "static/media/newFeature.1abb15b9.png": "/static/media/newFeature.1abb15b9.png",
+    "static/media/newFeature1.ef303bc4.png": "/static/media/newFeature1.ef303bc4.png",
+    "static/media/newFeature2.a2072c82.png": "/static/media/newFeature2.a2072c82.png",
     "static/media/newFeatureComp.4fb639eb.png": "/static/media/newFeatureComp.4fb639eb.png",
-    "static/media/newLearn.6046b891.png": "/static/media/newLearn.6046b891.png",
+    "static/media/newLearn.c4f1a403.png": "/static/media/newLearn.c4f1a403.png",
     "static/media/onboarding.321d3710.png": "/static/media/onboarding.321d3710.png",
     "static/media/patient_app.1635285b.png": "/static/media/patient_app.1635285b.png",
     "static/media/persona1.cca05c8a.png": "/static/media/persona1.cca05c8a.png",
@@ -95,7 +99,6 @@
     "static/media/shared_int.bb694b68.png": "/static/media/shared_int.bb694b68.png",
     "static/media/sitemap.765e80f4.png": "/static/media/sitemap.765e80f4.png",
     "static/media/sketch.dfa66d0e.svg": "/static/media/sketch.dfa66d0e.svg",
-    "static/media/sketches.27a432ea.png": "/static/media/sketches.27a432ea.png",
     "static/media/sketches.8f17316e.png": "/static/media/sketches.8f17316e.png",
     "static/media/sol.b3adde95.png": "/static/media/sol.b3adde95.png",
     "static/media/stacked.f0d435c2.png": "/static/media/stacked.f0d435c2.png",
@@ -105,12 +108,12 @@
     "static/media/web1.f33eabbd.png": "/static/media/web1.f33eabbd.png",
     "static/media/web2.e113e3de.png": "/static/media/web2.e113e3de.png",
     "static/media/welcome.f6a46231.png": "/static/media/welcome.f6a46231.png",
-    "static/media/wireframes.01b23cf8.png": "/static/media/wireframes.01b23cf8.png"
+    "static/media/wireframes.f901d081.png": "/static/media/wireframes.f901d081.png"
   },
   "entrypoints": [
     "static/js/runtime-main.ce13d569.js",
     "static/js/2.2c6d8abb.chunk.js",
     "static/css/main.a36c6ae2.chunk.css",
-    "static/js/main.40b737b4.chunk.js"
+    "static/js/main.43d2bdc3.chunk.js"
   ]
 }
