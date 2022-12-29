@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a36c6ae2.chunk.css",
-    "main.js": "/static/js/main.70d42949.chunk.js",
-    "main.js.map": "/static/js/main.70d42949.chunk.js.map",
+    "main.js": "/static/js/main.02a108d4.chunk.js",
+    "main.js.map": "/static/js/main.02a108d4.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1691f8ee.js",
     "runtime-main.js.map": "/static/js/runtime-main.1691f8ee.js.map",
     "static/js/2.65d499bb.chunk.js": "/static/js/2.65d499bb.chunk.js",
@@ -23,6 +23,9 @@
     "static/media/FiservCover2.f594c878.png": "/static/media/FiservCover2.f594c878.png",
     "static/media/Fiserv_logo.4bdd30fd.png": "/static/media/Fiserv_logo.4bdd30fd.png",
     "static/media/HiFi.0e441e2a.png": "/static/media/HiFi.0e441e2a.png",
+    "static/media/HiFi1.6c48b669.png": "/static/media/HiFi1.6c48b669.png",
+    "static/media/HiFi2.300a1500.png": "/static/media/HiFi2.300a1500.png",
+    "static/media/HiFi3.97a1154b.png": "/static/media/HiFi3.97a1154b.png",
     "static/media/Homework1.d5f03c60.png": "/static/media/Homework1.d5f03c60.png",
     "static/media/Homework2.3c9c3bfa.png": "/static/media/Homework2.3c9c3bfa.png",
     "static/media/InsomniacCover.b2cf1b64.png": "/static/media/InsomniacCover.b2cf1b64.png",
@@ -121,6 +124,6 @@
     "static/js/runtime-main.1691f8ee.js",
     "static/js/2.65d499bb.chunk.js",
     "static/css/main.a36c6ae2.chunk.css",
-    "static/js/main.70d42949.chunk.js"
+    "static/js/main.02a108d4.chunk.js"
   ]
 }
