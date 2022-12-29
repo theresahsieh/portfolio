@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a36c6ae2.chunk.css",
-    "main.js": "/static/js/main.02a108d4.chunk.js",
-    "main.js.map": "/static/js/main.02a108d4.chunk.js.map",
+    "main.js": "/static/js/main.db6c69c5.chunk.js",
+    "main.js.map": "/static/js/main.db6c69c5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.1691f8ee.js",
     "runtime-main.js.map": "/static/js/runtime-main.1691f8ee.js.map",
     "static/js/2.65d499bb.chunk.js": "/static/js/2.65d499bb.chunk.js",
@@ -22,7 +22,7 @@
     "static/media/Fiserv-Cover.995fce7b.png": "/static/media/Fiserv-Cover.995fce7b.png",
     "static/media/FiservCover2.f594c878.png": "/static/media/FiservCover2.f594c878.png",
     "static/media/Fiserv_logo.4bdd30fd.png": "/static/media/Fiserv_logo.4bdd30fd.png",
-    "static/media/HiFi.0e441e2a.png": "/static/media/HiFi.0e441e2a.png",
+    "static/media/HiFi.d7c95a35.png": "/static/media/HiFi.d7c95a35.png",
     "static/media/HiFi1.6c48b669.png": "/static/media/HiFi1.6c48b669.png",
     "static/media/HiFi2.300a1500.png": "/static/media/HiFi2.300a1500.png",
     "static/media/HiFi3.97a1154b.png": "/static/media/HiFi3.97a1154b.png",
@@ -62,7 +62,7 @@
     "static/media/convert.9a006866.png": "/static/media/convert.9a006866.png",
     "static/media/cookingMe.7b4bb409.svg": "/static/media/cookingMe.7b4bb409.svg",
     "static/media/designComparison.659c9440.png": "/static/media/designComparison.659c9440.png",
-    "static/media/designSystem.70f57f96.png": "/static/media/designSystem.70f57f96.png",
+    "static/media/designSystem.c4d83e6d.png": "/static/media/designSystem.c4d83e6d.png",
     "static/media/designTimeline.92fb87e5.png": "/static/media/designTimeline.92fb87e5.png",
     "static/media/designerMe.2aeccd2d.svg": "/static/media/designerMe.2aeccd2d.svg",
     "static/media/discord.452680d1.png": "/static/media/discord.452680d1.png",
@@ -124,6 +124,6 @@
     "static/js/runtime-main.1691f8ee.js",
     "static/js/2.65d499bb.chunk.js",
     "static/css/main.a36c6ae2.chunk.css",
-    "static/js/main.02a108d4.chunk.js"
+    "static/js/main.db6c69c5.chunk.js"
   ]
 }
