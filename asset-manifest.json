@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a36c6ae2.chunk.css",
-    "main.js": "/static/js/main.e0e8cf85.chunk.js",
-    "main.js.map": "/static/js/main.e0e8cf85.chunk.js.map",
+    "main.js": "/static/js/main.1f51f171.chunk.js",
+    "main.js.map": "/static/js/main.1f51f171.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4d1fae87.js",
     "runtime-main.js.map": "/static/js/runtime-main.4d1fae87.js.map",
     "static/js/2.4ec62131.chunk.js": "/static/js/2.4ec62131.chunk.js",
@@ -48,6 +48,7 @@
     "static/media/appRedesign1.c1e22ac2.png": "/static/media/appRedesign1.c1e22ac2.png",
     "static/media/appRedesign2.49513978.png": "/static/media/appRedesign2.49513978.png",
     "static/media/appRedesign3.f6f75aff.png": "/static/media/appRedesign3.f6f75aff.png",
+    "static/media/appendices.d98aea55.png": "/static/media/appendices.d98aea55.png",
     "static/media/check-icon.dc43ca3b.svg": "/static/media/check-icon.dc43ca3b.svg",
     "static/media/clinician_app.2ecbe47e.png": "/static/media/clinician_app.2ecbe47e.png",
     "static/media/coinbase-task.8ac61e82.jpg": "/static/media/coinbase-task.8ac61e82.jpg",
@@ -57,6 +58,7 @@
     "static/media/designSystem.c4d83e6d.png": "/static/media/designSystem.c4d83e6d.png",
     "static/media/designTimeline.92fb87e5.png": "/static/media/designTimeline.92fb87e5.png",
     "static/media/designerMe.2aeccd2d.svg": "/static/media/designerMe.2aeccd2d.svg",
+    "static/media/extras.1a763b75.png": "/static/media/extras.1a763b75.png",
     "static/media/f12.0d4151cc.svg": "/static/media/f12.0d4151cc.svg",
     "static/media/filledCheck-icon.aa55a404.svg": "/static/media/filledCheck-icon.aa55a404.svg",
     "static/media/fiserv-sitemap.245015d2.png": "/static/media/fiserv-sitemap.245015d2.png",
@@ -64,6 +66,7 @@
     "static/media/fiservStakeholders.0d27b40b.jpeg": "/static/media/fiservStakeholders.0d27b40b.jpeg",
     "static/media/fishingMe.0bcbabbe.svg": "/static/media/fishingMe.0bcbabbe.svg",
     "static/media/flow.6d60546b.png": "/static/media/flow.6d60546b.png",
+    "static/media/formats.6736db7b.png": "/static/media/formats.6736db7b.png",
     "static/media/initial-feedback.3e9ad931.jpeg": "/static/media/initial-feedback.3e9ad931.jpeg",
     "static/media/interview.d438ec80.png": "/static/media/interview.d438ec80.png",
     "static/media/interview1.ee1e6c49.jpeg": "/static/media/interview1.ee1e6c49.jpeg",
@@ -71,6 +74,7 @@
     "static/media/learning.8ab49ecd.png": "/static/media/learning.8ab49ecd.png",
     "static/media/litReview.08bb85cd.png": "/static/media/litReview.08bb85cd.png",
     "static/media/litreview.37490086.png": "/static/media/litreview.37490086.png",
+    "static/media/main.1366c69b.png": "/static/media/main.1366c69b.png",
     "static/media/mc.47fa140c.png": "/static/media/mc.47fa140c.png",
     "static/media/modal.6d856601.svg": "/static/media/modal.6d856601.svg",
     "static/media/mouse.6f3df93f.svg": "/static/media/mouse.6f3df93f.svg",
@@ -79,8 +83,16 @@
     "static/media/newFeatureComp.4fb639eb.png": "/static/media/newFeatureComp.4fb639eb.png",
     "static/media/nsf.cd1f2eab.png": "/static/media/nsf.cd1f2eab.png",
     "static/media/onboarding.1d8e66d6.png": "/static/media/onboarding.1d8e66d6.png",
+    "static/media/p1.e5f256a8.png": "/static/media/p1.e5f256a8.png",
+    "static/media/p2.e3221cf3.png": "/static/media/p2.e3221cf3.png",
+    "static/media/p3.0ec38112.png": "/static/media/p3.0ec38112.png",
+    "static/media/p4.2ff31174.png": "/static/media/p4.2ff31174.png",
+    "static/media/p5.b42b04a2.png": "/static/media/p5.b42b04a2.png",
+    "static/media/p6.c34599b8.png": "/static/media/p6.c34599b8.png",
     "static/media/paintingMe.d4e345b2.svg": "/static/media/paintingMe.d4e345b2.svg",
     "static/media/patient_app.1635285b.png": "/static/media/patient_app.1635285b.png",
+    "static/media/principles1.d27289ea.png": "/static/media/principles1.d27289ea.png",
+    "static/media/principles2.8226f1e2.png": "/static/media/principles2.8226f1e2.png",
     "static/media/problem.5ddc59f7.png": "/static/media/problem.5ddc59f7.png",
     "static/media/process.65e60fc1.png": "/static/media/process.65e60fc1.png",
     "static/media/programmerMe.2a6dfe13.svg": "/static/media/programmerMe.2a6dfe13.svg",
@@ -117,6 +129,6 @@
     "static/js/runtime-main.4d1fae87.js",
     "static/js/2.4ec62131.chunk.js",
     "static/css/main.a36c6ae2.chunk.css",
-    "static/js/main.e0e8cf85.chunk.js"
+    "static/js/main.1f51f171.chunk.js"
   ]
 }
