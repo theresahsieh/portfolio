@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.a36c6ae2.chunk.css",
-    "main.js": "/static/js/main.1f51f171.chunk.js",
-    "main.js.map": "/static/js/main.1f51f171.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4d1fae87.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4d1fae87.js.map",
-    "static/js/2.4ec62131.chunk.js": "/static/js/2.4ec62131.chunk.js",
-    "static/js/2.4ec62131.chunk.js.map": "/static/js/2.4ec62131.chunk.js.map",
-    "static/js/3.62295849.chunk.js": "/static/js/3.62295849.chunk.js",
-    "static/js/3.62295849.chunk.js.map": "/static/js/3.62295849.chunk.js.map",
+    "main.js": "/static/js/main.6c41a83d.chunk.js",
+    "main.js.map": "/static/js/main.6c41a83d.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c8a395c7.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c8a395c7.js.map",
+    "static/js/2.f5806339.chunk.js": "/static/js/2.f5806339.chunk.js",
+    "static/js/2.f5806339.chunk.js.map": "/static/js/2.f5806339.chunk.js.map",
+    "static/js/3.d0db786c.chunk.js": "/static/js/3.d0db786c.chunk.js",
+    "static/js/3.d0db786c.chunk.js.map": "/static/js/3.d0db786c.chunk.js.map",
     "index.html": "/index.html",
     "static/css/main.a36c6ae2.chunk.css.map": "/static/css/main.a36c6ae2.chunk.css.map",
-    "static/js/2.4ec62131.chunk.js.LICENSE.txt": "/static/js/2.4ec62131.chunk.js.LICENSE.txt",
+    "static/js/2.f5806339.chunk.js.LICENSE.txt": "/static/js/2.f5806339.chunk.js.LICENSE.txt",
     "static/media/AdamPatient.acfc6dd6.png": "/static/media/AdamPatient.acfc6dd6.png",
     "static/media/CarrieClinician.687eec7b.png": "/static/media/CarrieClinician.687eec7b.png",
     "static/media/Concept1.4d6c01f0.png": "/static/media/Concept1.4d6c01f0.png",
@@ -31,8 +31,8 @@
     "static/media/InsomniacCover2.ced577c8.png": "/static/media/InsomniacCover2.ced577c8.png",
     "static/media/InsomniacGamesLogo.80749390.png": "/static/media/InsomniacGamesLogo.80749390.png",
     "static/media/Instructions.46613739.png": "/static/media/Instructions.46613739.png",
-    "static/media/MastercardCover.375275e2.png": "/static/media/MastercardCover.375275e2.png",
-    "static/media/MastercardCover2.f4854749.png": "/static/media/MastercardCover2.f4854749.png",
+    "static/media/MastercardCover.75223be3.png": "/static/media/MastercardCover.75223be3.png",
+    "static/media/MastercardCover2.e1ddd7d8.png": "/static/media/MastercardCover2.e1ddd7d8.png",
     "static/media/Me.58cdab66.svg": "/static/media/Me.58cdab66.svg",
     "static/media/PE-book.5e9074a6.jpg": "/static/media/PE-book.5e9074a6.jpg",
     "static/media/PECSS-cover.2e74558f.png": "/static/media/PECSS-cover.2e74558f.png",
@@ -72,6 +72,7 @@
     "static/media/interview1.ee1e6c49.jpeg": "/static/media/interview1.ee1e6c49.jpeg",
     "static/media/investing.9a74ba0b.png": "/static/media/investing.9a74ba0b.png",
     "static/media/learning.8ab49ecd.png": "/static/media/learning.8ab49ecd.png",
+    "static/media/linkedin.a342ab4d.svg": "/static/media/linkedin.a342ab4d.svg",
     "static/media/litReview.08bb85cd.png": "/static/media/litReview.08bb85cd.png",
     "static/media/litreview.37490086.png": "/static/media/litreview.37490086.png",
     "static/media/main.1366c69b.png": "/static/media/main.1366c69b.png",
@@ -111,7 +112,7 @@
     "static/media/sketches.8f17316e.png": "/static/media/sketches.8f17316e.png",
     "static/media/solution.7125ba90.png": "/static/media/solution.7125ba90.png",
     "static/media/solution.e8d86633.png": "/static/media/solution.e8d86633.png",
-    "static/media/stacked.f0d435c2.png": "/static/media/stacked.f0d435c2.png",
+    "static/media/stacked.392677a7.png": "/static/media/stacked.392677a7.png",
     "static/media/storyboard1.aacd0c1b.jpeg": "/static/media/storyboard1.aacd0c1b.jpeg",
     "static/media/storyboard2.eb4f18f0.jpeg": "/static/media/storyboard2.eb4f18f0.jpeg",
     "static/media/survey.0e4c6c93.png": "/static/media/survey.0e4c6c93.png",
@@ -126,9 +127,9 @@
     "static/media/x-icon.6f632c37.svg": "/static/media/x-icon.6f632c37.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d1fae87.js",
-    "static/js/2.4ec62131.chunk.js",
+    "static/js/runtime-main.c8a395c7.js",
+    "static/js/2.f5806339.chunk.js",
     "static/css/main.a36c6ae2.chunk.css",
-    "static/js/main.1f51f171.chunk.js"
+    "static/js/main.6c41a83d.chunk.js"
   ]
 }
