@@ -1,8 +1,10 @@
-import { unstable_createMuiStrictModeTheme as createMuiTheme }  from '@material-ui/core/styles'
 
-const theme = createMuiTheme({
+import { createTheme } from '@mui/material/styles';
+import * as myStyles from "./MyStyles";
+
+const theme = createTheme({
   palette: {
-    primary: { 500: '#467fcf' },
+    primary: { 500: myStyles.purple.zero },
     background: {
       default: "#ffffff"
     },
@@ -29,10 +31,10 @@ const theme = createMuiTheme({
       marignBottom: "2.5"
     },
     h3: {
-      fontSize: "1.5rem",
+      fontSize: "1.8rem",
       lineHeight:"2.5rem",
       fontWeight: 700,
-      margin: "3rem 0 .5rem 0"
+      margin: "3rem 0 1.5rem 0"
     },
     
     h4: {
@@ -51,7 +53,7 @@ const theme = createMuiTheme({
     body2: {
       fontSize: "1.15rem",
       fontWeight: "400",
-      lineHeight:"1.8rem",
+      lineHeight:"2rem",
       letterSpacing:".001em",
       marginTop: ".2rem",
       marginBottom: "1rem"
@@ -66,6 +68,12 @@ const theme = createMuiTheme({
       fontSize: ".95rem",
       lineHeight:"1.3rem",
       marginBottom:"1rem"
+    },
+    problemStatement : {
+      fontSize: "1.5rem",
+      lineHeight:"2.5rem",
+      fontStyle: "italic",
+      fontWeight: "100"
     }
   }
 })
