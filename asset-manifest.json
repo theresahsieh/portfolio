@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.491354b0.css",
-    "main.js": "/static/js/main.3b0ef808.js",
+    "main.css": "/static/css/main.871f45da.css",
+    "main.js": "/static/js/main.bda9754a.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/meAtOffice.png": "/static/media/meAtOffice.47fa140c498f5d646578.png",
     "static/media/hifi.png": "/static/media/hifi.d7c95a353934f01625d0.png",
@@ -17,6 +17,7 @@
     "static/media/feature1.png": "/static/media/feature1.6c48b669bf2e80e70cc5.png",
     "static/media/feature3.png": "/static/media/feature3.97a1154b5acacbdb36ef.png",
     "static/media/Fiserv-cover.png": "/static/media/Fiserv-cover.995fce7b4bf4392ebc8e.png",
+    "static/media/sharedInterfaces.png": "/static/media/sharedInterfaces.d0f72411823d75f8de09.png",
     "static/media/threeAffinity.png": "/static/media/threeAffinity.c7cb798e137692f6bd42.png",
     "static/media/extras1.png": "/static/media/extras1.6e53bd249093bcf9717b.png",
     "static/media/p4.png": "/static/media/p4.2ff31174ed40d254e032.png",
@@ -45,7 +46,6 @@
     "static/media/user-flow.png": "/static/media/user-flow.61f147ff3c8f735b8116.png",
     "static/media/scen4.png": "/static/media/scen4.0e440915fb6720db5cf0.png",
     "static/media/sitemap.png": "/static/media/sitemap.765e80f4088ba163cc8c.png",
-    "static/media/sharedInterfaces.png": "/static/media/sharedInterfaces.bb694b6842557386a81b.png",
     "static/media/scen1.png": "/static/media/scen1.f4821663bce586e114aa.png",
     "static/media/ideationSketches.svg": "/static/media/ideationSketches.dfa66d0ea1a423c20ae999258e4bba33.svg",
     "static/media/interview.png": "/static/media/interview.d438ec801259bc6bfa8b.png",
@@ -67,8 +67,10 @@
     "static/media/sketch3.png": "/static/media/sketch3.56189832438a49cce1cf.png",
     "static/media/homeworkSolution.png": "/static/media/homeworkSolution.e8d866337c9167c48042.png",
     "static/media/PEbook.jpg": "/static/media/PEbook.5e9074a667f8b9b7c4f2.jpg",
+    "static/media/clinicianDashboard.png": "/static/media/clinicianDashboard.dc3f0552af2f6d80967d.png",
     "static/media/prototype2.png": "/static/media/prototype2.9a8473c802e31040aad1.png",
     "static/media/qualtrics.png": "/static/media/qualtrics.d018c7de3db13254123b.png",
+    "static/media/patientApp.png": "/static/media/patientApp.4370b0f2e816a6ce5875.png",
     "static/media/annotationRedesign.png": "/static/media/annotationRedesign.f6f75aff23b2d59b2a74.png",
     "static/media/shortcut.png": "/static/media/shortcut.a2072c82e8e345292935.png",
     "static/media/ideationConcepts.png": "/static/media/ideationConcepts.49513978433168d67ec3.png",
@@ -82,10 +84,8 @@
     "static/media/miro.png": "/static/media/miro.fc5d05a074c160a91660.png",
     "static/media/setup.png": "/static/media/setup.3d0beb2dfce7870441b7.png",
     "static/media/wireframe3.png": "/static/media/wireframe3.30caa21c2e9f8ff2e4b0.png",
-    "static/media/patientApp.png": "/static/media/patientApp.1635285bce005a35dc67.png",
     "static/media/ecosystem.png": "/static/media/ecosystem.db710d94ab0d4aea8921.png",
     "static/media/homeworkProblem.png": "/static/media/homeworkProblem.5ddc59f7a66aa5c2f97a.png",
-    "static/media/clinicianDashboard.png": "/static/media/clinicianDashboard.2ecbe47ed064627cdf00.png",
     "static/media/userinterviews.png": "/static/media/userinterviews.99d0cd871fc133c247f4.png",
     "static/media/lit-review.png": "/static/media/lit-review.08bb85cd42a3bbd3be89.png",
     "static/media/process.png": "/static/media/process.65e60fc13488575c7408.png",
@@ -111,12 +111,12 @@
     "static/media/figma.svg": "/static/media/figma.c8fdc0393f5e671b7907c1aa01ef2144.svg",
     "static/media/linkedin.svg": "/static/media/linkedin.a342ab4d005f9ab23d4f77af862189ad.svg",
     "static/media/mouse.svg": "/static/media/mouse.6f3df93f05c7a1afab41eeab2cd6bfc7.svg",
-    "main.491354b0.css.map": "/static/css/main.491354b0.css.map",
-    "main.3b0ef808.js.map": "/static/js/main.3b0ef808.js.map",
+    "main.871f45da.css.map": "/static/css/main.871f45da.css.map",
+    "main.bda9754a.js.map": "/static/js/main.bda9754a.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.491354b0.css",
-    "static/js/main.3b0ef808.js"
+    "static/css/main.871f45da.css",
+    "static/js/main.bda9754a.js"
   ]
 }
