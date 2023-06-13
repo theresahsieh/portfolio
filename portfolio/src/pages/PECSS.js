@@ -8,12 +8,9 @@ import SectionHeader from "../components/SectionHeader";
 import InfoBlock from "../components/InfoBlock";
 import PECSSMockups1 from '../resources/PECSS/PECSSMockups1.png';
 import ecosystem from '../resources/PECSS/ecosystem.png';
-
 import HiddenDetail from "../components/HiddenDetail";
 import ManageSearchIcon from "@mui/icons-material/ManageSearch";
 import GroupsIcon from "@mui/icons-material/Groups";
-import litReview from "../resources/Fiserv/lit-review.png";
-import stakeholders from "../resources/Fiserv/stakeholders.jpeg";
 import PEBook from '../resources/PECSS/PEbook.jpg';
 import whiteboard from '../resources/PECSS/whiteboard.png';
 import carriePersona from '../resources/PECSS/carriepersona.png';
@@ -28,10 +25,10 @@ import patientApp from '../resources/PECSS/patientApp.png';
 import homeworkProblem from '../resources/PECSS/homeworkProblem.png';
 import homeworkSolution from '../resources/PECSS/homeworkSolution.png';
 
-const color2 = "#054064";
 
 const project = projects.pecss;
 const color = myStyles.pecss.color;
+const color2 = "#009FAF";
 
 function PECSS() {
     return (
@@ -193,7 +190,7 @@ function PECSS() {
                         We also had <strong>weekly lab meetings</strong> where we would share new relevant papers and our Emory clinician would share different scenarios our platform should consider. These meetings constantly provided new perspectives on our work and facilitated meaningful discussions.
                     </Typography>
                     <Typography variant="h4">User Personas</Typography>
-                    <Typography variant="body2" sx={{ margin: '3rem 0px' }}>
+                    <Typography variant="body2">
                         The following are a set of personas I created to represent a clinician user and patient user of PECSS.
                     </Typography>
 
@@ -245,7 +242,6 @@ function PECSS() {
                             </Typography>
                         </Grid>
                     </Grid>
-
                 </div>
 
                 <div className="project-section">
@@ -255,7 +251,7 @@ function PECSS() {
                     </Typography>
 
 
-                    <Typography variant="h3" >Clinician Dashboard</Typography>
+                    <Typography variant="h3">Clinician Dashboard</Typography>
                     <Typography variant="body2">
                         I improved the information architecture for the dashboard to resructure how we organized data displayed to clinicians. <strong>As a front-end technical lead and designer, I balanced development and design goals. </strong>I created and implemented several core features for the platform myself and guided new lab members on both design and development teams.
                     </Typography>
@@ -300,7 +296,25 @@ function PECSS() {
                         Moving forwards, the assignment adding process still needs more fine tuning. The new system design alleviates the issue of adding multiple of the same assignment at once, but does not account for adding different assignment types. Furthermore, because PE is so manualized, having a preset schedule for certain assignments could help streamline the process more.
                     </Typography>
                 </div>
+                <div className="project-section">
+                    <SectionHeader color={color}>Impact</SectionHeader>
+
+                    <Typography variant="h4"><em>Advocating for Clinicians</em></Typography>
+                    <Typography variant="body2">
+                        Working closely with PE-certified clinicians allowed us to deeply understand and capture important insights about PTSD care. Sharing this information in our publications can help improve both the reach and efficacy of PE therapy. 
+                    </Typography>
+
+                    <Typography variant="h4"><em>Supplementing Care With Data</em></Typography>
+                    <Typography variant="body2">
+                        The data collected on the platform provides an opportunity for clinicians 
+                        to better personalize care and allows patients to better monitor 
+                        their progress. PECSS uses the leading best practices for data visualization, 
+                        health informatics, and human-computer interaction to make this data easily digestible and usable. 
+                    </Typography>
+
+                </div>
             </div>
+            
             <Grid
                 container
                 style={{

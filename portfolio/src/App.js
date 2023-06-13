@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import React from "react";
-import { Routes, Route, Navigate, BrowserRouter as Router } from "react-router-dom";
+import { Routes, Route, Navigate, HashRouter as Router } from "react-router-dom";
 import Projects from './projects/Projects';
 import About from './About';
 import { ThemeProvider} from '@mui/material/styles';

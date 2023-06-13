@@ -1021,6 +1021,18 @@ function Fiserv() {
                         </Grid>
                     </HiddenDetail>
                 </div>
+                <div className="project-section">
+                    <SectionHeader color={color}>Impact</SectionHeader>
+
+                    <Typography variant="h4"><em>Validating A Business Opportunity</em></Typography>
+                    <Typography variant="body2">
+                        The research we conducted to understand the cryptocurrency community, digital wallet 
+                        market, and user population established a foundation of product and user research 
+                        for the client to justify a future venture in the space. The results from the testing
+                        with our mobile application further supports the product idea. 
+                    </Typography>
+
+                </div>
             </div>
             <Grid
                 container
