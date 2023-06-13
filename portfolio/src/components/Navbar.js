@@ -18,7 +18,7 @@ function Navbar() {
     }}>
       <div style={{ width: "100%" }}>
         <Toolbar sx={{ justifyContent: 'space-between', overflowX: 'auto', maxWidth: '1488px', margin: "auto" }}>
-          <a href="#/projects" style={{ display: "flex" }}>
+          <a href="/projects" style={{ display: "flex" }}>
             <img
               src={logo}
               alt="logo"
@@ -33,7 +33,7 @@ function Navbar() {
             <Box sx={{ flexGrow: 1, display: 'flex' }}>
               {pages.map((page) => (
                 <Link
-                  key={`#/${page.url}`}
+                  key={`${page.url}`}
                   to={page.url}
                   style={{ textDecoration: 'none', padding: "1.5rem", color: myStyles.grey.one }}
                 >
