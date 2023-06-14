@@ -50,9 +50,6 @@ const Projects = () => {
                         justifyContent: "center"
                     }}
                 >
-                    <Typography variant="h6" sx={{width:"80%", padding:"12px", marginTop:"2rem", marginBottom:"1rem", maxWidth:'1400px'}}>
-                        <strong>Check out some of my work!</strong>
-                    </Typography>
                     <ProjectCards projects={projects} isFull={true} />
                 </Grid>
             </div>

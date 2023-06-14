@@ -1,7 +1,6 @@
 import { Typography } from "@mui/material";
-import { Grid } from "@mui/material";
-import { Link } from "react-router-dom";
-import * as myStyles from "../MyStyles";
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
+import LinkedIn from "../resources/icons/linkedin.svg";
 
 const Footer = () => {
     return (
@@ -14,22 +13,8 @@ const Footer = () => {
             }}
         >
             <div className="custom-container">
-                <Typography variant="body1" component="p">
-                    Reach me at{" "}
+                <div>
                     <Typography
-                        variant="body1"
-                        component={Link}
-                        href="mailto:theresaying.hsieh@gmail.com"
-                        style={{
-                            textDecoration: "none",
-                            color: "black",
-                            fontWeight: "bold",
-                        }}
-                    >
-                        theresaying.hsieh@gmail.com
-                    </Typography>
-                </Typography>
-                <Typography
                     variant="subtitle1"
                     component="p"
                     style={{
@@ -38,9 +23,21 @@ const Footer = () => {
                         fontWeight: "bold",
                     }}
                 >
-                    &copy; 2023 Design + Code by Theresa Hsieh
+                    &copy; 2023 Theresa Hsieh. All Rights Reserved
+                    <br />
+                    <span style={{ fontSize: ".85rem", fontWeight: "400" }}>Designed and developed from scratch with &hearts; and snacks</span>
                 </Typography>
+                </div>
+                <div>
+                <a href="mailto:theresaying.hsieh@gmail.com" target="_blank" rel="noreferrer">
+                    <MailOutlineIcon fontSize="large" sx={{ color: "rgb(0, 0, 0)", paddingRight: "16px" }} />
+                </a>
+                <a href="https://www.linkedin.com/in/theresa-hsieh/" target="_blank" rel="noreferrer">
+                    <img src={LinkedIn} alt="LinkedIn logo" style={{ paddingBottom: "8px" }}></img>
+                </a>
             </div>
+            </div>
+            
         </footer>
     );
 };

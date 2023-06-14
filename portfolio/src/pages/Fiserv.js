@@ -1015,18 +1015,21 @@ function Fiserv() {
                         </Grid>
                     </HiddenDetail>
                 </div>
-                {/* <div className="project-section">
-                    <SectionHeader color={color}>Impact</SectionHeader>
-
-                    <Typography variant="h4"><em>Validating A Business Opportunity</em></Typography>
+                <div className="project-section">
+                    <SectionHeader color={color}>Reflection</SectionHeader>
                     <Typography variant="body2">
-                        The research we conducted to understand the cryptocurrency community, digital wallet 
-                        market, and user population established a foundation of product and user research 
-                        for the client to justify a future venture in the space. The results from the testing
-                        with our mobile application further supports the product idea. 
+                        If given more time, our team would have liked to continue 
+                        to refine our design and test with more people. While 
+                        we were able to reach a decent number of users, we would have liked
+                        to evaluate our designs with a more diverse set of individuals.
+                    </Typography>
+                    <Typography variant="body2">
+                        During our design process, we also spent a bit too long on a feature 
+                        that was out of scope and later discarded. If given the chance, 
+                        we could have avoided this with more open communication as a team.
                     </Typography>
 
-                </div> */}
+                </div>
             </div>
             <Grid
                 container

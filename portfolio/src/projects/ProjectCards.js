@@ -13,12 +13,11 @@ const mainCard = {
     borderRadius: 4,
     marginBottom: "1.5rem",
     transition: "all 0.3s ease-in-out 0s",
-    borderWidth: "thick",
-    border: "solid white",
+    
     boxShadow: "none",
     "&:hover": {
         //boxShadow: "rgba(0, 0, 0, 0.22) 0px 19px 43px",
-        transform: "translate3d(4px, -4px, 0px)",
+        transform: "translate3d(4px, -6px, 0px)",
     },
 }
 
@@ -27,7 +26,7 @@ const fullCardImage = {
         height: "30vw",
     },
     height: "18vw",
-    maxHeight:"340px"
+    maxHeight: "340px"
 };
 
 const notFullCardImage = {
@@ -38,7 +37,7 @@ const notFullCardImage = {
         height: "30vw",
     },
     height: "12vw",
-    maxHeight:"200px"
+    maxHeight: "200px"
 }
 
 const ProjectCards = (props) => {
@@ -49,12 +48,19 @@ const ProjectCards = (props) => {
             //justifyContent: "center",
             width: "80%",
             maxWidth: "1400px",
-            margin:"auto",
+            margin: "auto",
         }}>
             {!isFull && (
-                <Grid item xs={12} style={{ marginLeft: "6px", marginTop:"2rem" }}>
+                <Grid item xs={12} style={{ marginLeft: "6px", marginTop: "2rem" }}>
                     <Typography variant="body2" component="p">
                         <strong> More Projects </strong>
+                    </Typography>
+                </Grid>
+            )}
+            {isFull && (
+                <Grid item xs={12} style={{ marginLeft: "6px", marginTop: "2rem", marginBottom:"2rem" }}>
+                    <Typography variant="h4" component="p">
+                        <strong>Check out some of my work!</strong>
                     </Typography>
                 </Grid>
             )}
@@ -70,7 +76,7 @@ const ProjectCards = (props) => {
                     <Link
                         to={`/projects/${value.path}`}
                         key={`${value.path}`}
-                        style={{textDecoration:"none"}}
+                        style={{ textDecoration: "none" }}
                     >
                         <Card sx={mainCard}>
                             <CardMedia
@@ -91,7 +97,7 @@ const ProjectCards = (props) => {
                                 {isFull && (
                                     <div style={{ marginTop: "16px" }}>
                                         {value.chips.map((c) => (
-                                            <span key={`${c}`}style={myStyles.chipStyle}>
+                                            <span key={`${c}`} style={myStyles.chipStyle}>
                                                 {c}
                                             </span>
                                         ))}

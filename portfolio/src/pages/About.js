@@ -1,18 +1,17 @@
-import profileImage from "./resources/about/about-photo.png";
+import profileImage from "../resources/about/about-photo.png";
 import { Typography } from "@mui/material";
 import { Grid } from "@mui/material";
-import useMediaQuery from '@mui/material/useMediaQuery';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
-import LinkedIn from "./resources/about/linkedin.svg";
-import me1 from "./resources/about/me1.svg";
-import me2 from "./resources/about/me2.svg";
-import me3 from "./resources/about/me3.svg";
-import me4 from "./resources/about/me4.svg";
-import me5 from "./resources/about/me5.svg";
-import me6 from "./resources/about/me6.svg";
+import LinkedIn from "../resources/about/linkedin.svg";
+import me1 from "../resources/about/me1.svg";
+import me2 from "../resources/about/me2.svg";
+import me3 from "../resources/about/me3.svg";
+import me4 from "../resources/about/me4.svg";
+import me5 from "../resources/about/me5.svg";
+import me6 from "../resources/about/me6.svg";
 import SchoolIcon from '@mui/icons-material/School';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
-import * as myStyles from "./MyStyles";
+import * as myStyles from "../MyStyles";
 
 
 const manyMes = [
@@ -26,13 +25,12 @@ const manyMes = [
 
 
 const About = () => {
-    const matches = useMediaQuery('(min-width:600px)');
 
     return (<div className="outer-block">
         <div className="centered-block">
             <Grid container sx={{ borderBottom: "solid rgba(216, 222, 226, 0.5)", marginBottom:"3rem" }}>
                 <Grid xs={12} sm={6} sx={{ display: "flex", justifyContent: "center" }}>
-                    <img src={profileImage} alt="My picture" style={{ maxWidth: "400px", width: "100%", height: "auto", alignSelf: "center" }} />
+                    <img src={profileImage} alt="Theresa Hsieh profile" style={{ maxWidth: "400px", width: "100%", height: "auto", alignSelf: "center" }} />
                 </Grid>
                 <Grid xs={12} sm={6} sx={{
                     padding: ".5rem",
@@ -84,7 +82,7 @@ const About = () => {
                 <Grid container paddingTop={".7rem"} paddingBottom={"2rem"}>
                     {manyMes.map((me) => (
                         <Grid xs={4} md={2} display={"flex"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"} padding={'1rem .5rem'}>
-                            <img src={me.img} alt={`My picture stylized as a ${me.title}`} style={{ maxWidth: "100px", width: "100%", height: "auto", alignSelf: "center" }} />
+                            <img src={me.img} alt={`Me stylized as a ${me.title}`} style={{ maxWidth: "100px", width: "100%", height: "auto", alignSelf: "center" }} />
                             <Typography>
                                 {me.title}
                             </Typography>

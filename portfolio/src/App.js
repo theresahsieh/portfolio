@@ -3,7 +3,7 @@ import Navbar from './components/Navbar';
 import React from "react";
 import { Routes, Route, Navigate, BrowserRouter as Router } from "react-router-dom";
 import Projects from './projects/Projects';
-import About from './About';
+import About from './pages/About';
 import { ThemeProvider} from '@mui/material/styles';
 import theme from "./theme";
 import { CssBaseline } from '@mui/material';
