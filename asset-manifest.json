@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.871f45da.css",
-    "main.js": "/static/js/main.e2df6f38.js",
+    "main.css": "/static/css/main.25cc315f.css",
+    "main.js": "/static/js/main.438d99d9.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/gif2.gif": "/static/media/gif2.66a6ebb27fb7e88dec58.gif",
     "static/media/gif4.gif": "/static/media/gif4.4848b6a645995e602d70.gif",
@@ -53,6 +53,7 @@
     "static/media/adjustments.png": "/static/media/adjustments.224412c7a4d9bd895698.png",
     "static/media/hifi1.png": "/static/media/hifi1.1d8e66d66d140456fc49.png",
     "static/media/requirements.png": "/static/media/requirements.34b43b618032aa1b64c8.png",
+    "static/media/update2.png": "/static/media/update2.58602ca1ad6816291f10.png",
     "static/media/p2.png": "/static/media/p2.e3221cf3c77ca41757e9.png",
     "static/media/hifi3.png": "/static/media/hifi3.9a74ba0b73a05c299f04.png",
     "static/media/interview.jpeg": "/static/media/interview.ee1e6c499bfc05cb5db1.jpeg",
@@ -80,6 +81,7 @@
     "static/media/stakeholders.jpeg": "/static/media/stakeholders.0d27b40b93004b16ccb8.jpeg",
     "static/media/scen3.png": "/static/media/scen3.587437b67ce2448ab92c.png",
     "static/media/sketch1.png": "/static/media/sketch1.4d6c01f06a0cc7f8dfc8.png",
+    "static/media/update1.png": "/static/media/update1.1071d1dca62fd1b2530d.png",
     "static/media/onboarding.png": "/static/media/onboarding.ef303bc4e2baeb13829c.png",
     "static/media/concept1.png": "/static/media/concept1.ba2b473335bc51f0b9fa.png",
     "static/media/prototype.png": "/static/media/prototype.f693717df78ac26e847a.png",
@@ -92,6 +94,7 @@
     "static/media/PECSS-cover.png": "/static/media/PECSS-cover.2e74558ff2e16d388665.png",
     "static/media/sketch2.png": "/static/media/sketch2.911e9aff3492295d0309.png",
     "static/media/sketch3.png": "/static/media/sketch3.56189832438a49cce1cf.png",
+    "static/media/hats.png": "/static/media/hats.d1754896528ffeed545b.png",
     "static/media/homeworkSolution.png": "/static/media/homeworkSolution.e8d866337c9167c48042.png",
     "static/media/PEbook.jpg": "/static/media/PEbook.5e9074a667f8b9b7c4f2.jpg",
     "static/media/clinicianDashboard.png": "/static/media/clinicianDashboard.dc3f0552af2f6d80967d.png",
@@ -105,11 +108,13 @@
     "static/media/shortcut.png": "/static/media/shortcut.a2072c82e8e345292935.png",
     "static/media/ideationConcepts.png": "/static/media/ideationConcepts.49513978433168d67ec3.png",
     "static/media/workshop2.png": "/static/media/workshop2.59ce8d268e740f0e42ec.png",
+    "static/media/update3.png": "/static/media/update3.3478c8865f0be1cba209.png",
     "static/media/PECSS-hero.png": "/static/media/PECSS-hero.558206415c57cef449d7.png",
     "static/media/instructions.png": "/static/media/instructions.466137399d1362e352f0.png",
     "static/media/principles1.png": "/static/media/principles1.d27289eaa2237534fca2.png",
     "static/media/workshop3.png": "/static/media/workshop3.c70a6b5c3275f0802231.png",
     "static/media/highPoints.png": "/static/media/highPoints.71870a9ade28913d5b3d.png",
+    "static/media/cognitivewalkthrough.png": "/static/media/cognitivewalkthrough.9a009109f1ebb2a67a18.png",
     "static/media/userzoom.png": "/static/media/userzoom.abd126bc82a1480f4bcf.png",
     "static/media/principles2.png": "/static/media/principles2.8226f1e2026e1ee559ae.png",
     "static/media/wireframe2.png": "/static/media/wireframe2.f0045985d4917d4820a9.png",
@@ -147,14 +152,14 @@
     "static/media/angular.svg": "/static/media/angular.3f781d9105b3bef395676155dd37e208.svg",
     "static/media/connection.svg": "/static/media/connection.f415c99ee69a2c104ba1cf386865097c.svg",
     "static/media/figma.svg": "/static/media/figma.c8fdc0393f5e671b7907c1aa01ef2144.svg",
-    "static/media/linkedin.svg": "/static/media/linkedin.a342ab4d005f9ab23d4f77af862189ad.svg",
+    "static/media/linkedin.svg": "/static/media/linkedin.f31200f1b43b98cb50783f96387fb39e.svg",
     "static/media/mouse.svg": "/static/media/mouse.6f3df93f05c7a1afab41eeab2cd6bfc7.svg",
-    "main.871f45da.css.map": "/static/css/main.871f45da.css.map",
-    "main.e2df6f38.js.map": "/static/js/main.e2df6f38.js.map",
+    "main.25cc315f.css.map": "/static/css/main.25cc315f.css.map",
+    "main.438d99d9.js.map": "/static/js/main.438d99d9.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.871f45da.css",
-    "static/js/main.e2df6f38.js"
+    "static/css/main.25cc315f.css",
+    "static/js/main.438d99d9.js"
   ]
 }
