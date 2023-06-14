@@ -18,6 +18,10 @@ export const blue={
     one: "#33CEFF"
 }
 
+export const yellow={
+    one:"#FFBF00"
+}
+
 export const chipStyle = {
     padding: "6px 12px ",
     marginRight: "8px",
@@ -57,4 +61,8 @@ export const insomniac = {
 }
 export const pecss = {
     color: "#54D0E0"
+}
+
+export const aquarium = {
+    color: "#46A3A0"
 }

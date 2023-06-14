@@ -46,7 +46,7 @@ const ProjectCards = (props) => {
     const isFull = props.isFull;
     return (
         <Grid container sx={{
-            justifyContent: "center",
+            //justifyContent: "center",
             width: "80%",
             maxWidth: "1400px",
             margin:"auto",

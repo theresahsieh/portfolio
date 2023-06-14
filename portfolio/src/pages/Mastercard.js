@@ -278,7 +278,7 @@ function Mastercard() {
                 }}
             >
                 <ProjectCards
-                    projects={[projects.fiserv, projects.pecss, projects.insomniac]}
+                    projects={[projects.aquarium, projects.fiserv, projects.insomniac,]}
                     isFull={false}
                 />
             </Grid>

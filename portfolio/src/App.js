@@ -11,6 +11,7 @@ import Mastercard from './pages/Mastercard';
 import Fiserv from "./pages/Fiserv";
 import Insomniac from "./pages/Insomniac";
 import PECSS from "./pages/PECSS";
+import Aquarium from "./pages/Aquarium";
 import ScrollToTop from "./ScrollToTop";
 import Footer from './components/Footer';
 
@@ -24,6 +25,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route exact path="/projects" element={<Projects />} />
+          <Route exact path="/projects/Aquarium" element={<Aquarium/>} />
           <Route exact path="/projects/Mastercard" element={<Mastercard/>} />
           <Route exact path="/projects/Fiserv" element={<Fiserv/>} />
           <Route exact path="/projects/Insomniac" element={<Insomniac/>} />

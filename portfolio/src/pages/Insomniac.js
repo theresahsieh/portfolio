@@ -106,7 +106,7 @@ function Insomniac() {
                                 "Content design and writing",
                                 "Project management"
                             ]}
-                            tools={[tools.figma, tools.miro, tools.qualtrics]}
+                            tools={[tools.figma, tools.miro, tools.qualtrics, tools.procreate]}
                         />
                     </div>
                 </div>
@@ -571,7 +571,7 @@ function Insomniac() {
                 }}
             >
                 <ProjectCards
-                    projects={[projects.mastercard, projects.fiserv, projects.pecss]}
+                    projects={[projects.aquarium, projects.mastercard, projects.fiserv]}
                     isFull={false}
                 />
             </Grid>

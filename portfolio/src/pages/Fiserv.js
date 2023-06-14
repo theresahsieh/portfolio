@@ -515,12 +515,6 @@ function Fiserv() {
                 </div>
                 <div className="project-section">
                     <SectionHeader color={color}>Design and Iteration</SectionHeader>
-                    <Typography variant="body2">
-                        We divided the research into three phases to familiarize ourselves
-                        with the crypto space and understand the attitudes, behaviors, and
-                        beliefs of both crypto owners and non-crypto owners. I led
-                        background research and user interviews.
-                    </Typography>
                     <Typography variant="h3" sx={{ color: color }}>
                         Sketched Concepts
                     </Typography>
@@ -1021,7 +1015,7 @@ function Fiserv() {
                         </Grid>
                     </HiddenDetail>
                 </div>
-                <div className="project-section">
+                {/* <div className="project-section">
                     <SectionHeader color={color}>Impact</SectionHeader>
 
                     <Typography variant="h4"><em>Validating A Business Opportunity</em></Typography>
@@ -1032,7 +1026,7 @@ function Fiserv() {
                         with our mobile application further supports the product idea. 
                     </Typography>
 
-                </div>
+                </div> */}
             </div>
             <Grid
                 container
@@ -1041,7 +1035,7 @@ function Fiserv() {
                 }}
             >
                 <ProjectCards
-                    projects={[projects.mastercard, projects.pecss, projects.insomniac]}
+                    projects={[projects.aquarium, projects.mastercard, projects.insomniac]}
                     isFull={false}
                 />
             </Grid>

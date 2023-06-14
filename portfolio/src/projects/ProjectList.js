@@ -11,6 +11,10 @@ import InsomniacCover from "../resources/Insomniac/Insomniac-cover.png";
 import InsomniacHero from "../resources/Insomniac/Insomniac-hero.png";
 
 
+import AquariumCover from "../resources/Aquarium/Aquarium-cover.png";
+import AquariumHero from "../resources/Aquarium/Aquarium-hero.png";
+
+
 export const mastercard = {
     name: "Mastercard: Product Experience Design",
     image: MastercardCover,
@@ -43,7 +47,15 @@ export const pecss = {
     path: "pecss",
 }
 
+export const aquarium = {
+    name: "Georgia Aquarium",
+    image: AquariumCover,
+    hero: AquariumHero,
+    chips: ["Case Study", "UX Design / UX Research", "Education"],
+    path: "aquarium",
+}
+
 
 export const projects = [
-    mastercard, fiserv, insomniac, pecss
+    aquarium, mastercard, fiserv, insomniac, pecss
 ];
