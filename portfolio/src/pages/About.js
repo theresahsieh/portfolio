@@ -55,7 +55,7 @@ const About = () => {
                             Human-Computer Interaction and a Bachelor’s in Computer
                             Science from Georgia Tech. I have worked on several end-to-end
                             user-centered design projects and enjoy crafting delightful
-                            experiences. I’m currently looking for full time UX design roles.
+                            experiences. I’m currently looking for full time product design roles.
                         </Typography>
                     </div>
                     <div>

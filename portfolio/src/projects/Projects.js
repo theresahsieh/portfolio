@@ -21,7 +21,7 @@ const Projects = () => {
                         <Typography component="h1" variant="h2" sx={{ paddingBottom: "2rem" }}> Hi there, I'm Terri!</Typography>
                         <Typography variant="h6"> I'm a product designer who loves to
                             create delightful experiences. I'm currently looking for a full-time
-                            UX design role.
+                            design role.
                         </Typography>
                     </Grid>
                     <Grid item sm={12} md={6}>
